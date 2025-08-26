@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: valorgoff_u1_interior.ma
-//Last modified: Mon, Aug 25, 2025 11:46:08 PM
+//Last modified: Mon, Aug 25, 2025 11:51:12 PM
 //Codeset: 1252
 requires maya "2026";
 requires "stereoCamera" "10.0";
@@ -12,18 +12,18 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "2A5D79EB-42D5-F7D2-5464-458651BF2CC4";
+fileInfo "UUID" "1E824D80-4466-72F5-CFF8-6A81BC46C4D0";
 createNode transform -s -n "persp";
 	rename -uid "706DE962-4C17-885A-000C-E4A56300E684";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -2.5282126898687722 8.8561124466799743 17.989168025240115 ;
-	setAttr ".r" -type "double3" -23.400000000001199 -8.0000000000001101 -6.022147149834435e-16 ;
+	setAttr ".t" -type "double3" -4.8777911390581625 1.7114056795966262 8.4485820815583814 ;
+	setAttr ".r" -type "double3" -4.2000000000002355 -30.000000000000163 -2.2953676268941109e-16 ;
 	setAttr ".rpt" -type "double3" -6.1747001872317752e-17 -5.0292938326864366e-16 6.0838057715928223e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "89C48C2C-4825-9D35-4A66-8A99211FDD5C";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 19.793915901016263;
+	setAttr ".coi" 9.7818516635451758;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
