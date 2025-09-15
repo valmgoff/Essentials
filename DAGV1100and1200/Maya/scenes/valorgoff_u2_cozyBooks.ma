@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: valorgoff_u2_cozyBooks.ma
-//Last modified: Mon, Sep 15, 2025 04:19:41 PM
+//Last modified: Mon, Sep 15, 2025 04:22:02 PM
 //Codeset: 1252
 requires maya "2026";
 requires "stereoCamera" "10.0";
@@ -13,23 +13,23 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "AC061E4D-4E98-0A6D-3C25-EDB41CF1AE56";
+fileInfo "UUID" "6178C09F-4F3B-42CE-4D53-B8B06CF89307";
 createNode transform -s -n "persp";
 	rename -uid "C3A94761-4B2D-2212-D774-31AC0C4F93A5";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -7.5267720649122758 1.5515514547723166 16.469834294820782 ;
-	setAttr ".r" -type "double3" -5.4000000031903541 -11497.199999999793 0 ;
+	setAttr ".t" -type "double3" 7.4753536712966415 27.121958827127088 47.697787876679328 ;
+	setAttr ".r" -type "double3" -30.000000002040107 -11515.999999999956 0 ;
 	setAttr ".rpt" -type "double3" 5.4184842877037895e-16 -4.2235542583114435e-16 9.5804972348125689e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3D3E322F-43B7-1E22-8DDF-E3B71CD990CD";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 12.1214079525235;
+	setAttr ".coi" 47.788702742500277;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 4.3483166694641113 1.6157587698105402 6.2228007316589355 ;
+	setAttr ".tp" -type "double3" 4.2037987660113947 3.3393644094467163 6.8505780896204831 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "34416AE8-4609-3E8E-6B45-0CA5851D02AC";
@@ -25131,6 +25131,7 @@ createNode mesh -n "plate1Shape" -p "plate1";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 1;
 createNode transform -n "glasses";
 	rename -uid "30A2BCA8-4650-0E3A-0A82-BE957D436E92";
 	setAttr ".rp" -type "double3" 4.3483173181213655 0 6.222800225464475 ;
@@ -25508,6 +25509,7 @@ createNode mesh -n "glassShape" -p "glass";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 1;
 createNode transform -n "glass1" -p "glasses";
 	rename -uid "27405ABA-4B72-E80E-C0AE-B9816CD8C2A4";
 	setAttr ".rp" -type "double3" 4.6805918896746261 3.2315177917480473 6.124002070580393 ;
@@ -51697,9 +51699,25 @@ createNode transform -n "wall_1";
 createNode mesh -n "wall_Shape1" -p "wall_1";
 	rename -uid "4DB1C061-459E-9615-A847-73A73DDC9192";
 	setAttr -k off ".v";
+	setAttr -s 6 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.75 0.375 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 2 ".pt[8:9]" -type "float3"  1.1920929e-07 2.3841858e-07 
+		0 1.1920929e-07 2.3841858e-07 0;
+	setAttr ".dr" 1;
+createNode mesh -n "polySurfaceShape7" -p "wall_1";
+	rename -uid "F55EE119-4678-9E19-6260-FEA1C448328F";
+	setAttr -k off ".v";
+	setAttr ".io" yes;
 	setAttr -s 3 ".iog[0].og";
-	setAttr ".iog[0].og[0].gcl" -type "componentList" 26 "f[8:9]" "f[14]" "f[18]" "f[22]" "f[26]" "f[31]" "f[35]" "f[38]" "f[42]" "f[46]" "f[50]" "f[54]" "f[58]" "f[63]" "f[67]" "f[70:105]" "f[145:152]" "f[158:169]" "f[175:182]" "f[188:199]" "f[202:206]" "f[212:214]" "f[220:221]" "f[225:227]" "f[233:239]" "f[242:319]";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 28 "f[0:7]" "f[10:11]" "f[15]" "f[19:21]" "f[23]" "f[27:30]" "f[34]" "f[36:37]" "f[39:41]" "f[45]" "f[47]" "f[51:53]" "f[55]" "f[59:62]" "f[66]" "f[68:69]" "f[106:114]" "f[123:132]" "f[141:144]" "f[153:157]" "f[170:174]" "f[183:187]" "f[200:201]" "f[207]" "f[215:219]" "f[222:224]" "f[232]" "f[240:241]";
+	setAttr ".iog[0].og[0].gcl" -type "componentList" 28 "f[6:11]" "f[14:15]" "f[18]" "f[21:23]" "f[26]" "f[29]" "f[31]" "f[34:36]" "f[38:39]" "f[42]" "f[45:47]" "f[50]" "f[53:55]" "f[58]" "f[61]" "f[63]" "f[66:68]" "f[70:105]" "f[145:152]" "f[157:170]" "f[175:182]" "f[187:200]" "f[202:207]" "f[212:214]" "f[219:221]" "f[225:227]" "f[232:240]" "f[242:319]";
+	setAttr ".iog[0].og[1].gcl" -type "componentList" 20 "f[0:5]" "f[19:20]" "f[27:28]" "f[30]" "f[37]" "f[40:41]" "f[51:52]" "f[59:60]" "f[62]" "f[69]" "f[106:114]" "f[123:132]" "f[141:144]" "f[153:156]" "f[171:174]" "f[183:186]" "f[201]" "f[215:218]" "f[222:224]" "f[241]";
 	setAttr ".iog[0].og[3].gcl" -type "componentList" 12 "f[12:13]" "f[16:17]" "f[24:25]" "f[32:33]" "f[43:44]" "f[48:49]" "f[56:57]" "f[64:65]" "f[115:122]" "f[133:140]" "f[208:211]" "f[228:231]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -55365,15 +55383,6 @@ createNode shadingEngine -n "pasted__standardSurface4SG2";
 createNode standardSurface -n "pasted__whiteColor2";
 	rename -uid "364AB53F-4636-9271-E436-099D0C93436C";
 	setAttr ".bc" -type "float3" 7.3708086 3.4855933 2.1349487 ;
-createNode groupId -n "groupId274";
-	rename -uid "11E2972E-46F0-4D93-032A-088F6776AA3E";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId275";
-	rename -uid "7E55E4F1-42F2-7A43-5C98-4FA7B334B865";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId276";
-	rename -uid "F54B142E-4BE4-5A47-7FDB-45A032010857";
-	setAttr ".ihi" 0;
 createNode shadingEngine -n "pasted__standardSurface10SG";
 	rename -uid "A5F822E1-4F00-80FE-DC95-939E6240D82D";
 	setAttr ".ihi" 0;
@@ -56868,8 +56877,8 @@ createNode groupId -n "groupId277";
 createNode groupParts -n "groupParts2";
 	rename -uid "3F21A1C1-4328-5309-D082-98B7E83C9AAC";
 	setAttr ".ihi" 0;
-	setAttr ".ic" -type "componentList" 37 "f[2]" "f[7:8]" "f[15:17]" "f[25:26]" "f[36:37]" "f[41:42]" "f[48]" "f[52:55]" "f[60:61]" "f[64:67]" "f[72]" "f[76:77]" "f[81:82]" "f[85:88]" "f[92]" "f[96:99]" "f[102:103]" "f[107:109]" "f[113:114]" "f[119:124]" "f[127:128]" "f[133:139]" "f[143]" "f[149:157]" "f[165:177]" "f[184:200]" "f[205:222]" "f[226:242]" "f[244:412]" "f[418:419]" "f[425:441]" "f[447:459]" "f[465:479]" "f[485:497]" "f[503:605]" "f[611:629]" "f[635:647]";
-	setAttr ".irc" -type "componentList" 37 "f[0:1]" "f[3:6]" "f[9:14]" "f[18:24]" "f[27:35]" "f[38:40]" "f[43:47]" "f[49:51]" "f[56:59]" "f[62:63]" "f[68:71]" "f[73:75]" "f[78:80]" "f[83:84]" "f[89:91]" "f[93:95]" "f[100:101]" "f[104:106]" "f[110:112]" "f[115:118]" "f[125:126]" "f[129:132]" "f[140:142]" "f[144:148]" "f[158:164]" "f[178:183]" "f[201:204]" "f[223:225]" "f[243]" "f[413:417]" "f[420:424]" "f[442:446]" "f[460:464]" "f[480:484]" "f[498:502]" "f[606:610]" "f[630:634]";
+	setAttr ".ic" -type "componentList" 37 "f[2]" "f[7:8]" "f[15:17]" "f[25:26]" "f[30:31]" "f[36:37]" "f[40:43]" "f[48]" "f[51:56]" "f[60:61]" "f[64:68]" "f[72]" "f[75:78]" "f[81:82]" "f[85:89]" "f[92]" "f[95:99]" "f[102:103]" "f[107:110]" "f[113:114]" "f[118:124]" "f[127:128]" "f[133:140]" "f[143]" "f[148:157]" "f[164:178]" "f[183:200]" "f[204:223]" "f[225:412]" "f[417:420]" "f[425:441]" "f[446:460]" "f[465:479]" "f[484:498]" "f[503:605]" "f[610:630]" "f[635:647]";
+	setAttr ".irc" -type "componentList" 37 "f[0:1]" "f[3:6]" "f[9:14]" "f[18:24]" "f[27:29]" "f[32:35]" "f[38:39]" "f[44:47]" "f[49:50]" "f[57:59]" "f[62:63]" "f[69:71]" "f[73:74]" "f[79:80]" "f[83:84]" "f[90:91]" "f[93:94]" "f[100:101]" "f[104:106]" "f[111:112]" "f[115:117]" "f[125:126]" "f[129:132]" "f[141:142]" "f[144:147]" "f[158:163]" "f[179:182]" "f[201:203]" "f[224]" "f[413:416]" "f[421:424]" "f[442:445]" "f[461:464]" "f[480:483]" "f[499:502]" "f[606:609]" "f[631:634]";
 createNode groupId -n "groupId278";
 	rename -uid "E2128699-4607-6DBE-0B51-DF8020FA3BAA";
 	setAttr ".ihi" 0;
@@ -56879,7 +56888,8 @@ createNode groupId -n "groupId279";
 createNode groupParts -n "groupParts3";
 	rename -uid "2D7E2F52-48EC-9A27-0724-03865B2BAE07";
 	setAttr ".ihi" 0;
-	setAttr ".ic" -type "componentList" 37 "f[0:1]" "f[3:6]" "f[9:14]" "f[18:24]" "f[27:35]" "f[38:40]" "f[43:47]" "f[49:51]" "f[56:59]" "f[62:63]" "f[68:71]" "f[73:75]" "f[78:80]" "f[83:84]" "f[89:91]" "f[93:95]" "f[100:101]" "f[104:106]" "f[110:112]" "f[115:118]" "f[125:126]" "f[129:132]" "f[140:142]" "f[144:148]" "f[158:164]" "f[178:183]" "f[201:204]" "f[223:225]" "f[243]" "f[413:417]" "f[420:424]" "f[442:446]" "f[460:464]" "f[480:484]" "f[498:502]" "f[606:610]" "f[630:634]";
+	setAttr ".ic" -type "componentList" 37 "f[0:1]" "f[3:6]" "f[9:14]" "f[18:24]" "f[27:29]" "f[32:35]" "f[38:39]" "f[44:47]" "f[49:50]" "f[57:59]" "f[62:63]" "f[69:71]" "f[73:74]" "f[79:80]" "f[83:84]" "f[90:91]" "f[93:94]" "f[100:101]" "f[104:106]" "f[111:112]" "f[115:117]" "f[125:126]" "f[129:132]" "f[141:142]" "f[144:147]" "f[158:163]" "f[179:182]" "f[201:203]" "f[224]" "f[413:416]" "f[421:424]" "f[442:445]" "f[461:464]" "f[480:483]" "f[499:502]" "f[606:609]" "f[631:634]";
+	setAttr ".irc" -type "componentList" 29 "f[30:31]" "f[40]" "f[43]" "f[51]" "f[56]" "f[68]" "f[75]" "f[78]" "f[89]" "f[95]" "f[110]" "f[118]" "f[140]" "f[148]" "f[164]" "f[178]" "f[183]" "f[204]" "f[223]" "f[225]" "f[243]" "f[417]" "f[420]" "f[446]" "f[460]" "f[484]" "f[498]" "f[610]" "f[630]";
 createNode polySplit -n "polySplit50";
 	rename -uid "ECBFD692-429B-6EEE-3DA0-22853AAA143A";
 	setAttr -s 21 ".e[0:20]"  0.84724498 0.84724498 0.84724498 0.84724498
@@ -57718,6 +57728,71 @@ createNode polySplit -n "polySplit116";
 		-2147483473 -2147483471 -2147483508;
 	setAttr ".sma" 180;
 	setAttr ".m2015" yes;
+createNode polySplit -n "polySplit117";
+	rename -uid "3B3D0FF5-485D-B41C-B44C-91BC408373CD";
+	setAttr -s 29 ".e[0:28]"  0.90095103 0.90095103 0.90095103 0.90095103
+		 0.0990493 0.0990493 0.0990493 0.0990493 0.0990493 0.0990493 0.0990493 0.0990493 0.0990493
+		 0.0990493 0.0990493 0.0990493 0.0990493 0.0990493 0.0990493 0.90095103 0.90095103
+		 0.90095103 0.90095103 0.90095103 0.90095103 0.90095103 0.90095103 0.90095103 0.90095103;
+	setAttr -s 29 ".d[0:28]"  -2147483582 -2147482751 -2147482383 -2147483602 -2147483600 -2147483598 
+		-2147483575 -2147483549 -2147483527 -2147482363 -2147482735 -2147483505 -2147483467 -2147482796 -2147483424 -2147483360 -2147483263 -2147482652 
+		-2147483219 -2147483217 -2147483258 -2147483308 -2147483348 -2147483380 -2147482668 -2147483410 -2147483456 -2147483496 -2147482801;
+	setAttr ".sma" 180;
+	setAttr ".m2015" yes;
+createNode polySplit -n "polySplit118";
+	rename -uid "F73605BB-4E3F-22FA-ACB2-5DABD61FB415";
+	setAttr -s 29 ".e[0:28]"  0.102995 0.102995 0.102995 0.102995 0.89700502
+		 0.89700502 0.89700502 0.89700502 0.89700502 0.89700502 0.89700502 0.89700502 0.89700502
+		 0.89700502 0.89700502 0.89700502 0.89700502 0.89700502 0.89700502 0.102995 0.102995
+		 0.102995 0.102995 0.102995 0.102995 0.102995 0.102995 0.102995 0.102995;
+	setAttr -s 29 ".d[0:28]"  -2147483582 -2147482751 -2147482383 -2147483602 -2147482334 -2147482333 
+		-2147482332 -2147482331 -2147482330 -2147482329 -2147482328 -2147482327 -2147482326 -2147482325 -2147482324 -2147482323 -2147482322 -2147482321 
+		-2147482320 -2147483217 -2147483258 -2147483308 -2147483348 -2147483380 -2147482668 -2147483410 -2147483456 -2147483496 -2147482801;
+	setAttr ".sma" 180;
+	setAttr ".m2015" yes;
+createNode polySplit -n "polySplit119";
+	rename -uid "100D4912-428D-17FA-0E43-36B3D07AB4DB";
+	setAttr -s 27 ".e[0:26]"  0.118359 0.88164097 0.88164097 0.88164097
+		 0.118359 0.118359 0.88164097 0.118359 0.118359 0.118359 0.88164097 0.88164097 0.88164097
+		 0.88164097 0.88164097 0.88164097 0.88164097 0.118359 0.88164097 0.88164097 0.118359
+		 0.118359 0.118359 0.118359 0.118359 0.118359 0.118359;
+	setAttr -s 27 ".d[0:26]"  -2147483640 -2147483165 -2147483509 -2147483573 -2147483526 -2147483606 
+		-2147483562 -2147483590 -2147483542 -2147483208 -2147483639 -2147483245 -2147483305 -2147483637 -2147483218 -2147483546 -2147483594 -2147483558 
+		-2147483610 -2147483530 -2147483577 -2147483513 -2147483175 -2147483636 -2147483320 -2147483260 -2147483640;
+	setAttr ".sma" 180;
+	setAttr ".m2015" yes;
+createNode groupId -n "groupId283";
+	rename -uid "14561F09-4E85-F24D-F46E-66839886BE0F";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts9";
+	rename -uid "10AA204A-4404-FD24-6230-9EABB34774DA";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 28 "f[6:11]" "f[14:15]" "f[18]" "f[21:23]" "f[26]" "f[29]" "f[31]" "f[34:36]" "f[38:39]" "f[42]" "f[45:47]" "f[50]" "f[53:55]" "f[58]" "f[61]" "f[63]" "f[66:68]" "f[70:105]" "f[145:152]" "f[157:170]" "f[175:182]" "f[187:200]" "f[202:207]" "f[212:214]" "f[219:221]" "f[225:227]" "f[232:240]" "f[242:319]";
+createNode groupId -n "groupId284";
+	rename -uid "3BBA6382-466E-6819-1464-8BA950061CBA";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts10";
+	rename -uid "4424A91F-43FE-B702-9B5B-D9B6D78AC210";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 20 "f[0:5]" "f[19:20]" "f[27:28]" "f[30]" "f[37]" "f[40:41]" "f[51:52]" "f[59:60]" "f[62]" "f[69]" "f[106:114]" "f[123:132]" "f[141:144]" "f[153:156]" "f[171:174]" "f[183:186]" "f[201]" "f[215:218]" "f[222:224]" "f[241]";
+createNode groupId -n "groupId285";
+	rename -uid "2F4EBCEE-4CDB-B799-2600-A2807AF750D9";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts11";
+	rename -uid "F493556D-49E7-DEAB-10AA-D3B48361B1DA";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 12 "f[12:13]" "f[16:17]" "f[24:25]" "f[32:33]" "f[43:44]" "f[48:49]" "f[56:57]" "f[64:65]" "f[115:122]" "f[133:140]" "f[208:211]" "f[228:231]";
+createNode polySplit -n "polySplit120";
+	rename -uid "B3D71239-48CF-6532-79B5-5ABFC4221523";
+	setAttr -s 27 ".e[0:26]"  0.16242599 0.83757401 0.83757401 0.83757401
+		 0.16242599 0.83757401 0.83757401 0.16242599 0.16242599 0.16242599 0.83757401 0.83757401
+		 0.83757401 0.83757401 0.83757401 0.83757401 0.83757401 0.16242599 0.16242599 0.83757401
+		 0.16242599 0.16242599 0.16242599 0.16242599 0.16242599 0.16242599 0.16242599;
+	setAttr -s 27 ".d[0:26]"  -2147483639 -2147482999 -2147483000 -2147483001 -2147483562 -2147483003 
+		-2147483004 -2147483573 -2147483509 -2147483165 -2147483008 -2147482983 -2147482984 -2147482985 -2147482986 -2147482987 -2147482988 -2147483530 
+		-2147483610 -2147482991 -2147483594 -2147483546 -2147483218 -2147483637 -2147483305 -2147483245 -2147483639;
+	setAttr ".sma" 180;
+	setAttr ".m2015" yes;
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -av -k on ".ihi";
@@ -58064,14 +58139,15 @@ connectAttr "groupId259.id" "bag_2Shape.iog.og[1].gid";
 connectAttr "standardSurface5SG.mwc" "bag_2Shape.iog.og[1].gco";
 connectAttr "groupId255.id" "bag_2Shape.ciog.cog[0].cgid";
 connectAttr "wallsLayer.di" "wall_1.do";
-connectAttr "groupId274.id" "wall_Shape1.iog.og[0].gid";
+connectAttr "groupId283.id" "wall_Shape1.iog.og[0].gid";
 connectAttr "standardSurface10SG.mwc" "wall_Shape1.iog.og[0].gco";
-connectAttr "groupId275.id" "wall_Shape1.iog.og[1].gid";
+connectAttr "groupId284.id" "wall_Shape1.iog.og[1].gid";
 connectAttr "standardSurface11SG.mwc" "wall_Shape1.iog.og[1].gco";
-connectAttr "groupId276.id" "wall_Shape1.iog.og[3].gid";
+connectAttr "groupId285.id" "wall_Shape1.iog.og[3].gid";
 connectAttr "standardSurface11SG.mwc" "wall_Shape1.iog.og[3].gco";
+connectAttr "polySplit120.out" "wall_Shape1.i";
 connectAttr "wallsLayer.di" "wall_2.do";
-connectAttr "groupParts3.og" "wall_Shape2.i";
+connectAttr "polySplit118.out" "wall_Shape2.i";
 connectAttr "polyTweakUV60.uvtk[0]" "wall_Shape2.uvst[0].uvtw";
 connectAttr "groupId277.id" "wall_Shape2.iog.og[2].gid";
 connectAttr "standardSurface10SG.mwc" "wall_Shape2.iog.og[2].gco";
@@ -58214,14 +58290,14 @@ connectAttr "polyCylinder1.out" "groupParts1.ig";
 connectAttr "grayColor.oc" "standardSurface10SG.ss";
 connectAttr "bag_2Shape.ciog.cog[0]" "standardSurface10SG.dsm" -na;
 connectAttr "bag_2Shape.iog.og[0]" "standardSurface10SG.dsm" -na;
-connectAttr "wall_Shape1.iog.og[0]" "standardSurface10SG.dsm" -na;
 connectAttr "wall_Shape2.iog.og[2]" "standardSurface10SG.dsm" -na;
 connectAttr "wall_Shape2.ciog.cog[1]" "standardSurface10SG.dsm" -na;
+connectAttr "wall_Shape1.iog.og[0]" "standardSurface10SG.dsm" -na;
 connectAttr "groupId258.msg" "standardSurface10SG.gn" -na;
 connectAttr "groupId260.msg" "standardSurface10SG.gn" -na;
-connectAttr "groupId274.msg" "standardSurface10SG.gn" -na;
 connectAttr "groupId277.msg" "standardSurface10SG.gn" -na;
 connectAttr "groupId278.msg" "standardSurface10SG.gn" -na;
+connectAttr "groupId283.msg" "standardSurface10SG.gn" -na;
 connectAttr "standardSurface10SG.msg" "materialInfo10.sg";
 connectAttr "grayColor.msg" "materialInfo10.m";
 connectAttr "tanColor.oc" "standardSurface11SG.ss";
@@ -58231,21 +58307,21 @@ connectAttr "groupId157.msg" "standardSurface11SG.gn" -na;
 connectAttr "groupId207.msg" "standardSurface11SG.gn" -na;
 connectAttr "groupId216.msg" "standardSurface11SG.gn" -na;
 connectAttr "groupId261.msg" "standardSurface11SG.gn" -na;
-connectAttr "groupId275.msg" "standardSurface11SG.gn" -na;
 connectAttr "groupId279.msg" "standardSurface11SG.gn" -na;
-connectAttr "groupId276.msg" "standardSurface11SG.gn" -na;
 connectAttr "groupId280.msg" "standardSurface11SG.gn" -na;
 connectAttr "groupId282.msg" "standardSurface11SG.gn" -na;
+connectAttr "groupId284.msg" "standardSurface11SG.gn" -na;
+connectAttr "groupId285.msg" "standardSurface11SG.gn" -na;
 connectAttr "bookShape.iog.og[1]" "standardSurface11SG.dsm" -na;
 connectAttr "books_1Shape.iog.og[4]" "standardSurface11SG.dsm" -na;
 connectAttr "books_2Shape.iog.og[4]" "standardSurface11SG.dsm" -na;
 connectAttr "bookshelfShape.iog.og[2]" "standardSurface11SG.dsm" -na;
 connectAttr "dirtShape.iog.og[1]" "standardSurface11SG.dsm" -na;
-connectAttr "wall_Shape1.iog.og[1]" "standardSurface11SG.dsm" -na;
 connectAttr "wall_Shape2.iog.og[3]" "standardSurface11SG.dsm" -na;
-connectAttr "wall_Shape1.iog.og[3]" "standardSurface11SG.dsm" -na;
 connectAttr "potBodyShape.iog.og[0]" "standardSurface11SG.dsm" -na;
 connectAttr "potBodyShape.iog.og[4]" "standardSurface11SG.dsm" -na;
+connectAttr "wall_Shape1.iog.og[1]" "standardSurface11SG.dsm" -na;
+connectAttr "wall_Shape1.iog.og[3]" "standardSurface11SG.dsm" -na;
 connectAttr "standardSurface11SG.msg" "materialInfo11.sg";
 connectAttr "tanColor.msg" "materialInfo11.m";
 connectAttr "whiteLightColor.oc" "standardSurface12SG.ss";
@@ -58725,6 +58801,16 @@ connectAttr "polyCircularize3.out" "polyCircularize4.ip";
 connectAttr "glassCenterShape.wm" "polyCircularize4.mp";
 connectAttr "polyCircularize4.out" "polySplit115.ip";
 connectAttr "polySplit115.out" "polySplit116.ip";
+connectAttr "groupParts3.og" "polySplit117.ip";
+connectAttr "polySplit117.out" "polySplit118.ip";
+connectAttr "groupParts11.og" "polySplit119.ip";
+connectAttr "polySurfaceShape7.o" "groupParts9.ig";
+connectAttr "groupId283.id" "groupParts9.gi";
+connectAttr "groupParts9.og" "groupParts10.ig";
+connectAttr "groupId284.id" "groupParts10.gi";
+connectAttr "groupParts10.og" "groupParts11.ig";
+connectAttr "groupId285.id" "groupParts11.gi";
+connectAttr "polySplit119.out" "polySplit120.ip";
 connectAttr "standardSurface2SG.pa" ":renderPartition.st" -na;
 connectAttr "standardSurface3SG.pa" ":renderPartition.st" -na;
 connectAttr "standardSurface4SG.pa" ":renderPartition.st" -na;
