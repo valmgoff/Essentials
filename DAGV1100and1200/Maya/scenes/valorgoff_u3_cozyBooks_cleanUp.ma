@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: valorgoff_u3_cozyBooks_cleanUp.ma
-//Last modified: Sat, Sep 20, 2025 11:37:07 PM
+//Last modified: Sat, Sep 20, 2025 11:39:40 PM
 //Codeset: 1252
 file -rdi 1 -ns "valorgoff_cup" -rfn "valorgoff_cupRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya/scenes/valorgoff_cup.ma";
@@ -16,19 +16,19 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "C20B4D00-4D66-DD13-74D2-9D9E98C6B86C";
+fileInfo "UUID" "D641763A-448D-C2B7-45ED-F18E07730875";
 createNode transform -s -n "persp";
 	rename -uid "C3A94761-4B2D-2212-D774-31AC0C4F93A5";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 20.449194737413009 25.121118720904569 23.286712291366406 ;
-	setAttr ".r" -type "double3" -32.399999999833504 -315.20000000008116 0 ;
+	setAttr ".t" -type "double3" 20.106425147655315 22.770368682977246 31.026323470944728 ;
+	setAttr ".r" -type "double3" -29.400000000000404 -326.40000000004028 0 ;
 	setAttr ".rpt" -type "double3" 5.2703953436924118e-16 -1.321409215866232e-15 8.0730966950538999e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3D3E322F-43B7-1E22-8DDF-E3B71CD990CD";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 45.556839358628523;
+	setAttr ".coi" 43.65023896999071;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
