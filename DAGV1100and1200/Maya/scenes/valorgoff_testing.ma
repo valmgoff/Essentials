@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: valorgoff_testing.ma
-//Last modified: Fri, Sep 26, 2025 01:42:36 PM
+//Last modified: Fri, Sep 26, 2025 01:43:36 PM
 //Codeset: 1252
 requires maya "2026";
 requires "stereoCamera" "10.0";
@@ -11,12 +11,12 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "0F0E4C6C-423E-9EAA-5711-A68A00A24441";
+fileInfo "UUID" "D7D32779-4E39-8E27-7155-B89882C0050A";
 createNode transform -s -n "persp";
 	rename -uid "52FD9503-4725-3ECC-025C-B3A6E01B7D75";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -30.612497733412894 17.747072163388246 24.450427286961247 ;
-	setAttr ".r" -type "double3" -20.738352729871171 -1858.199999996815 3.0178571982309713e-15 ;
+	setAttr ".t" -type "double3" -32.157315527060291 13.488442166065276 24.481795783864065 ;
+	setAttr ".r" -type "double3" -14.138352729867197 -1859.3999999966322 1.5620313901468031e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "62128809-4F69-90A5-16E5-859E7CF5D110";
 	setAttr -k off ".v" no;
