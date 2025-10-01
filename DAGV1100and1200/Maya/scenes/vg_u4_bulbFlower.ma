@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
-//Name: valorgoff_u4_CurvesLab.ma
-//Last modified: Wed, Oct 01, 2025 01:50:42 PM
+//Name: vg_u4_bulbFlower.ma
+//Last modified: Wed, Oct 01, 2025 01:51:15 PM
 //Codeset: 1252
 requires maya "2026";
 requires -nodeType "materialxStack" -nodeType "MaterialXSurfaceShader" -dataType "MxDocumentStackData"
@@ -12,7 +12,7 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "FA824038-4DF2-3BBA-1116-86BA5D8CEF27";
+fileInfo "UUID" "19B7491F-4E0C-C6E2-0BB5-DFBE86A599E5";
 createNode transform -s -n "persp";
 	rename -uid "B5006A7C-4509-10F0-C4B2-61B14182CC87";
 	setAttr ".v" no;
@@ -22950,4 +22950,4 @@ connectAttr "groupId70.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId72.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId77.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId78.msg" ":initialShadingGroup.gn" -na;
-// End of valorgoff_u4_CurvesLab.ma
+// End of vg_u4_bulbFlower.ma
