@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: u2_glass.ma
-//Last modified: Sat, Oct 04, 2025 12:10:47 AM
+//Last modified: Sat, Oct 04, 2025 12:13:18 AM
 //Codeset: 1252
 requires maya "2026";
 requires "stereoCamera" "10.0";
@@ -11,12 +11,8 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "6B6CE785-4BD6-BCE0-C9FA-D694163FFAEC";
-createNode transform -n "glasses";
-	rename -uid "30A2BCA8-4650-0E3A-0A82-BE957D436E92";
-	setAttr ".rp" -type "double3" 4.3483173181213655 0 6.222800225464475 ;
-	setAttr ".sp" -type "double3" 4.3483173181213655 0 6.222800225464475 ;
-createNode transform -n "glass" -p "glasses";
+fileInfo "UUID" "7CB5BAFA-4AB3-4CD4-39B3-AAA5F8FBE265";
+createNode transform -n "glass";
 	rename -uid "5E4D4B8D-4874-6535-9319-86BD4621A646";
 createNode mesh -n "glassShape" -p "glass";
 	rename -uid "2710EA2E-4BE1-B197-A16E-02A7E5875FC7";
@@ -493,7 +489,7 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "DA9FAABD-4032-BE68-EC81-BC931CD719DE";
+	rename -uid "EA9BEF99-4650-8D4A-8850-1E9C8166DB00";
 	setAttr ".cdl" 3;
 	setAttr -s 7 ".dli[1:6]"  1 2 3 4 5 6;
 createNode materialInfo -n "materialInfo13";
@@ -509,18 +505,18 @@ createNode standardSurface -n "grayGlass";
 	setAttr ".ctr" 0.6428571343421936;
 	setAttr ".op" -type "float3" 0.70918369 0.70918369 0.70918369 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "5846524D-4318-B934-9C9B-D681451E2D38";
+	rename -uid "F6017EE4-4E00-8ED6-B89D-889FF1BE812F";
 	setAttr -s 3 ".lnk";
 	setAttr -s 3 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "38B13F21-4F13-0CAE-3D0B-11B7F1B4AE91";
+	rename -uid "48942D98-45BA-CB9C-D013-D0A876F3DA47";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "6826A33C-45F8-F8F1-7596-F98BC38F7948";
+	rename -uid "43F8D98D-4CC5-3919-D2C0-A59D15EA318A";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "446D882D-420B-9347-D3D2-71B4A8772D3A";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "F0A700CF-4CCF-AC0D-C498-61963AE53268";
+	rename -uid "7BE566C7-4D6B-3535-9B38-478EBE92B2E6";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "F1A7B6C1-4908-4EFA-4493-4A87608B976B";
 	setAttr ".g" yes;
