@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: valorgoff_u2_cozyBooks.ma
-//Last modified: Sat, Oct 04, 2025 12:28:24 AM
+//Last modified: Sat, Oct 04, 2025 12:35:38 AM
 //Codeset: 1252
 file -rdi 1 -ns "u2_wallA" -rfn "u2_wallARN" -op "v=0;" -typ "mayaAscii" "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u2_wallA.ma";
 file -rdi 1 -ns "u2_wallB" -rfn "u2_wallBRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u2_wallB.ma";
@@ -30,11 +30,11 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "180CA38A-4F47-DBEB-C76B-B9BFAB5695CA";
+fileInfo "UUID" "618DF3DB-463B-78E4-1D3D-568A0798A094";
 createNode transform -s -n "persp";
 	rename -uid "C3A94761-4B2D-2212-D774-31AC0C4F93A5";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 8.2544119899008948 5.8782011383930959 3.7174355943306825 ;
+	setAttr ".t" -type "double3" 7.4282195118144285 9.7309307237728166 2.5592666514494069 ;
 	setAttr ".r" -type "double3" -18.599999999979151 -11508.799999999797 0 ;
 	setAttr ".rpt" -type "double3" 5.4184842877037895e-16 -4.2235542583114435e-16 9.5804972348125689e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -24592,15 +24592,15 @@ createNode transform -n "stackedPlates";
 createNode transform -n "walls";
 	rename -uid "D20EDBC4-4D0F-E2EB-7816-6AA31F535A14";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "B885E2CA-4252-2C14-FE8E-C0A28144A871";
+	rename -uid "10B5DC04-4D0E-E279-DE9F-7A80D258FB2B";
 	setAttr -s 39 ".lnk";
 	setAttr -s 38 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "4BCF95F8-40E5-8881-E8ED-948257D5B26C";
+	rename -uid "29158F23-4A29-3F16-C5D4-BC92970ACB6E";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "736E0EC2-4A02-0367-A54D-C2A4186A6A82";
+	rename -uid "40472846-4B3F-B3DD-221E-EB864924F4AB";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "60D39ED8-46ED-652A-299A-A99AA1D74C7B";
+	rename -uid "562C96EC-48A0-D821-0B4E-42BE7E862FAB";
 	setAttr ".cdl" 3;
 	setAttr -s 7 ".dli[1:6]"  1 2 3 4 5 6;
 	setAttr -s 5 ".dli";
@@ -24608,7 +24608,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "D967D206-43F6-D51D-815F-FC89F4D4FB6F";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "0D5C9F7D-4B98-62A4-D15E-60971E51052E";
+	rename -uid "E50CE456-4E5C-4558-E290-EB8D28382E73";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "AEB49C3A-4102-F222-D5CC-71BAA9073A09";
 	setAttr ".g" yes;
