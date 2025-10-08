@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: u3_wallB.ma
-//Last modified: Mon, Oct 06, 2025 01:53:31 PM
+//Last modified: Tue, Oct 07, 2025 03:28:43 PM
 //Codeset: 1252
 requires maya "2026";
 requires "stereoCamera" "10.0";
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "8D02D1CE-4DF5-874A-2D01-D280EF10FD24";
+fileInfo "UUID" "AB2C96A8-4B1E-A63B-8D45-2FB78CA6131B";
 createNode transform -n "wall";
 	rename -uid "7EF8734A-4B47-3571-2CA1-51A8B5993EF1";
 	setAttr ".rp" -type "double3" -12.000000000000069 0 5.3290705182007514e-15 ;
@@ -1308,22 +1308,22 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "AFAECB7E-4B6B-D118-3D92-88ABC0241CDB";
+	rename -uid "2CF7EB29-4E40-CE80-9D4D-AEA32554BA7A";
 	setAttr ".cdl" 1;
 	setAttr -s 7 ".dli[1:6]"  1 2 3 4 5 6;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "9A5466BA-4E1F-A403-1B79-B897F45F956A";
-	setAttr -s 18 ".lnk";
-	setAttr -s 18 ".slnk";
+	rename -uid "720A3A9A-42B9-F52B-6939-11A4ED1F71F9";
+	setAttr -s 4 ".lnk";
+	setAttr -s 4 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "7CA32B9E-4A6B-6818-6961-359B6BFDA6BE";
+	rename -uid "6F2E1419-4B58-8185-3763-D18358A841E7";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "0679360B-4301-7AB0-2A58-129975913B13";
+	rename -uid "89FB5368-43FB-7C6C-F64E-FCB3EF0C2C0B";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "3F6F2D9C-4EC7-EEBF-EA1A-728CB3EAA062";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "4F4E909D-453A-D7D2-A153-9FA6F5E91884";
+	rename -uid "1D97E95D-41FF-9518-F049-C0806D349D74";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "1D08A43C-4E95-FB85-658C-32BA9E93AB92";
 	setAttr ".g" yes;
