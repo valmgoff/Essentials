@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: valorgoff_u8_milestone.ma
-//Last modified: Thu, Nov 06, 2025 01:38:27 AM
+//Last modified: Thu, Nov 06, 2025 01:39:43 AM
 //Codeset: 1252
 file -rdi 1 -ns "u8_loot" -rfn "u8_lootRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u8_loot.ma";
 file -rdi 1 -ns "u8_loot1" -rfn "u8_lootRN1" -typ "mayaAscii" "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u8_loot.ma";
@@ -21,12 +21,12 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "B535CF54-44CF-0B01-CF77-F89E74FB405A";
+fileInfo "UUID" "9F8727B2-4738-F4DF-AF74-979B308DFCE5";
 createNode transform -s -n "persp";
 	rename -uid "36165999-47A5-9251-2464-848B6BC9681C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -21.480952732890792 14.202834399561636 9.564617122331196 ;
-	setAttr ".r" -type "double3" -32.13835272982935 1009.399999999637 0 ;
+	setAttr ".t" -type "double3" -23.858865555420703 11.729806949112882 1.9126399236647986 ;
+	setAttr ".r" -type "double3" -24.938352729870811 986.1999999996134 2.5444437451708134e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "7B91387E-4D9B-3583-AD6B-2C8E67C5A82C";
 	setAttr -k off ".v" no;
