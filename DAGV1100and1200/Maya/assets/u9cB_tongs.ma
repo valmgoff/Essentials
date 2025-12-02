@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: u9cB_tongs.ma
-//Last modified: Mon, Dec 01, 2025 06:01:45 PM
+//Last modified: Tue, Dec 02, 2025 09:39:56 AM
 //Codeset: 1252
 requires maya "2026";
 requires "stereoCamera" "10.0";
@@ -11,18 +11,18 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "0BB7DD5A-422D-33CA-3429-7DA8C3C96432";
+fileInfo "UUID" "01B63FFA-48C1-4DE3-C3AD-919C18530D56";
 createNode transform -s -n "persp";
 	rename -uid "4DA8A2BD-4BFB-3390-8B42-43B52BEDC7E8";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 2.0602370970417332 6.4699542749270273 4.2244837475565129 ;
-	setAttr ".r" -type "double3" 666.00000000146315 386.39999999999202 1.775434253879381e-15 ;
+	setAttr ".t" -type "double3" 3.0464211585066896 0.32934320434763992 1.6497002466760933 ;
+	setAttr ".r" -type "double3" 714.60000000145828 421.99999999999056 0 ;
 	setAttr ".rpt" -type "double3" -3.6225637879767398e-17 7.2658625014163842e-16 5.9249290029563012e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "BA5AB15D-4964-CA91-F4AE-2DA930F1D531";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 7.9973050634829779;
+	setAttr ".coi" 3.499633808472701;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -11861,20 +11861,20 @@ createNode transform -n "tongB" -p "tongs";
 	setAttr ".r" -type "double3" 0 0 -180 ;
 parent -s -nc -r -add "|tongs|tongA|tongB13Shape" "tongB" ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "6C6712BA-4367-CFD8-1CF5-07904F2D9A2C";
+	rename -uid "BC41EE39-4AB0-D733-0B6D-F3A6D3429D93";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "589E8E3B-4F4B-2667-505E-C3B8F3D99412";
+	rename -uid "BACBF5B7-41F8-7DEE-D917-329151FEC5A8";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "65FFC58F-4536-BF7D-1050-ABB33F54FE0E";
+	rename -uid "6DCFCB21-4F4A-E739-BDAC-90A54D73EA8C";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "23C44120-488D-9B7E-D1D1-8195AF8B187E";
+	rename -uid "322197C6-43E2-92CA-6036-68B9ADB17561";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "B74CF5E2-43D8-2693-1B07-839FC96D56EB";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "76A9A688-4EDA-1956-27E2-D78ACE53E361";
+	rename -uid "A5446031-4625-3425-3DD4-088DE6CB1715";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "C3D6E22E-470A-4DDF-61F4-5FAF48B61F10";
 	setAttr ".g" yes;
@@ -12234,15 +12234,15 @@ relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":default
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
+connectAttr "|tongs|tongA|tongB13Shape.iog.og[0]" ":initialShadingGroup.dsm" -na
+		;
+connectAttr "|tongs|tongB|tongB13Shape.iog.og[0]" ":initialShadingGroup.dsm" -na
+		;
 connectAttr "groupId4.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId87.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId108.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId110.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId113.msg" ":initialShadingGroup.gn" -na;
-connectAttr "|tongs|tongA|tongB13Shape.iog.og[0]" ":initialShadingGroup.dsm" -na
-		;
-connectAttr "|tongs|tongB|tongB13Shape.iog.og[0]" ":initialShadingGroup.dsm" -na
-		;
 connectAttr "groupId5.msg" ":defaultLastHiddenSet.gn" -na;
 connectAttr "groupId88.msg" ":defaultLastHiddenSet.gn" -na;
 connectAttr "groupId109.msg" ":defaultLastHiddenSet.gn" -na;
