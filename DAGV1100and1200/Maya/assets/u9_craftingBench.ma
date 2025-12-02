@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: u9_craftingBench.ma
-//Last modified: Tue, Dec 02, 2025 11:12:28 AM
+//Last modified: Tue, Dec 02, 2025 11:15:14 AM
 //Codeset: 1252
 file -rdi 1 -ns "u9cB_hammer" -rfn "u9cB_hammerRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u9cB_hammer.ma";
@@ -50,17 +50,17 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "5084A990-4CCF-45A9-4AEB-7FAE530FAF9C";
+fileInfo "UUID" "D307FE7A-497A-AB47-CD3E-EBAC6503AD8F";
 createNode transform -s -n "persp";
 	rename -uid "1E7B851D-4D09-1AB2-4878-7B81A4351F53";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -1.3853703339213193 8.8391431581150712 10.039533188620563 ;
-	setAttr ".r" -type "double3" 3207.2616471499832 1433.7999999999063 -1.9995420695185355e-16 ;
+	setAttr ".t" -type "double3" -2.5091734070088103 12.325861677109291 12.097687986934259 ;
+	setAttr ".r" -type "double3" 3202.4616471494146 1431.3999999998259 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "6C803472-4E5B-4F6E-91BB-D4982D714787";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 11.877042037033712;
+	setAttr ".coi" 16.459715812062136;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
