@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: valorgoff_u9_towerScene.ma
-//Last modified: Thu, Nov 20, 2025 12:56:20 PM
+//Last modified: Wed, Dec 03, 2025 12:07:38 AM
 //Codeset: 1252
 file -rdi 1 -ns "u9_towerWall" -rfn "u9_towerWallRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u9_towerWall.ma";
@@ -8,12 +8,48 @@ file -rdi 1 -ns "u9_secondFloor" -rfn "u9_secondFloorRN" -op "v=0;" -typ "mayaAs
 		 "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u9_secondFloor.ma";
 file -rdi 1 -ns "u9_halfFloor" -rfn "u9_halfFloorRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u9_halfFloor.ma";
+file -rdi 1 -ns "u9_craftingBench" -rfn "u9_craftingBenchRN" -op "v=0;" -typ
+		 "mayaAscii" "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u9_craftingBench.ma";
+file -rdi 2 -ns "u9cB_hammer" -rfn "u9_craftingBench:u9cB_hammerRN" -op "v=0;"
+		 -typ "mayaAscii" "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u9cB_hammer.ma";
+file -rdi 2 -ns "u9cB_saw" -rfn "u9_craftingBench:u9cB_sawRN" -op "v=0;" -typ
+		 "mayaAscii" "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u9cB_saw.ma";
+file -rdi 2 -ns "u9cB_tongs" -rfn "u9_craftingBench:u9cB_tongsRN" -op "v=0;"
+		 -typ "mayaAscii" "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u9cB_tongs.ma";
+file -rdi 2 -ns "u9cB_sword" -rfn "u9_craftingBench:u9cB_swordRN" -op "v=0;"
+		 -typ "mayaAscii" "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u9cB_sword.ma";
+file -rdi 2 -ns "u9cB_diamond" -rfn "u9_craftingBench:u9cB_diamondRN" -op "v=0;"
+		 -typ "mayaAscii" "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u9cB_diamond.ma";
+file -rdi 2 -ns "u9cB_log" -rfn "u9_craftingBench:u9cB_logRN" -op "v=0;" -typ
+		 "mayaAscii" "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u9cB_log.ma";
+file -rdi 2 -ns "u9cB_plank" -rfn "u9_craftingBench:u9cB_plankRN" -op "v=0;"
+		 -typ "mayaAscii" "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u9cB_plank.ma";
+file -rdi 2 -ns "u9cB_plank1" -rfn "u9_craftingBench:u9cB_plankRN1" -typ "mayaAscii"
+		 "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u9cB_plank.ma";
+file -rdi 2 -ns "u9cB_plank2" -rfn "u9_craftingBench:u9cB_plankRN2" -typ "mayaAscii"
+		 "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u9cB_plank.ma";
+file -rdi 2 -ns "u9cB_twig" -rfn "u9_craftingBench:u9cB_twigRN" -op "v=0;" 
+		-typ "mayaAscii" "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u9cB_twig.ma";
+file -rdi 2 -ns "u9cB_twig1" -rfn "u9_craftingBench:u9cB_twigRN1" -typ "mayaAscii"
+		 "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u9cB_twig.ma";
+file -rdi 2 -ns "u9cB_twig2" -rfn "u9_craftingBench:u9cB_twigRN2" -typ "mayaAscii"
+		 "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u9cB_twig.ma";
+file -rdi 2 -ns "u9cB_twig3" -rfn "u9_craftingBench:u9cB_twigRN3" -typ "mayaAscii"
+		 "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u9cB_twig.ma";
+file -rdi 2 -ns "u9cB_diamond1" -rfn "u9_craftingBench:u9cB_diamondRN1" -typ
+		 "mayaAscii" "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u9cB_diamond.ma";
+file -rdi 2 -ns "u9cB_diamond2" -rfn "u9_craftingBench:u9cB_diamond1RN" -typ
+		 "mayaAscii" "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u9cB_diamond.ma";
+file -rdi 2 -ns "u9cB_diamond3" -rfn "u9_craftingBench:u9cB_diamondRN2" -typ
+		 "mayaAscii" "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u9cB_diamond.ma";
 file -r -ns "u9_towerWall" -dr 1 -rfn "u9_towerWallRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u9_towerWall.ma";
 file -r -ns "u9_secondFloor" -dr 1 -rfn "u9_secondFloorRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u9_secondFloor.ma";
 file -r -ns "u9_halfFloor" -dr 1 -rfn "u9_halfFloorRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u9_halfFloor.ma";
+file -r -ns "u9_craftingBench" -dr 1 -rfn "u9_craftingBenchRN" -op "v=0;" -typ "mayaAscii"
+		 "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//assets/u9_craftingBench.ma";
 requires maya "2026";
 requires "stereoCamera" "10.0";
 requires "mtoa" "5.5.3";
@@ -23,21 +59,21 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "B2CF7F39-4493-A5FD-4FF7-52BBB82414B7";
+fileInfo "UUID" "30380975-406A-8C48-E11C-8A8F5A2AD203";
 createNode transform -s -n "persp";
 	rename -uid "25E769BA-4CB8-0399-FB78-569F5E009E9B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -8.5337065921493434 31.554770654030705 32.04946809543712 ;
-	setAttr ".r" -type "double3" -40.538352729670066 -374.19999999970474 -8.2019958159668235e-16 ;
+	setAttr ".t" -type "double3" -2.0791132565594426 16.184970178718935 -17.85876494414946 ;
+	setAttr ".r" -type "double3" -30.338352729354462 -159.40000000040092 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "A4232C45-4BBE-EDD5-A304-03BAE9E66B2B";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 41.800178845345442;
+	setAttr ".coi" 26.754726929355932;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0 -10.000000476837158 0 ;
+	setAttr ".tp" -type "double3" 14.096420221797098 2.5486590266227722 5.8684506956635891 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "0112731A-4D1A-DD22-4871-13AC072EE92C";
@@ -91,6 +127,8 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -n "refs";
 	rename -uid "93855A92-417E-BF96-17C4-5BBCCE81CC2B";
+createNode transform -n "floor1complete" -p "refs";
+	rename -uid "A1ECC594-4EFC-483F-EA08-9FB396ABCC63";
 createNode transform -n "toDo";
 	rename -uid "9A8166CE-4113-52C5-F0F7-9C8F8908AB61";
 createNode transform -n "bedGroup" -p "toDo";
@@ -6036,7 +6074,7 @@ createNode transform -n "craftingGroup" -p "toDo";
 	rename -uid "AFBA9577-42F7-0E4F-72C8-8E9819B2D43E";
 createNode transform -n "chair" -p "craftingGroup";
 	rename -uid "3F4CFF51-4028-DFB5-F132-BEB1174895A1";
-	setAttr ".t" -type "double3" 10.020536149875005 0.49999984310193213 4.8497672829833931 ;
+	setAttr ".t" -type "double3" 9.3566845082349026 0.49999984310193213 3.8724970330534667 ;
 	setAttr ".r" -type "double3" 0 -16.54382108029586 0 ;
 	setAttr ".s" -type "double3" 2.6936594203625339 1.8759116530506621 2.6936594203625339 ;
 	setAttr ".rp" -type "double3" 0 -0.49999984310193124 0 ;
@@ -6089,80 +6127,21 @@ createNode mesh -n "chairShape" -p "chair";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".dr" 1;
-createNode transform -n "craftingBench" -p "craftingGroup";
-	rename -uid "9E23E113-4F20-8841-07E4-B9B6E9F0F67D";
-	setAttr ".t" -type "double3" 14.024579740715003 1.2871074686446824 6.4278140095725131 ;
-	setAttr ".r" -type "double3" 0 -19.237438891899448 0 ;
-	setAttr ".s" -type "double3" 0.35873792959724082 1.3971591386383257 1.14435260001412 ;
-	setAttr ".rp" -type "double3" 0 -1.287107468644682 0 ;
-	setAttr ".sp" -type "double3" 0 -1.287107468644682 0 ;
-createNode mesh -n "craftingBenchShape" -p "craftingBench";
-	rename -uid "34829734-4CA0-FD72-C4B0-95849049939E";
-	setAttr -k off ".v";
-	setAttr ".vir" yes;
-	setAttr ".vif" yes;
-	setAttr -s 6 ".gtag";
-	setAttr ".gtag[0].gtagnm" -type "string" "back";
-	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "f[2]";
-	setAttr ".gtag[1].gtagnm" -type "string" "bottom";
-	setAttr ".gtag[1].gtagcmp" -type "componentList" 1 "f[3]";
-	setAttr ".gtag[2].gtagnm" -type "string" "front";
-	setAttr ".gtag[2].gtagcmp" -type "componentList" 1 "f[0]";
-	setAttr ".gtag[3].gtagnm" -type "string" "left";
-	setAttr ".gtag[3].gtagcmp" -type "componentList" 1 "f[5]";
-	setAttr ".gtag[4].gtagnm" -type "string" "right";
-	setAttr ".gtag[4].gtagcmp" -type "componentList" 1 "f[4]";
-	setAttr ".gtag[5].gtagnm" -type "string" "top";
-	setAttr ".gtag[5].gtagcmp" -type "componentList" 1 "f[1]";
-	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr -s 14 ".uvst[0].uvsp[0:13]" -type "float2" 0.375 0 0.625 0 0.375
-		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
-		 0.875 0.25 0.125 0 0.125 0.25;
-	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
-	setAttr ".covm[0]"  0 1 1;
-	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 8 ".pt[0:7]" -type "float3"  -4.3843932 -0.78710741 2.5242519 
-		4.3843932 -0.78710741 2.5242519 -4.3843932 0.78710741 2.5242519 4.3843932 0.78710741 
-		2.5242519 -4.3843932 0.78710741 -2.5242519 4.3843932 0.78710741 -2.5242519 -4.3843932 
-		-0.78710741 -2.5242519 4.3843932 -0.78710741 -2.5242519;
-	setAttr -s 8 ".vt[0:7]"  -0.5 -0.5 0.5 0.5 -0.5 0.5 -0.5 0.5 0.5 0.5 0.5 0.5
-		 -0.5 0.5 -0.5 0.5 0.5 -0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5;
-	setAttr -s 12 ".ed[0:11]"  0 1 0 2 3 0 4 5 0 6 7 0 0 2 0 1 3 0 2 4 0
-		 3 5 0 4 6 0 5 7 0 6 0 0 7 1 0;
-	setAttr -s 6 -ch 24 ".fc[0:5]" -type "polyFaces" 
-		f 4 0 5 -2 -5
-		mu 0 4 0 1 3 2
-		f 4 1 7 -3 -7
-		mu 0 4 2 3 5 4
-		f 4 2 9 -4 -9
-		mu 0 4 4 5 7 6
-		f 4 3 11 -1 -11
-		mu 0 4 6 7 9 8
-		f 4 -12 -10 -8 -6
-		mu 0 4 1 10 11 3
-		f 4 10 4 6 8
-		mu 0 4 12 0 2 13;
-	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
-	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
-	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
-	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 1;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "6B16AFA1-4FE4-0201-A9F9-869E6EEE6DFD";
-	setAttr -s 499 ".lnk";
-	setAttr -s 499 ".slnk";
+	rename -uid "B4D825CE-4A6E-4721-0B7E-6E845B00010E";
+	setAttr -s 509 ".lnk";
+	setAttr -s 509 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "8DAB551C-4C6B-48DB-07F1-92974E334E82";
+	rename -uid "1B3CB159-422D-9864-9544-F9A57AFDCE9C";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "4A6DC021-4575-852C-B13C-B689FE6EF014";
+	rename -uid "D75084CD-4935-7C9E-F2A8-2F8477A338F2";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "50CE2A5A-4D5F-2F5E-F9E2-679D2780B90A";
+	rename -uid "8E2F3796-4E0E-5024-2801-16BC81912784";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "1D8BDE98-4BF2-055C-A035-688D49351E24";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "68D8BB0E-4928-1A27-367A-48A091924951";
+	rename -uid "22BAB057-4192-C228-9008-AE9B48CBB33E";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "50A54365-46CB-F444-C4C5-C8ACFE755967";
 	setAttr ".g" yes;
@@ -6172,17 +6151,17 @@ createNode script -n "uiConfigurationScriptNode";
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -docTag \"RADRENDER\" \n            -camera \"|top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n"
 		+ "            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n"
-		+ "            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n"
+		+ "            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 371\n            -height 555\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n"
 		+ "            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -docTag \"RADRENDER\" \n            -camera \"|side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n"
 		+ "            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n"
 		+ "            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n"
-		+ "            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -docTag \"RADRENDER\" \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n"
+		+ "            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 371\n            -height 555\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -docTag \"RADRENDER\" \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n"
 		+ "            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n"
 		+ "            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n"
-		+ "            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -docTag \"RADRENDER\" \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n"
+		+ "            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 371\n            -height 555\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -docTag \"RADRENDER\" \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n"
 		+ "            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n"
-		+ "            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1452\n            -height 1177\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n"
+		+ "            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 2552\n            -height 1324\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n"
 		+ "            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n"
 		+ "            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n"
 		+ "            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -selectCommand \"print(\\\"\\\")\" \n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n"
@@ -6208,12 +6187,12 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n"
 		+ "                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -rendererOverrideName \"stereoOverrideVP2\" \n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n"
 		+ "                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -bluePencil 1\n                -greasePencils 0\n                -excludeObjectPreset \"All\" \n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n"
-		+ "                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n"
-		+ "            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n"
-		+ "            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n"
-		+ "\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -docTag \\\"RADRENDER\\\" \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1452\\n    -height 1177\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -docTag \\\"RADRENDER\\\" \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1452\\n    -height 1177\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n"
+		+ "            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n"
+		+ "            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -selectCommand \"print(\\\"\\\")\" \n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n"
+		+ "        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -docTag \\\"RADRENDER\\\" \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2552\\n    -height 1324\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -docTag \\\"RADRENDER\\\" \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2552\\n    -height 1324\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -8858,6 +8837,364 @@ createNode reference -n "u9_halfFloorRN";
 		"displaySmoothMesh" " 2";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
+createNode file -n "file1";
+	rename -uid "CDA6EA47-427B-1356-0063-3FB3F066F0C0";
+	setAttr ".ftn" -type "string" "C:/Users/Valor/Documents/Coding/git/Essentials/DAGV1100and1200/Maya//sourceimages/fantasyPalette.png";
+	setAttr ".cs" -type "string" "sRGB Encoded Rec.709 (sRGB)";
+createNode place2dTexture -n "place2dTexture1";
+	rename -uid "095D088D-42E3-7CBE-3F22-9480A195880E";
+createNode reference -n "u9_craftingBenchRN";
+	rename -uid "EF1E096B-45E1-79AC-62F4-64BCD60E5BDA";
+	setAttr -s 56 ".phl";
+	setAttr ".phl[1]" 0;
+	setAttr ".phl[2]" 0;
+	setAttr ".phl[3]" 0;
+	setAttr ".phl[4]" 0;
+	setAttr ".phl[5]" 0;
+	setAttr ".phl[6]" 0;
+	setAttr ".phl[7]" 0;
+	setAttr ".phl[8]" 0;
+	setAttr ".phl[9]" 0;
+	setAttr ".phl[10]" 0;
+	setAttr ".phl[11]" 0;
+	setAttr ".phl[12]" 0;
+	setAttr ".phl[13]" 0;
+	setAttr ".phl[14]" 0;
+	setAttr ".phl[15]" 0;
+	setAttr ".phl[16]" 0;
+	setAttr ".phl[17]" 0;
+	setAttr ".phl[18]" 0;
+	setAttr ".phl[19]" 0;
+	setAttr ".phl[20]" 0;
+	setAttr ".phl[21]" 0;
+	setAttr ".phl[22]" 0;
+	setAttr ".phl[23]" 0;
+	setAttr ".phl[24]" 0;
+	setAttr ".phl[25]" 0;
+	setAttr ".phl[26]" 0;
+	setAttr ".phl[27]" 0;
+	setAttr ".phl[28]" 0;
+	setAttr ".phl[29]" 0;
+	setAttr ".phl[30]" 0;
+	setAttr ".phl[31]" 0;
+	setAttr ".phl[32]" 0;
+	setAttr ".phl[33]" 0;
+	setAttr ".phl[34]" 0;
+	setAttr ".phl[35]" 0;
+	setAttr ".phl[36]" 0;
+	setAttr ".phl[37]" 0;
+	setAttr ".phl[38]" 0;
+	setAttr ".phl[39]" 0;
+	setAttr ".phl[40]" 0;
+	setAttr ".phl[41]" 0;
+	setAttr ".phl[42]" 0;
+	setAttr ".phl[43]" 0;
+	setAttr ".phl[44]" 0;
+	setAttr ".phl[45]" 0;
+	setAttr ".phl[46]" 0;
+	setAttr ".phl[47]" 0;
+	setAttr ".phl[48]" 0;
+	setAttr ".phl[49]" 0;
+	setAttr ".phl[50]" 0;
+	setAttr ".phl[51]" 0;
+	setAttr ".phl[52]" 0;
+	setAttr ".phl[53]" 0;
+	setAttr ".phl[54]" 0;
+	setAttr ".phl[55]" 0;
+	setAttr ".phl[56]" 0;
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"u9_craftingBenchRN"
+		"u9_craftingBench:u9cB_diamondRN" 0
+		"u9_craftingBench:u9cB_plankRN" 0
+		"u9_craftingBench:u9cB_diamondRN1" 0
+		"u9_craftingBench:u9cB_diamond1RN" 0
+		"u9_craftingBenchRN" 0
+		"u9_craftingBench:u9cB_plankRN2" 0
+		"u9_craftingBench:u9cB_hammerRN" 0
+		"u9_craftingBench:u9cB_swordRN" 0
+		"u9_craftingBench:u9cB_twigRN2" 0
+		"u9_craftingBench:u9cB_logRN" 0
+		"u9_craftingBench:u9cB_sawRN" 0
+		"u9_craftingBench:u9cB_twigRN" 0
+		"u9_craftingBench:u9cB_twigRN3" 0
+		"u9_craftingBench:u9cB_twigRN1" 0
+		"u9_craftingBench:u9cB_diamondRN2" 0
+		"u9_craftingBench:u9cB_tongsRN" 0
+		"u9_craftingBench:u9cB_plankRN1" 0
+		"u9_craftingBench:u9cB_diamondRN" 2
+		3 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:corner|u9_craftingBench:u9cB_diamond:gem|u9_craftingBench:u9cB_diamond:gemShape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		5 3 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:corner|u9_craftingBench:u9cB_diamond:gem|u9_craftingBench:u9cB_diamond:gemShape.instObjGroups" 
+		"u9_craftingBenchRN.placeHolderList[21]" ":initialShadingGroup.dsm"
+		"u9_craftingBench:u9cB_plankRN" 2
+		3 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:wood|u9_craftingBench:u9cB_plank:plank|u9_craftingBench:u9cB_plank:plankShape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		5 3 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:wood|u9_craftingBench:u9cB_plank:plank|u9_craftingBench:u9cB_plank:plankShape.instObjGroups" 
+		"u9_craftingBenchRN.placeHolderList[23]" ":initialShadingGroup.dsm"
+		"u9_craftingBench:u9cB_diamondRN1" 2
+		3 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:crafting|u9_craftingBench:u9cB_diamond1:gem|u9_craftingBench:u9cB_diamond1:gemShape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		5 3 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:crafting|u9_craftingBench:u9cB_diamond1:gem|u9_craftingBench:u9cB_diamond1:gemShape.instObjGroups" 
+		"u9_craftingBenchRN.placeHolderList[42]" ":initialShadingGroup.dsm"
+		"u9_craftingBench:u9cB_diamond1RN" 2
+		3 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:crafting|u9_craftingBench:u9cB_diamond2:gem|u9_craftingBench:u9cB_diamond2:gemShape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		5 3 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:crafting|u9_craftingBench:u9cB_diamond2:gem|u9_craftingBench:u9cB_diamond2:gemShape.instObjGroups" 
+		"u9_craftingBenchRN.placeHolderList[43]" ":initialShadingGroup.dsm"
+		"u9_craftingBenchRN" 24
+		0 "|u9_craftingBench:bench" "|refs|floor1complete" "-s -r "
+		2 "|refs|floor1complete|u9_craftingBench:bench" "translate" " -type \"double3\" 14.24915464066627457 0 6.00146972528808398"
+		
+		2 "|refs|floor1complete|u9_craftingBench:bench" "rotate" " -type \"double3\" 0 -113.34888807658083465 0"
+		
+		2 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:bodyPoly|u9_craftingBench:cloth|u9_craftingBench:clothShape" 
+		"instObjGroups.objectGroups[0].objectGrpCompList" " -type \"componentList\" 1 \"f[0:1171]\""
+		
+		2 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:bodyPoly|u9_craftingBench:body|u9_craftingBench:bodyShape" 
+		"instObjGroups.objectGroups" " -s 2"
+		2 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:bodyPoly|u9_craftingBench:bars|u9_craftingBench:barsShape" 
+		"instObjGroups.objectGroups[0].objectGrpCompList" " -type \"componentList\" 1 \"f[0:2975]\""
+		
+		3 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:bodyPoly|u9_craftingBench:cloth|u9_craftingBench:clothShape.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "u9_craftingBench:groupId15.groupId" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:bodyPoly|u9_craftingBench:cloth|u9_craftingBench:clothShape.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:bodyPoly|u9_craftingBench:cloth|u9_craftingBench:clothShape.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:bodyPoly|u9_craftingBench:bars|u9_craftingBench:barsShape.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "u9_craftingBench:groupId17.groupId" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:bodyPoly|u9_craftingBench:bars|u9_craftingBench:barsShape.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:bodyPoly|u9_craftingBench:bars|u9_craftingBench:barsShape.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:bodyPoly|u9_craftingBench:body|u9_craftingBench:bodyShape.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "u9_craftingBench:groupId18.groupId" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:bodyPoly|u9_craftingBench:body|u9_craftingBench:bodyShape.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:bodyPoly|u9_craftingBench:body|u9_craftingBench:bodyShape.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		5 3 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:bodyPoly|u9_craftingBench:cloth|u9_craftingBench:clothShape.instObjGroups.objectGroups[0]" 
+		"u9_craftingBenchRN.placeHolderList[45]" ":initialShadingGroup.dsm"
+		5 0 "u9_craftingBenchRN" "u9_craftingBench:groupId15.groupId" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:bodyPoly|u9_craftingBench:cloth|u9_craftingBench:clothShape.instObjGroups.objectGroups[0].objectGroupId" 
+		"u9_craftingBenchRN.placeHolderList[46]" "u9_craftingBenchRN.placeHolderList[47]" 
+		"u9_craftingBench:clothShape.iog.og[0].gid"
+		5 4 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:bodyPoly|u9_craftingBench:cloth|u9_craftingBench:clothShape.instObjGroups.objectGroups[0].objectGrpColor" 
+		"u9_craftingBenchRN.placeHolderList[48]" ""
+		5 3 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:bodyPoly|u9_craftingBench:body|u9_craftingBench:bodyShape.instObjGroups.objectGroups[0]" 
+		"u9_craftingBenchRN.placeHolderList[49]" ":initialShadingGroup.dsm"
+		5 0 "u9_craftingBenchRN" "u9_craftingBench:groupId18.groupId" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:bodyPoly|u9_craftingBench:body|u9_craftingBench:bodyShape.instObjGroups.objectGroups[0].objectGroupId" 
+		"u9_craftingBenchRN.placeHolderList[50]" "u9_craftingBenchRN.placeHolderList[51]" 
+		"u9_craftingBench:bodyShape.iog.og[0].gid"
+		5 4 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:bodyPoly|u9_craftingBench:body|u9_craftingBench:bodyShape.instObjGroups.objectGroups[0].objectGrpColor" 
+		"u9_craftingBenchRN.placeHolderList[52]" ""
+		5 3 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:bodyPoly|u9_craftingBench:bars|u9_craftingBench:barsShape.instObjGroups.objectGroups[0]" 
+		"u9_craftingBenchRN.placeHolderList[53]" ":initialShadingGroup.dsm"
+		5 0 "u9_craftingBenchRN" "u9_craftingBench:groupId17.groupId" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:bodyPoly|u9_craftingBench:bars|u9_craftingBench:barsShape.instObjGroups.objectGroups[0].objectGroupId" 
+		"u9_craftingBenchRN.placeHolderList[54]" "u9_craftingBenchRN.placeHolderList[55]" 
+		"u9_craftingBench:barsShape.iog.og[0].gid"
+		5 4 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:bodyPoly|u9_craftingBench:bars|u9_craftingBench:barsShape.instObjGroups.objectGroups[0].objectGrpColor" 
+		"u9_craftingBenchRN.placeHolderList[56]" ""
+		"u9_craftingBench:u9cB_plankRN2" 2
+		3 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:wood|u9_craftingBench:u9cB_plank2:plank|u9_craftingBench:u9cB_plank2:plankShape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		5 3 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:wood|u9_craftingBench:u9cB_plank2:plank|u9_craftingBench:u9cB_plank2:plankShape.instObjGroups" 
+		"u9_craftingBenchRN.placeHolderList[25]" ":initialShadingGroup.dsm"
+		"u9_craftingBench:u9cB_hammerRN" 2
+		3 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_hammer:hammer|u9_craftingBench:u9cB_hammer:hammerShape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		5 3 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_hammer:hammer|u9_craftingBench:u9cB_hammer:hammerShape.instObjGroups" 
+		"u9_craftingBenchRN.placeHolderList[1]" ":initialShadingGroup.dsm"
+		"u9_craftingBench:u9cB_swordRN" 2
+		3 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:corner|u9_craftingBench:u9cB_sword:sword|u9_craftingBench:u9cB_sword:swordShape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		5 3 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:corner|u9_craftingBench:u9cB_sword:sword|u9_craftingBench:u9cB_sword:swordShape.instObjGroups" 
+		"u9_craftingBenchRN.placeHolderList[20]" ":initialShadingGroup.dsm"
+		"u9_craftingBench:u9cB_twigRN2" 7
+		2 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:crafting|u9_craftingBench:u9cB_twig2:stick|u9_craftingBench:u9cB_twig2:stick_e_313_" 
+		"instObjGroups.objectGroups" " -s 2"
+		3 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:crafting|u9_craftingBench:u9cB_twig2:stick|u9_craftingBench:u9cB_twig2:stick_e_313_.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "u9_craftingBench:u9cB_twig2:groupId13.groupId" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:crafting|u9_craftingBench:u9cB_twig2:stick|u9_craftingBench:u9cB_twig2:stick_e_313_.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:crafting|u9_craftingBench:u9cB_twig2:stick|u9_craftingBench:u9cB_twig2:stick_e_313_.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		5 3 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:crafting|u9_craftingBench:u9cB_twig2:stick|u9_craftingBench:u9cB_twig2:stick_e_313_.instObjGroups.objectGroups[0]" 
+		"u9_craftingBenchRN.placeHolderList[34]" ":initialShadingGroup.dsm"
+		5 0 "u9_craftingBenchRN" "u9_craftingBench:u9cB_twig2:groupId13.groupId" 
+		"|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:crafting|u9_craftingBench:u9cB_twig2:stick|u9_craftingBench:u9cB_twig2:stick_e_313_.instObjGroups.objectGroups[0].objectGroupId" 
+		"u9_craftingBenchRN.placeHolderList[35]" "u9_craftingBenchRN.placeHolderList[36]" 
+		"u9_craftingBench:u9cB_twig2:stick_e_313_.iog.og[0].gid"
+		5 4 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:crafting|u9_craftingBench:u9cB_twig2:stick|u9_craftingBench:u9cB_twig2:stick_e_313_.instObjGroups.objectGroups[0].objectGrpColor" 
+		"u9_craftingBenchRN.placeHolderList[37]" ""
+		"u9_craftingBench:u9cB_logRN" 2
+		3 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:wood|u9_craftingBench:u9cB_log:log|u9_craftingBench:u9cB_log:logShape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		5 3 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:wood|u9_craftingBench:u9cB_log:log|u9_craftingBench:u9cB_log:logShape.instObjGroups" 
+		"u9_craftingBenchRN.placeHolderList[22]" ":initialShadingGroup.dsm"
+		"u9_craftingBench:u9cB_sawRN" 11
+		2 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_saw:saw|u9_craftingBench:u9cB_saw:sawShape" 
+		"instObjGroups.objectGroups" " -s 2"
+		2 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_saw:saw|u9_craftingBench:u9cB_saw:sawShape" 
+		"instObjGroups.objectGroups[3].objectGrpCompList" " -type \"componentList\" 1 \"f[0:2955]\""
+		
+		2 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_saw:saw|u9_craftingBench:u9cB_saw:sawShape" 
+		"instObjGroups.objectGroups[64].objectGrpCompList" " -type \"componentList\" 3 \"f[0:660]\" \"f[662:1358]\" \"f[1360:2955]\""
+		
+		3 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_saw:saw|u9_craftingBench:u9cB_saw:sawShape.instObjGroups.objectGroups[3]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "u9_craftingBench:u9cB_saw:groupId7.groupId" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_saw:saw|u9_craftingBench:u9cB_saw:sawShape.instObjGroups.objectGroups[3].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_saw:saw|u9_craftingBench:u9cB_saw:sawShape.instObjGroups.objectGroups[3].objectGrpColor" 
+		""
+		3 "u9_craftingBench:u9cB_saw:groupId8.groupId" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_saw:saw|u9_craftingBench:u9cB_saw:sawShape.instObjGroups.objectGroups[64].objectGroupId" 
+		""
+		5 3 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_saw:saw|u9_craftingBench:u9cB_saw:sawShape.instObjGroups.objectGroups[3]" 
+		"u9_craftingBenchRN.placeHolderList[2]" ":initialShadingGroup.dsm"
+		5 0 "u9_craftingBenchRN" "u9_craftingBench:u9cB_saw:groupId7.groupId" 
+		"|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_saw:saw|u9_craftingBench:u9cB_saw:sawShape.instObjGroups.objectGroups[3].objectGroupId" 
+		"u9_craftingBenchRN.placeHolderList[3]" "u9_craftingBenchRN.placeHolderList[4]" "u9_craftingBench:u9cB_saw:sawShape.iog.og[3].gid"
+		
+		5 4 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_saw:saw|u9_craftingBench:u9cB_saw:sawShape.instObjGroups.objectGroups[3].objectGrpColor" 
+		"u9_craftingBenchRN.placeHolderList[5]" ""
+		5 0 "u9_craftingBenchRN" "u9_craftingBench:u9cB_saw:groupId8.groupId" 
+		"|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_saw:saw|u9_craftingBench:u9cB_saw:sawShape.instObjGroups.objectGroups[64].objectGroupId" 
+		"u9_craftingBenchRN.placeHolderList[6]" "u9_craftingBenchRN.placeHolderList[7]" "u9_craftingBench:u9cB_saw:sawShape.iog.og[64].gid"
+		
+		"u9_craftingBench:u9cB_twigRN" 7
+		2 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:wood|u9_craftingBench:u9cB_twig:stick|u9_craftingBench:u9cB_twig:stick_e_313_" 
+		"instObjGroups.objectGroups" " -s 2"
+		3 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:wood|u9_craftingBench:u9cB_twig:stick|u9_craftingBench:u9cB_twig:stick_e_313_.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "u9_craftingBench:u9cB_twig:groupId13.groupId" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:wood|u9_craftingBench:u9cB_twig:stick|u9_craftingBench:u9cB_twig:stick_e_313_.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:wood|u9_craftingBench:u9cB_twig:stick|u9_craftingBench:u9cB_twig:stick_e_313_.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		5 3 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:wood|u9_craftingBench:u9cB_twig:stick|u9_craftingBench:u9cB_twig:stick_e_313_.instObjGroups.objectGroups[0]" 
+		"u9_craftingBenchRN.placeHolderList[26]" ":initialShadingGroup.dsm"
+		5 0 "u9_craftingBenchRN" "u9_craftingBench:u9cB_twig:groupId13.groupId" 
+		"|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:wood|u9_craftingBench:u9cB_twig:stick|u9_craftingBench:u9cB_twig:stick_e_313_.instObjGroups.objectGroups[0].objectGroupId" 
+		"u9_craftingBenchRN.placeHolderList[27]" "u9_craftingBenchRN.placeHolderList[28]" 
+		"u9_craftingBench:u9cB_twig:stick_e_313_.iog.og[0].gid"
+		5 4 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:wood|u9_craftingBench:u9cB_twig:stick|u9_craftingBench:u9cB_twig:stick_e_313_.instObjGroups.objectGroups[0].objectGrpColor" 
+		"u9_craftingBenchRN.placeHolderList[29]" ""
+		"u9_craftingBench:u9cB_twigRN3" 7
+		2 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:crafting|u9_craftingBench:u9cB_twig3:stick|u9_craftingBench:u9cB_twig3:stick_e_313_" 
+		"instObjGroups.objectGroups" " -s 2"
+		3 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:crafting|u9_craftingBench:u9cB_twig3:stick|u9_craftingBench:u9cB_twig3:stick_e_313_.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "u9_craftingBench:u9cB_twig3:groupId13.groupId" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:crafting|u9_craftingBench:u9cB_twig3:stick|u9_craftingBench:u9cB_twig3:stick_e_313_.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:crafting|u9_craftingBench:u9cB_twig3:stick|u9_craftingBench:u9cB_twig3:stick_e_313_.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		5 3 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:crafting|u9_craftingBench:u9cB_twig3:stick|u9_craftingBench:u9cB_twig3:stick_e_313_.instObjGroups.objectGroups[0]" 
+		"u9_craftingBenchRN.placeHolderList[38]" ":initialShadingGroup.dsm"
+		5 0 "u9_craftingBenchRN" "u9_craftingBench:u9cB_twig3:groupId13.groupId" 
+		"|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:crafting|u9_craftingBench:u9cB_twig3:stick|u9_craftingBench:u9cB_twig3:stick_e_313_.instObjGroups.objectGroups[0].objectGroupId" 
+		"u9_craftingBenchRN.placeHolderList[39]" "u9_craftingBenchRN.placeHolderList[40]" 
+		"u9_craftingBench:u9cB_twig3:stick_e_313_.iog.og[0].gid"
+		5 4 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:crafting|u9_craftingBench:u9cB_twig3:stick|u9_craftingBench:u9cB_twig3:stick_e_313_.instObjGroups.objectGroups[0].objectGrpColor" 
+		"u9_craftingBenchRN.placeHolderList[41]" ""
+		"u9_craftingBench:u9cB_diamondRN2" 2
+		3 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:crafting|u9_craftingBench:u9cB_diamond3:gem|u9_craftingBench:u9cB_diamond3:gemShape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		5 3 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:crafting|u9_craftingBench:u9cB_diamond3:gem|u9_craftingBench:u9cB_diamond3:gemShape.instObjGroups" 
+		"u9_craftingBenchRN.placeHolderList[44]" ":initialShadingGroup.dsm"
+		"u9_craftingBench:u9cB_twigRN1" 7
+		2 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:wood|u9_craftingBench:u9cB_twig1:stick|u9_craftingBench:u9cB_twig1:stick_e_313_" 
+		"instObjGroups.objectGroups" " -s 2"
+		3 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:wood|u9_craftingBench:u9cB_twig1:stick|u9_craftingBench:u9cB_twig1:stick_e_313_.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "u9_craftingBench:u9cB_twig1:groupId13.groupId" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:wood|u9_craftingBench:u9cB_twig1:stick|u9_craftingBench:u9cB_twig1:stick_e_313_.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:wood|u9_craftingBench:u9cB_twig1:stick|u9_craftingBench:u9cB_twig1:stick_e_313_.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		5 3 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:wood|u9_craftingBench:u9cB_twig1:stick|u9_craftingBench:u9cB_twig1:stick_e_313_.instObjGroups.objectGroups[0]" 
+		"u9_craftingBenchRN.placeHolderList[30]" ":initialShadingGroup.dsm"
+		5 0 "u9_craftingBenchRN" "u9_craftingBench:u9cB_twig1:groupId13.groupId" 
+		"|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:wood|u9_craftingBench:u9cB_twig1:stick|u9_craftingBench:u9cB_twig1:stick_e_313_.instObjGroups.objectGroups[0].objectGroupId" 
+		"u9_craftingBenchRN.placeHolderList[31]" "u9_craftingBenchRN.placeHolderList[32]" 
+		"u9_craftingBench:u9cB_twig1:stick_e_313_.iog.og[0].gid"
+		5 4 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:wood|u9_craftingBench:u9cB_twig1:stick|u9_craftingBench:u9cB_twig1:stick_e_313_.instObjGroups.objectGroups[0].objectGrpColor" 
+		"u9_craftingBenchRN.placeHolderList[33]" ""
+		"u9_craftingBench:u9cB_tongsRN" 23
+		2 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_tongs:tongs|u9_craftingBench:u9cB_tongs:tongA|u9_craftingBench:u9cB_tongs:tongB13Shape" 
+		"instObjGroups" " -s 2"
+		2 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_tongs:tongs|u9_craftingBench:u9cB_tongs:tongA|u9_craftingBench:u9cB_tongs:tongB13Shape" 
+		"instObjGroups.objectGroups" " -s 2"
+		2 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_tongs:tongs|u9_craftingBench:u9cB_tongs:tongA|u9_craftingBench:u9cB_tongs:tongB13Shape" 
+		"instObjGroups.objectGroups[0].objectGrpCompList" " -type \"componentList\" 1 \"f[0:2577]\""
+		
+		2 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_tongs:tongs|u9_craftingBench:u9cB_tongs:tongA|u9_craftingBench:u9cB_tongs:tongB13Shape" 
+		"instObjGroups.objectGroups[1].objectGrpCompList" " -type \"componentList\" 1 \"f[0:2577]\""
+		
+		2 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_tongs:tongs|u9_craftingBench:u9cB_tongs:tongB|u9_craftingBench:u9cB_tongs:tongB13Shape" 
+		"instObjGroups.objectGroups" " -s 2"
+		2 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_tongs:tongs|u9_craftingBench:u9cB_tongs:tongB|u9_craftingBench:u9cB_tongs:tongB13Shape" 
+		"instObjGroups.objectGroups[0].objectGrpCompList" " -type \"componentList\" 1 \"f[0:2577]\""
+		
+		2 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_tongs:tongs|u9_craftingBench:u9cB_tongs:tongB|u9_craftingBench:u9cB_tongs:tongB13Shape" 
+		"instObjGroups.objectGroups[1].objectGrpCompList" " -type \"componentList\" 7 \"f[0:2216]\" \"f[2218:2227]\" \"f[2294:2295]\" \"f[2367:2377]\" \"f[2379:2388]\" \"f[2455:2456]\" \"f[2528:2577]\""
+		
+		3 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_tongs:tongs|u9_craftingBench:u9cB_tongs:tongA|u9_craftingBench:u9cB_tongs:tongB13Shape.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "u9_craftingBench:u9cB_tongs:groupId110.groupId" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_tongs:tongs|u9_craftingBench:u9cB_tongs:tongA|u9_craftingBench:u9cB_tongs:tongB13Shape.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_tongs:tongs|u9_craftingBench:u9cB_tongs:tongA|u9_craftingBench:u9cB_tongs:tongB13Shape.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "u9_craftingBench:u9cB_tongs:groupId111.groupId" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_tongs:tongs|u9_craftingBench:u9cB_tongs:tongA|u9_craftingBench:u9cB_tongs:tongB13Shape.instObjGroups.objectGroups[1].objectGroupId" 
+		""
+		3 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_tongs:tongs|u9_craftingBench:u9cB_tongs:tongB|u9_craftingBench:u9cB_tongs:tongB13Shape.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "u9_craftingBench:u9cB_tongs:groupId113.groupId" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_tongs:tongs|u9_craftingBench:u9cB_tongs:tongB|u9_craftingBench:u9cB_tongs:tongB13Shape.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_tongs:tongs|u9_craftingBench:u9cB_tongs:tongB|u9_craftingBench:u9cB_tongs:tongB13Shape.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "u9_craftingBench:u9cB_tongs:groupId114.groupId" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_tongs:tongs|u9_craftingBench:u9cB_tongs:tongB|u9_craftingBench:u9cB_tongs:tongB13Shape.instObjGroups.objectGroups[1].objectGroupId" 
+		""
+		5 3 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_tongs:tongs|u9_craftingBench:u9cB_tongs:tongA|u9_craftingBench:u9cB_tongs:tongB13Shape.instObjGroups.objectGroups[0]" 
+		"u9_craftingBenchRN.placeHolderList[8]" ":initialShadingGroup.dsm"
+		5 0 "u9_craftingBenchRN" "u9_craftingBench:u9cB_tongs:groupId110.groupId" 
+		"|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_tongs:tongs|u9_craftingBench:u9cB_tongs:tongA|u9_craftingBench:u9cB_tongs:tongB13Shape.instObjGroups.objectGroups[0].objectGroupId" 
+		"u9_craftingBenchRN.placeHolderList[9]" "u9_craftingBenchRN.placeHolderList[10]" 
+		"|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_tongs:tongs|u9_craftingBench:u9cB_tongs:tongA|u9_craftingBench:u9cB_tongs:tongB13Shape.iog.og[0].gid"
+		
+		5 4 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_tongs:tongs|u9_craftingBench:u9cB_tongs:tongA|u9_craftingBench:u9cB_tongs:tongB13Shape.instObjGroups.objectGroups[0].objectGrpColor" 
+		"u9_craftingBenchRN.placeHolderList[11]" ""
+		5 0 "u9_craftingBenchRN" "u9_craftingBench:u9cB_tongs:groupId111.groupId" 
+		"|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_tongs:tongs|u9_craftingBench:u9cB_tongs:tongA|u9_craftingBench:u9cB_tongs:tongB13Shape.instObjGroups.objectGroups[1].objectGroupId" 
+		"u9_craftingBenchRN.placeHolderList[12]" "u9_craftingBenchRN.placeHolderList[13]" 
+		"|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_tongs:tongs|u9_craftingBench:u9cB_tongs:tongA|u9_craftingBench:u9cB_tongs:tongB13Shape.iog.og[1].gid"
+		
+		5 3 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_tongs:tongs|u9_craftingBench:u9cB_tongs:tongB|u9_craftingBench:u9cB_tongs:tongB13Shape.instObjGroups.objectGroups[0]" 
+		"u9_craftingBenchRN.placeHolderList[14]" ":initialShadingGroup.dsm"
+		5 0 "u9_craftingBenchRN" "u9_craftingBench:u9cB_tongs:groupId113.groupId" 
+		"|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_tongs:tongs|u9_craftingBench:u9cB_tongs:tongB|u9_craftingBench:u9cB_tongs:tongB13Shape.instObjGroups.objectGroups[0].objectGroupId" 
+		"u9_craftingBenchRN.placeHolderList[15]" "u9_craftingBenchRN.placeHolderList[16]" 
+		"|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_tongs:tongs|u9_craftingBench:u9cB_tongs:tongB|u9_craftingBench:u9cB_tongs:tongB13Shape.iog.og[0].gid"
+		
+		5 4 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_tongs:tongs|u9_craftingBench:u9cB_tongs:tongB|u9_craftingBench:u9cB_tongs:tongB13Shape.instObjGroups.objectGroups[0].objectGrpColor" 
+		"u9_craftingBenchRN.placeHolderList[17]" ""
+		5 0 "u9_craftingBenchRN" "u9_craftingBench:u9cB_tongs:groupId114.groupId" 
+		"|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_tongs:tongs|u9_craftingBench:u9cB_tongs:tongB|u9_craftingBench:u9cB_tongs:tongB13Shape.instObjGroups.objectGroups[1].objectGroupId" 
+		"u9_craftingBenchRN.placeHolderList[18]" "u9_craftingBenchRN.placeHolderList[19]" 
+		"|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:frontTools|u9_craftingBench:u9cB_tongs:tongs|u9_craftingBench:u9cB_tongs:tongB|u9_craftingBench:u9cB_tongs:tongB13Shape.iog.og[1].gid"
+		
+		"u9_craftingBench:u9cB_plankRN1" 2
+		3 "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:wood|u9_craftingBench:u9cB_plank1:plank|u9_craftingBench:u9cB_plank1:plankShape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		5 3 "u9_craftingBenchRN" "|refs|floor1complete|u9_craftingBench:bench|u9_craftingBench:topItems|u9_craftingBench:wood|u9_craftingBench:u9cB_plank1:plank|u9_craftingBench:u9cB_plank1:plankShape.instObjGroups" 
+		"u9_craftingBenchRN.placeHolderList[24]" ":initialShadingGroup.dsm";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode lambert -n "lambert2";
+	rename -uid "1316AF0A-4678-1F60-4562-14B357B8E12A";
+createNode shadingEngine -n "lambert2SG";
+	rename -uid "442EF2DB-459B-3245-1F10-BBBA1E6A43DD";
+	setAttr ".ihi" 0;
+	setAttr -s 27 ".dsm";
+	setAttr ".ro" yes;
+createNode materialInfo -n "materialInfo1";
+	rename -uid "23A0AEAC-4B81-2878-46D6-5E871EDD5A8F";
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -av -k on ".ihi";
@@ -8895,7 +9232,7 @@ select -ne :renderPartition;
 	setAttr -k on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 499 ".st";
+	setAttr -s 509 ".st";
 	setAttr -k on ".an";
 	setAttr -k on ".pt";
 select -ne :renderGlobalsList1;
@@ -8908,28 +9245,31 @@ select -ne :defaultShaderList1;
 	setAttr -k on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 177 ".s";
+	setAttr -s 178 ".s";
 select -ne :postProcessList1;
 	setAttr -k on ".cch";
 	setAttr -k on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
 	setAttr -s 2 ".p";
+select -ne :defaultRenderUtilityList1;
+	setAttr -s 17 ".u";
 select -ne :defaultRenderingList1;
 	setAttr -k on ".ihi";
-	setAttr -s 4 ".r";
+	setAttr -s 21 ".r";
+select -ne :defaultTextureList1;
+	setAttr -s 17 ".tx";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :openPBR_shader1;
-	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
 	setAttr -av -k on ".cch";
 	setAttr -k on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 31 ".dsm";
+	setAttr -s 23 ".dsm";
 	setAttr -k on ".mwc";
 	setAttr -k on ".an";
 	setAttr -k on ".il";
@@ -8938,7 +9278,7 @@ select -ne :initialShadingGroup;
 	setAttr -k on ".fo";
 	setAttr -k on ".epo";
 	setAttr -k on ".ro" yes;
-	setAttr -s 912 ".gn";
+	setAttr -s 954 ".gn";
 select -ne :initialParticleSE;
 	setAttr -av -k on ".cch";
 	setAttr -k on ".ihi";
@@ -8952,6 +9292,8 @@ select -ne :initialParticleSE;
 	setAttr -k on ".fo";
 	setAttr -k on ".epo";
 	setAttr -k on ".ro" yes;
+select -ne :initialMaterialInfo;
+	setAttr -s 17 ".t";
 select -ne :defaultRenderGlobals;
 	addAttr -ci true -h true -sn "dss" -ln "defaultSurfaceShader" -dt "string";
 	setAttr -k on ".cch";
@@ -9116,51 +9458,126 @@ select -ne :hardwareRenderGlobals;
 	setAttr -k on ".bswa";
 	setAttr -k on ".shml";
 	setAttr -k on ".hwel";
+connectAttr "u9_craftingBenchRN.phl[21]" ":initialShadingGroup.dsm" -na;
+connectAttr "u9_craftingBenchRN.phl[23]" ":initialShadingGroup.dsm" -na;
+connectAttr "u9_craftingBenchRN.phl[42]" ":initialShadingGroup.dsm" -na;
+connectAttr "u9_craftingBenchRN.phl[43]" ":initialShadingGroup.dsm" -na;
+connectAttr "u9_craftingBenchRN.phl[45]" ":initialShadingGroup.dsm" -na;
+connectAttr "u9_craftingBenchRN.phl[46]" "u9_craftingBenchRN.phl[47]";
+connectAttr ":initialShadingGroup.mwc" "u9_craftingBenchRN.phl[48]";
+connectAttr "u9_craftingBenchRN.phl[49]" ":initialShadingGroup.dsm" -na;
+connectAttr "u9_craftingBenchRN.phl[50]" "u9_craftingBenchRN.phl[51]";
+connectAttr ":initialShadingGroup.mwc" "u9_craftingBenchRN.phl[52]";
+connectAttr "u9_craftingBenchRN.phl[53]" ":initialShadingGroup.dsm" -na;
+connectAttr "u9_craftingBenchRN.phl[54]" "u9_craftingBenchRN.phl[55]";
+connectAttr ":initialShadingGroup.mwc" "u9_craftingBenchRN.phl[56]";
+connectAttr "u9_craftingBenchRN.phl[25]" ":initialShadingGroup.dsm" -na;
+connectAttr "u9_craftingBenchRN.phl[1]" ":initialShadingGroup.dsm" -na;
+connectAttr "u9_craftingBenchRN.phl[20]" ":initialShadingGroup.dsm" -na;
+connectAttr "u9_craftingBenchRN.phl[34]" ":initialShadingGroup.dsm" -na;
+connectAttr "u9_craftingBenchRN.phl[35]" "u9_craftingBenchRN.phl[36]";
+connectAttr ":initialShadingGroup.mwc" "u9_craftingBenchRN.phl[37]";
+connectAttr "u9_craftingBenchRN.phl[22]" ":initialShadingGroup.dsm" -na;
+connectAttr "u9_craftingBenchRN.phl[2]" ":initialShadingGroup.dsm" -na;
+connectAttr "u9_craftingBenchRN.phl[3]" "u9_craftingBenchRN.phl[4]";
+connectAttr ":initialShadingGroup.mwc" "u9_craftingBenchRN.phl[5]";
+connectAttr "u9_craftingBenchRN.phl[6]" "u9_craftingBenchRN.phl[7]";
+connectAttr "u9_craftingBenchRN.phl[26]" ":initialShadingGroup.dsm" -na;
+connectAttr "u9_craftingBenchRN.phl[27]" "u9_craftingBenchRN.phl[28]";
+connectAttr ":initialShadingGroup.mwc" "u9_craftingBenchRN.phl[29]";
+connectAttr "u9_craftingBenchRN.phl[38]" ":initialShadingGroup.dsm" -na;
+connectAttr "u9_craftingBenchRN.phl[39]" "u9_craftingBenchRN.phl[40]";
+connectAttr ":initialShadingGroup.mwc" "u9_craftingBenchRN.phl[41]";
+connectAttr "u9_craftingBenchRN.phl[44]" ":initialShadingGroup.dsm" -na;
+connectAttr "u9_craftingBenchRN.phl[30]" ":initialShadingGroup.dsm" -na;
+connectAttr "u9_craftingBenchRN.phl[31]" "u9_craftingBenchRN.phl[32]";
+connectAttr ":initialShadingGroup.mwc" "u9_craftingBenchRN.phl[33]";
+connectAttr "u9_craftingBenchRN.phl[8]" ":initialShadingGroup.dsm" -na;
+connectAttr "u9_craftingBenchRN.phl[9]" "u9_craftingBenchRN.phl[10]";
+connectAttr ":initialShadingGroup.mwc" "u9_craftingBenchRN.phl[11]";
+connectAttr "u9_craftingBenchRN.phl[12]" "u9_craftingBenchRN.phl[13]";
+connectAttr "u9_craftingBenchRN.phl[14]" ":initialShadingGroup.dsm" -na;
+connectAttr "u9_craftingBenchRN.phl[15]" "u9_craftingBenchRN.phl[16]";
+connectAttr ":initialShadingGroup.mwc" "u9_craftingBenchRN.phl[17]";
+connectAttr "u9_craftingBenchRN.phl[18]" "u9_craftingBenchRN.phl[19]";
+connectAttr "u9_craftingBenchRN.phl[24]" ":initialShadingGroup.dsm" -na;
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "lambert2SG.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "lambert2SG.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
+connectAttr ":defaultColorMgtGlobals.cme" "file1.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "file1.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "file1.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "file1.ws";
+connectAttr "place2dTexture1.c" "file1.c";
+connectAttr "place2dTexture1.tf" "file1.tf";
+connectAttr "place2dTexture1.rf" "file1.rf";
+connectAttr "place2dTexture1.mu" "file1.mu";
+connectAttr "place2dTexture1.mv" "file1.mv";
+connectAttr "place2dTexture1.s" "file1.s";
+connectAttr "place2dTexture1.wu" "file1.wu";
+connectAttr "place2dTexture1.wv" "file1.wv";
+connectAttr "place2dTexture1.re" "file1.re";
+connectAttr "place2dTexture1.of" "file1.of";
+connectAttr "place2dTexture1.r" "file1.ro";
+connectAttr "place2dTexture1.n" "file1.n";
+connectAttr "place2dTexture1.vt1" "file1.vt1";
+connectAttr "place2dTexture1.vt2" "file1.vt2";
+connectAttr "place2dTexture1.vt3" "file1.vt3";
+connectAttr "place2dTexture1.vc1" "file1.vc1";
+connectAttr "place2dTexture1.o" "file1.uv";
+connectAttr "place2dTexture1.ofs" "file1.fs";
+connectAttr "lambert2.oc" "lambert2SG.ss";
+connectAttr "chairShape.iog" "lambert2SG.dsm" -na;
+connectAttr "ladderShape.iog" "lambert2SG.dsm" -na;
+connectAttr "wardrobeShape.iog" "lambert2SG.dsm" -na;
+connectAttr "wardrobeShape1.iog" "lambert2SG.dsm" -na;
+connectAttr "pCylinderShape15.iog" "lambert2SG.dsm" -na;
+connectAttr "pCylinderShape14.iog" "lambert2SG.dsm" -na;
+connectAttr "pCylinderShape13.iog" "lambert2SG.dsm" -na;
+connectAttr "pCylinderShape12.iog" "lambert2SG.dsm" -na;
+connectAttr "|toDo|cages|group5|group2|pCylinder10|pCylinderShape10.iog" "lambert2SG.dsm"
+		 -na;
+connectAttr "|toDo|cages|group5|group2|pCylinder11|pCylinderShape11.iog" "lambert2SG.dsm"
+		 -na;
+connectAttr "|toDo|cages|group5|group2|pCylinder9|pCylinderShape9.iog" "lambert2SG.dsm"
+		 -na;
+connectAttr "|toDo|cages|group5|group3|pCylinder10|pCylinderShape10.iog" "lambert2SG.dsm"
+		 -na;
+connectAttr "|toDo|cages|group5|group3|pCylinder11|pCylinderShape11.iog" "lambert2SG.dsm"
+		 -na;
+connectAttr "|toDo|cages|group5|group3|pCylinder9|pCylinderShape9.iog" "lambert2SG.dsm"
+		 -na;
+connectAttr "pCylinderShape8.iog" "lambert2SG.dsm" -na;
+connectAttr "|toDo|cages|group4|group2|pCylinder10|pCylinderShape10.iog" "lambert2SG.dsm"
+		 -na;
+connectAttr "|toDo|cages|group4|group2|pCylinder11|pCylinderShape11.iog" "lambert2SG.dsm"
+		 -na;
+connectAttr "|toDo|cages|group4|group2|pCylinder9|pCylinderShape9.iog" "lambert2SG.dsm"
+		 -na;
+connectAttr "|toDo|cages|group4|group3|pCylinder10|pCylinderShape10.iog" "lambert2SG.dsm"
+		 -na;
+connectAttr "|toDo|cages|group4|group3|pCylinder11|pCylinderShape11.iog" "lambert2SG.dsm"
+		 -na;
+connectAttr "|toDo|cages|group4|group3|pCylinder9|pCylinderShape9.iog" "lambert2SG.dsm"
+		 -na;
+connectAttr "tableShape1.iog" "lambert2SG.dsm" -na;
+connectAttr "tableShape.iog" "lambert2SG.dsm" -na;
+connectAttr "displayShape.iog" "lambert2SG.dsm" -na;
+connectAttr "bedstandShape1.iog" "lambert2SG.dsm" -na;
+connectAttr "bedShape.iog" "lambert2SG.dsm" -na;
+connectAttr "bedstandShape.iog" "lambert2SG.dsm" -na;
+connectAttr "lambert2SG.msg" "materialInfo1.sg";
+connectAttr "lambert2.msg" "materialInfo1.m";
+connectAttr "lambert2SG.pa" ":renderPartition.st" -na;
+connectAttr "lambert2.msg" ":defaultShaderList1.s" -na;
+connectAttr "place2dTexture1.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-connectAttr "ladderShape.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "bedShape.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "bedstandShape.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "bedstandShape1.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "craftingBenchShape.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "chairShape.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "wardrobeShape.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "wardrobeShape1.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "pCylinderShape8.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "|toDo|cages|group4|group2|pCylinder9|pCylinderShape9.iog" ":initialShadingGroup.dsm"
-		 -na;
-connectAttr "|toDo|cages|group4|group2|pCylinder10|pCylinderShape10.iog" ":initialShadingGroup.dsm"
-		 -na;
-connectAttr "|toDo|cages|group4|group2|pCylinder11|pCylinderShape11.iog" ":initialShadingGroup.dsm"
-		 -na;
-connectAttr "|toDo|cages|group4|group3|pCylinder9|pCylinderShape9.iog" ":initialShadingGroup.dsm"
-		 -na;
-connectAttr "|toDo|cages|group4|group3|pCylinder11|pCylinderShape11.iog" ":initialShadingGroup.dsm"
-		 -na;
-connectAttr "|toDo|cages|group4|group3|pCylinder10|pCylinderShape10.iog" ":initialShadingGroup.dsm"
-		 -na;
-connectAttr "|toDo|cages|group5|group3|pCylinder9|pCylinderShape9.iog" ":initialShadingGroup.dsm"
-		 -na;
-connectAttr "|toDo|cages|group5|group3|pCylinder11|pCylinderShape11.iog" ":initialShadingGroup.dsm"
-		 -na;
-connectAttr "|toDo|cages|group5|group3|pCylinder10|pCylinderShape10.iog" ":initialShadingGroup.dsm"
-		 -na;
-connectAttr "|toDo|cages|group5|group2|pCylinder9|pCylinderShape9.iog" ":initialShadingGroup.dsm"
-		 -na;
-connectAttr "|toDo|cages|group5|group2|pCylinder11|pCylinderShape11.iog" ":initialShadingGroup.dsm"
-		 -na;
-connectAttr "|toDo|cages|group5|group2|pCylinder10|pCylinderShape10.iog" ":initialShadingGroup.dsm"
-		 -na;
-connectAttr "pCylinderShape12.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "pCylinderShape13.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "pCylinderShape14.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "pCylinderShape15.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "displayShape.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "tableShape.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "tableShape1.iog" ":initialShadingGroup.dsm" -na;
+connectAttr "file1.msg" ":defaultTextureList1.tx" -na;
+connectAttr "file1.oc" ":openPBR_shader1.bc";
+connectAttr "file1.msg" ":initialMaterialInfo.t" -na;
 // End of valorgoff_u9_towerScene.ma
