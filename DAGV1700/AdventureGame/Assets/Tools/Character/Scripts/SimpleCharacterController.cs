@@ -11,6 +11,9 @@ public class SimpleCharacterController : MonoBehaviour
     [Tooltip("The speed at which the character moves horizontally.")]
     public float moveSpeed = 5f;
 
+    [Tooltip("The speed at which the character moves horizontally in air.")]
+    public float airSpeed = 2f;
+
     [Tooltip("The upward force applied when the character jumps.")]
     public float jumpForce = 4f;
 
@@ -21,8 +24,8 @@ public class SimpleCharacterController : MonoBehaviour
     private Vector3 velocity;
     private Transform thisTransform;
     //add a roll to the character controller
-   
-    
+
+
 
     /// <summary>
     /// Initialize required components.
@@ -38,45 +41,63 @@ public class SimpleCharacterController : MonoBehaviour
     /// </summary>
     private void Update()
     {
-        MoveCharacter();
-        ApplyGravity();
+        Movement();
         KeepCharacterOnXAxis();
     }
 
-    /// <summary>
-    /// Handles horizontal movement and jumping.
-    /// </summary>
-    private void MoveCharacter()
+    private void Movement()
     {
-        // Handle horizontal movement
-        var moveInput = Input.GetAxis("Horizontal");
-        var move = new Vector3(moveInput, 0f, 0f) * (moveSpeed * Time.deltaTime);
-        controller.Move(move);
+        // get player input
+        var moveInput = Input.GetAxis("Horizontal"); // left or right float [-1-1]
 
-        // Handle jumping
+        // set velocity of controller
+        if (controller.isGrounded) // on ground
+        {
+            // set normal speed on ground
+            velocity.x = moveSpeed * Time.deltaTime * moveInput;
+            // set not falling if on ground
+            velocity.y = 0f;
+        }
+        else // in air
+        {
+            // set reduced speed in air
+            velocity.x = airSpeed * Time.deltaTime * moveInput;
+            // add falling if in air
+            velocity.y += gravity * Time.deltaTime * Time.deltaTime;
+        }
+
+        // jumping
+        if (Input.GetButtonDown("Jump"))
+        {
+            velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity) * Time.deltaTime;
+        }
+
+        // move according to velocity
+        controller.Move(velocity);
+    }
+
+    private void OldMovement()
+    {
+        // get player input
+        var moveInput = Input.GetAxis("Horizontal"); // left or right float [-1-1]
+        var movement = new Vector3(moveInput * moveSpeed * Time.deltaTime, 0f, 0f);
+        controller.Move(movement);
+
+        // jumping
         if (Input.GetButtonDown("Jump"))
         {
             velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
         }
-    }
 
-    /// <summary>
-    /// Defines the character's behavior under gravity.
-    /// </summary>
-    private void ApplyGravity()
-    {
-        // Apply gravity when off the ground
-        if (!controller.isGrounded)
+        if (controller.isGrounded)
         {
-            velocity.y += gravity * Time.deltaTime;
+            velocity.y = 0f;
         }
         else
         {
-            // Reset vertical velocity when on the ground
-            velocity.y = 0f;
+            velocity.y += gravity * Time.deltaTime;
         }
 
-        // Apply velocity
         controller.Move(velocity * Time.deltaTime);
     }
 

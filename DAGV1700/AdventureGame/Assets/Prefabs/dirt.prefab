@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8347385216528402609}
   - component: {fileID: 8937959666259086444}
   - component: {fileID: 4741078291177220446}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dirt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 7109638438925774740}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.8437796, y: -5.945629, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
