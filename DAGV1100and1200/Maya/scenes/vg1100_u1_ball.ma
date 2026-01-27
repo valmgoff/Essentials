@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: vg1100_u1_ball.ma
-//Last modified: Mon, Jan 26, 2026 05:02:10 PM
+//Last modified: Mon, Jan 26, 2026 05:03:37 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202409190603-cbdc5a7e54";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "0461B0EE-4583-5253-DD9D-A0AA91C8A2FA";
+fileInfo "UUID" "99942B3A-49FD-3793-5E02-E1B7B12ACB36";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "12858C39-462B-F04A-BDA3-7CB231E8E2D5";
@@ -2392,42 +2392,6 @@ createNode animCurveTL -n "myBall_translateY";
 	setAttr -s 16 ".koy[0:15]"  -0.86350062228027469 0.99953840423536755 
 		0 0.99954402643817319 0 0.99840401550519076 0 0.99842515954314337 -0.91483921406771729 
 		0.98792820033086448 0 0.93915542221608761 0 -0.27675009069367512 0 0;
-createNode animCurveTA -n "myBall_rotateX";
-	rename -uid "EC62EBCA-4086-F9FD-5C4D-8FBBBE355E0F";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  1 0 6 0 15 0 23 0 30 0 36 0 42 0 47 0 51 0
-		 55 0;
-createNode animCurveTA -n "myBall_rotateY";
-	rename -uid "761835A6-40A4-AB8A-30BE-7F9F3273D9B4";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  1 0 6 0 15 0 23 0 30 0 36 0 42 0 47 0 51 0
-		 55 0;
-createNode animCurveTA -n "myBall_rotateZ";
-	rename -uid "6F1B8485-4386-ECF4-698F-35B6439DBCFB";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  1 0 6 0 15 0 23 0 30 0 36 0 42 0 47 0 51 0
-		 55 0;
-createNode animCurveTU -n "myBall_scaleX";
-	rename -uid "4C0B87E4-459A-B251-8748-7D8638E3D8E9";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  1 1 6 1 15 1 23 1 30 1 36 1 42 1 47 1 51 1
-		 55 1;
-createNode animCurveTU -n "myBall_scaleY";
-	rename -uid "8A6917B5-4C93-44B7-D388-1BB58A8EA2FB";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  1 1 6 1 15 1 23 1 30 1 36 1 42 1 47 1 51 1
-		 55 1;
-createNode animCurveTU -n "myBall_scaleZ";
-	rename -uid "031AA18E-4B14-CAF5-A7D0-23A959911B94";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  1 1 6 1 15 1 23 1 30 1 36 1 42 1 47 1 51 1
-		 55 1;
 createNode aiOptions -s -n "defaultArnoldRenderOptions";
 	rename -uid "6759337B-4274-BF24-1E15-5EBBF4C141D6";
 	setAttr ".version" -type "string" "5.4.5";
@@ -2489,12 +2453,6 @@ select -ne :hardwareRenderGlobals;
 connectAttr "polyPlane1.out" "planeShape.i";
 connectAttr "myBall_translateX.o" "myBall.tx";
 connectAttr "myBall_translateY.o" "myBall.ty";
-connectAttr "myBall_rotateX.o" "myBall.rx";
-connectAttr "myBall_rotateY.o" "myBall.ry";
-connectAttr "myBall_rotateZ.o" "myBall.rz";
-connectAttr "myBall_scaleX.o" "myBall.sx";
-connectAttr "myBall_scaleY.o" "myBall.sy";
-connectAttr "myBall_scaleZ.o" "myBall.sz";
 connectAttr "polySphere5.out" "myBallShape.i";
 connectAttr "Ball_translateY.o" "romrellBall_bounce.ty";
 connectAttr "polySphere2.out" "romrellBall_bounceShape.i";
