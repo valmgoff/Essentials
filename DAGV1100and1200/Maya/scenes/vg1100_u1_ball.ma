@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: vg1100_u1_ball.ma
-//Last modified: Mon, Jan 26, 2026 04:54:09 PM
+//Last modified: Mon, Jan 26, 2026 05:02:10 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202409190603-cbdc5a7e54";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "9CE888E5-4E48-8C67-3DFC-87AB06E88F95";
+fileInfo "UUID" "0461B0EE-4583-5253-DD9D-A0AA91C8A2FA";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "12858C39-462B-F04A-BDA3-7CB231E8E2D5";
@@ -2152,7 +2152,7 @@ createNode mesh -n "williamsCoin_flickShape" -p "williamsCoin_flick";
 	setAttr ".dr" 1;
 createNode transform -n "classBall_slide" -p "practice";
 	rename -uid "DA23D342-4786-95F6-9F1A-FDA844A9FB35";
-	setAttr ".t" -type "double3" 8.3389578601150838 5 6 ;
+	setAttr ".t" -type "double3" 6.2591985708973539 5 6 ;
 createNode mesh -n "classBall_slideShape" -p "classBall_slide";
 	rename -uid "466B2362-4400-91AA-5735-9E8675D2C2A6";
 	setAttr -k off ".v";
@@ -2371,17 +2371,27 @@ createNode animCurveTL -n "myBall_translateY";
 	rename -uid "8F899D7C-41C2-97F6-9291-DC8EB2C9FCB5";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 10 51 2 72 1;
-	setAttr -s 3 ".kit[2]"  3;
-	setAttr -s 3 ".kot[2]"  3;
-	setAttr -s 3 ".kix[0:2]"  0.50434778617024167 0.40381858045559993 
-		1;
-	setAttr -s 3 ".kiy[0:2]"  -0.86350061411974466 -0.91483908644024614 
-		0;
-	setAttr -s 3 ".kox[0:2]"  0.50434777219848859 0.40381829131920383 
-		1;
-	setAttr -s 3 ".koy[0:2]"  -0.86350062228027469 -0.91483921406771729 
-		0;
+	setAttr -s 16 ".ktv[0:15]"  1 10 6 1 15 8.2183082141898112 23 1 30 5.4067258474767801
+		 36 1 42 3.2375314240183695 47 1 51 2 55 1 59 1.385805646348734 62 1 65 1.1322767031302681
+		 68 1 70 1.0141107457004563 72 1;
+	setAttr -s 16 ".kit[2:15]"  18 1 18 1 18 1 1 1 
+		18 1 18 1 18 3;
+	setAttr -s 16 ".kot[2:15]"  18 1 18 1 18 1 1 1 
+		18 1 18 1 18 3;
+	setAttr -s 16 ".ktl[1:15]" no yes no yes no yes no yes no yes no yes 
+		no yes yes;
+	setAttr -s 16 ".kix[0:15]"  0.50434778617024167 0.02069465227052519 
+		1 0.020528140936454751 1 0.020672933037810738 1 0.05870386137992737 0.40381858045559993 
+		0.05833052341693501 1 0.1039302060130797 1 0.48479648971965666 1 1;
+	setAttr -s 16 ".kiy[0:15]"  -0.86350061411974466 -0.99978584275203763 
+		0 -0.99978927551244179 0 -0.9997862920842705 0 -0.9982754412781506 -0.91483908644024614 
+		-0.99829732546867345 0 -0.9945845928215854 0 -0.87462698538033845 0 0;
+	setAttr -s 16 ".kox[0:15]"  0.50434777219848859 0.030380560538196814 
+		1 0.030195019651668119 1 0.056474966340060107 1 0.056099917925508794 0.40381829131920383 
+		0.15491246234896466 1 0.34349249325439757 1 0.96094192712205173 1 1;
+	setAttr -s 16 ".koy[0:15]"  -0.86350062228027469 0.99953840423536755 
+		0 0.99954402643817319 0 0.99840401550519076 0 0.99842515954314337 -0.91483921406771729 
+		0.98792820033086448 0 0.93915542221608761 0 -0.27675009069367512 0 0;
 createNode animCurveTA -n "myBall_rotateX";
 	rename -uid "EC62EBCA-4086-F9FD-5C4D-8FBBBE355E0F";
 	setAttr ".tan" 18;
@@ -2434,8 +2444,8 @@ createNode aiAOVDriver -s -n "defaultArnoldDisplayDriver";
 createNode aiImagerDenoiserOidn -s -n "defaultArnoldDenoiser";
 	rename -uid "8AEC33BD-4D20-E651-643A-758060A25E72";
 select -ne :time1;
-	setAttr ".o" 115;
-	setAttr ".unw" 115;
+	setAttr ".o" 92;
+	setAttr ".unw" 92;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
