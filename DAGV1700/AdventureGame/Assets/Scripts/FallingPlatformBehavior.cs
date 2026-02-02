@@ -10,27 +10,39 @@ public class FallingPlatformBehavior : MonoBehaviour
     [SerializeField]
     private float fallingForSecs = 1f;
     [SerializeField]
-    private float fallSpeed = 1f;
+    private float startingSpeed = 1f;
+    [SerializeField]
+    private float acceleration = 1f;
+    [SerializeField]
+    private float secsUntillRespawn = 3f;
     // pointers
-    private Coroutine fallCoroutine = null;
-    private GameObject parentPlatform = null;
+    private Coroutine fallCoroutine;
+    private GameObject parentPlatform;
     // vars
     private bool isFalling;
+    private float currSpeed;
+    private Vector3 startingPosition;
 
     private void Start()
     {
         parentPlatform = transform.parent.gameObject; // grabs parrent
-        StopAllCoroutines(); // saftey line, prob unessisary
+        startingPosition = parentPlatform.transform.position;
+        Reset();
     }
 
+    // only used to make object fall
     private void Update()
     {
         if (isFalling)
         {
             // grab transform
-            var currPosition = parentPlatform.transform.position;
+            Vector3 currPosition = parentPlatform.transform.position;
+
             // calculate fall
-            currPosition.y -= fallSpeed;
+            currSpeed += acceleration * Time.deltaTime / 2f; // set average velocity acording to linear acceleration
+            currPosition.y -= currSpeed * Time.deltaTime; // move acording to average velocity
+            currSpeed += acceleration * Time.deltaTime / 2f; // add remainder of acceleration
+
             // apply
             parentPlatform.transform.position = currPosition;
         }
@@ -49,6 +61,7 @@ public class FallingPlatformBehavior : MonoBehaviour
         }
     }
 
+    // coroutine function
     IEnumerator FallEnum()
     {
         // delay before fall
@@ -56,11 +69,24 @@ public class FallingPlatformBehavior : MonoBehaviour
 
         // begin fall
         isFalling = true;
-
         // fall for seonds
         yield return new WaitForSeconds(fallingForSecs);
 
-        // leave
-        Destroy(parentPlatform);
+        // stop falling and wait untill respawn
+        isFalling = false;
+        yield return new WaitForSeconds(secsUntillRespawn);
+        // reset to starting values (respawn)
+        Reset();
+    }
+
+    private void Reset()
+    {
+        // starting assumptions
+        isFalling = false;
+        currSpeed = startingSpeed;
+        parentPlatform.transform.position = startingPosition;
+        // clean coroutine
+        StopAllCoroutines();
+        fallCoroutine = null;
     }
 }
