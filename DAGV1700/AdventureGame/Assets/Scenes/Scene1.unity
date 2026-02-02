@@ -624,7 +624,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 35707790}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Poison Blocks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2273,7 +2273,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 194134727}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Spike Floors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2372,7 +2372,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 212204746}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: midground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2822,10 +2822,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: water (68)
       objectReference: {fileID: 0}
-    - target: {fileID: 8049616572354795415, guid: 2e3fda1e4ee8ba241a9df1b2309d9ba3, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3274,7 +3270,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 289795852}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Falling platforms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3853,10 +3849,6 @@ PrefabInstance:
     - target: {fileID: 8049616572354795415, guid: 2e3fda1e4ee8ba241a9df1b2309d9ba3, type: 3}
       propertyPath: m_Name
       value: water (72)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8049616572354795415, guid: 2e3fda1e4ee8ba241a9df1b2309d9ba3, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4549,10 +4541,6 @@ PrefabInstance:
     - target: {fileID: 8049616572354795415, guid: 2e3fda1e4ee8ba241a9df1b2309d9ba3, type: 3}
       propertyPath: m_Name
       value: water (56)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8049616572354795415, guid: 2e3fda1e4ee8ba241a9df1b2309d9ba3, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7663,7 +7651,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 691959886}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Traps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7801,10 +7789,6 @@ PrefabInstance:
     - target: {fileID: 8049616572354795415, guid: 2e3fda1e4ee8ba241a9df1b2309d9ba3, type: 3}
       propertyPath: m_Name
       value: water (60)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8049616572354795415, guid: 2e3fda1e4ee8ba241a9df1b2309d9ba3, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8364,10 +8348,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: water (57)
       objectReference: {fileID: 0}
-    - target: {fileID: 8049616572354795415, guid: 2e3fda1e4ee8ba241a9df1b2309d9ba3, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8452,7 +8432,7 @@ GameObject:
   - component: {fileID: 751489416}
   - component: {fileID: 751489415}
   - component: {fileID: 751489419}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -9063,10 +9043,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: water (59)
       objectReference: {fileID: 0}
-    - target: {fileID: 8049616572354795415, guid: 2e3fda1e4ee8ba241a9df1b2309d9ba3, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9191,10 +9167,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: water (65)
       objectReference: {fileID: 0}
-    - target: {fileID: 8049616572354795415, guid: 2e3fda1e4ee8ba241a9df1b2309d9ba3, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9256,10 +9228,6 @@ PrefabInstance:
     - target: {fileID: 8049616572354795415, guid: 2e3fda1e4ee8ba241a9df1b2309d9ba3, type: 3}
       propertyPath: m_Name
       value: water (66)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8049616572354795415, guid: 2e3fda1e4ee8ba241a9df1b2309d9ba3, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9654,7 +9622,7 @@ GameObject:
   - component: {fileID: 882164016}
   - component: {fileID: 882164017}
   - component: {fileID: 882164018}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Art
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11095,10 +11063,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: water (69)
       objectReference: {fileID: 0}
-    - target: {fileID: 8049616572354795415, guid: 2e3fda1e4ee8ba241a9df1b2309d9ba3, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11780,10 +11744,6 @@ PrefabInstance:
     - target: {fileID: 8049616572354795415, guid: 9f30f345a76e58e4e8af1a46e75295b5, type: 3}
       propertyPath: m_Name
       value: rock (124)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8049616572354795415, guid: 9f30f345a76e58e4e8af1a46e75295b5, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12550,9 +12510,9 @@ GameObject:
   - component: {fileID: 1142583950}
   - component: {fileID: 1142583949}
   - component: {fileID: 1142583951}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12567,7 +12527,7 @@ CharacterController:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 4294967295
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -12591,7 +12551,7 @@ Transform:
   m_GameObject: {fileID: 1142583946}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 20.11, y: 3.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12612,7 +12572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimpleCharacterController
   moveSpeed: 10
-  airSpeed: 5
+  airSpeed: 8
   jumpForce: 10
   gravity: -9.81
 --- !u!1001 &1143502217
@@ -13530,10 +13490,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: water (62)
       objectReference: {fileID: 0}
-    - target: {fileID: 8049616572354795415, guid: 2e3fda1e4ee8ba241a9df1b2309d9ba3, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13930,7 +13886,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1297483989}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Ground Blocks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14715,10 +14671,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: water (71)
       objectReference: {fileID: 0}
-    - target: {fileID: 8049616572354795415, guid: 2e3fda1e4ee8ba241a9df1b2309d9ba3, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15277,10 +15229,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: water (63)
       objectReference: {fileID: 0}
-    - target: {fileID: 8049616572354795415, guid: 2e3fda1e4ee8ba241a9df1b2309d9ba3, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15714,10 +15662,6 @@ PrefabInstance:
     - target: {fileID: 8049616572354795415, guid: 9f30f345a76e58e4e8af1a46e75295b5, type: 3}
       propertyPath: m_Name
       value: rock (110)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8049616572354795415, guid: 9f30f345a76e58e4e8af1a46e75295b5, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16172,7 +16116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1461520271}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Springs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19991,7 +19935,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1845466527}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Water Blocks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22272,10 +22216,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: rock (135)
       objectReference: {fileID: 0}
-    - target: {fileID: 8049616572354795415, guid: 9f30f345a76e58e4e8af1a46e75295b5, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22947,10 +22887,6 @@ PrefabInstance:
     - target: {fileID: 8049616572354795415, guid: 9f30f345a76e58e4e8af1a46e75295b5, type: 3}
       propertyPath: m_Name
       value: rock (108)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8049616572354795415, guid: 9f30f345a76e58e4e8af1a46e75295b5, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
