@@ -66,6 +66,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90b1aea8c164cbe4eb3fcee579c11dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  delayFallSecs: 1
+  fallingForSecs: 1
 --- !u!1 &9008099708033891544
 GameObject:
   m_ObjectHideFlags: 0
@@ -77,7 +79,7 @@ GameObject:
   - component: {fileID: 5002041499444231298}
   - component: {fileID: 167387628814326919}
   - component: {fileID: 5148273081397443558}
-  - component: {fileID: 2920459011997567770}
+  - component: {fileID: 968665924022619833}
   m_Layer: 0
   m_Name: Falling Platform
   m_TagString: Untagged
@@ -181,7 +183,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.31, y: 0.1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2920459011997567770
+--- !u!114 &968665924022619833
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -190,48 +192,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 9008099708033891544}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7c4c067838ab4f4daf3ceea190e0b91, type: 3}
+  m_Script: {fileID: 11500000, guid: 90b1aea8c164cbe4eb3fcee579c11dd6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SimpleTriggerEventBehaviour
-  awakeEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: Sleep
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  triggerEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5148273081397443558}
-        m_TargetAssemblyTypeName: UnityEngine.BoxCollider, UnityEngine
-        m_MethodName: set_isTrigger
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: WakeUp
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  m_EditorClassIdentifier: Assembly-CSharp::FallingPlatformBehavior
+  delayFallSecs: 4
+  fallingForSecs: 4
