@@ -66,6 +66,7 @@ public class FallingPlatformBehavior : MonoBehaviour
     {
         // delay before fall
         yield return new WaitForSeconds(delayFallSecs);
+        parentPlatform.GetComponent<Animator>().enabled = false; // stop animation
 
         // begin fall
         isFalling = true;
@@ -74,6 +75,7 @@ public class FallingPlatformBehavior : MonoBehaviour
 
         // stop falling and wait untill respawn
         isFalling = false;
+        parentPlatform.GetComponent<Animator>().enabled = true; // start animation
         yield return new WaitForSeconds(secsUntillRespawn);
         // reset to starting values (respawn)
         Reset();
