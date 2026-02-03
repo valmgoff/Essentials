@@ -8,18 +8,24 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class SimpleCharacterController : MonoBehaviour
 {
+    // editor dials
+    [SerializeField]
     [Tooltip("The speed at which the character moves horizontally.")]
-    public float moveSpeed = 8f;
+    private float moveSpeed = 8f;
 
+    [SerializeField]
     [Tooltip("The speed at which the character moves horizontally in air.")]
-    public float airSpeed = 4f;
+    private float airSpeed = 4f;
 
+    [SerializeField]
     [Tooltip("The upward force applied when the character jumps.")]
-    public float jumpForce = 5f;
+    private float jumpForce = 5f;
 
+    [SerializeField]
     [Tooltip("The constant downward force applied by gravity.")]
-    public float gravity = -9.81f;
+    private float gravity = -9.81f;
 
+    // pointers
     private CharacterController controller;
     private Vector3 velocity;
     private Transform thisTransform;
