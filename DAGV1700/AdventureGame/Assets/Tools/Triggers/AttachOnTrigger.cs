@@ -6,7 +6,7 @@ public class AttachOnTrigger : MonoBehaviour
     {
         transform.parent = other.transform;
     }
-    
+
     public void OnTriggerExit(Collider other)
     {
         transform.parent = null;
