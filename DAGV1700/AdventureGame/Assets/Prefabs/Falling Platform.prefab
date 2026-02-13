@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2804818411215289280}
   - component: {fileID: 4243745125721299867}
   - component: {fileID: 929194184572089840}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Falling Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +83,7 @@ GameObject:
   - component: {fileID: 167387628814326919}
   - component: {fileID: 5148273081397443558}
   - component: {fileID: 695144854224110408}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Falling Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
