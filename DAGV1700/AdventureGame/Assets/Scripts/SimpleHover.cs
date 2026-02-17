@@ -1,5 +1,7 @@
 using System;
+using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.Scripting.APIUpdating;
 
 public class SimpleHover : MonoBehaviour
 {
@@ -8,6 +10,8 @@ public class SimpleHover : MonoBehaviour
     private bool isHovering = true;
     [SerializeField]
     private float movementRange = 1.0f;
+    [SerializeField]
+    private float minSpeed = 0.1f;
     // variables
     private float startingHeight;
     private float distanceMoved;
@@ -47,7 +51,7 @@ public class SimpleHover : MonoBehaviour
                 {
                     isGoingDown = false; // going up!
                 }
-                else
+                else // move
                 {
                     Move();
                 }
@@ -59,7 +63,7 @@ public class SimpleHover : MonoBehaviour
                 {
                     isGoingDown = true; // going down!
                 }
-                else
+                else // move
                 {
                     Move();
                 }
@@ -85,13 +89,25 @@ public class SimpleHover : MonoBehaviour
         // grab transform
         Vector3 currPosition = transform.position;
 
-
         // calculate fall
-        currSpeed += acceleration * Time.deltaTime / 2f; // set average velocity acording to linear acceleration
-        currPosition.y -= currSpeed * Time.deltaTime; // move acording to average velocity
-        currSpeed += acceleration * Time.deltaTime / 2f; // add remainder of acceleration
+        float distanceToGo = targetDistance - distanceMoved;
+        if (isGoingDown)
+        {
+            if (distanceToGo > -1 * minSpeed) // slower than target min speed
+            {
+                distanceToGo = -1 * minSpeed;
+            }
+        }
+        else
+        {
+            if (distanceToGo < minSpeed) // slower than target min speed
+            {
+                distanceToGo = 1 * minSpeed;
+            }
+        }
+        currPosition.y += distanceToGo * Time.deltaTime; // move according to calculated distance
 
         // apply
-        parentPlatform.transform.position = currPosition;
+        transform.position = currPosition;
     }
 }
