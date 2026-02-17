@@ -12579,7 +12579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SimpleCharacterController
   moveSpeed: 10
   airSpeed: 8
-  jumpForce: 10
+  jumpForce: 0.1
   gravity: -9.81
 --- !u!1001 &1143502217
 PrefabInstance:

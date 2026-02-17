@@ -75,7 +75,7 @@ public class SimpleCharacterController : MonoBehaviour
         // jumping
         if (Input.GetButtonDown("Jump"))
         {
-            velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity) * Time.deltaTime;
+            velocity.y = jumpForce / 50f; // instantanious, so not time.deltaTime
         }
 
         // move according to velocity
