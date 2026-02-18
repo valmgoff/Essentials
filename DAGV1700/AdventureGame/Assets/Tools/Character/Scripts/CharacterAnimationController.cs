@@ -1,50 +1,40 @@
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Animations;
 
 public class CharacterAnimationController : MonoBehaviour
 {
-    public CharacterController controller;
+    // target references
+    [SerializeField]
+    private Object objectWithController;
+
+    // references
+    private SimpleCharacterController controller;
     private Animator animator;
-    private readonly int 
-        run = Animator.StringToHash("Run"),
-        idle = Animator.StringToHash("Idle"),
-        jump = Animator.StringToHash("Jump"),
-        wallJump = Animator.StringToHash("WallJump");
+    private readonly int
+        running = Animator.StringToHash("Running"),
+        jumping = Animator.StringToHash("Jumping"),
+        grounded = Animator.StringToHash("Grounded"),
+        timesJumped = Animator.StringToHash("Times Jumped");
 
     private void Start()
     {
         // Cache the Animator component attached to CharacterArt
         animator = GetComponent<Animator>();
-        //controller in parent object
-        controller = GetComponentInParent<CharacterController>();
+        // get target object's character controller
+        controller = objectWithController.GetComponent<SimpleCharacterController>();
     }
 
     private void Update()
     {
-        HandleAnimations();
+        UpdateFromPlayerController();
     }
 
-    private void HandleAnimations()
+    private void UpdateFromPlayerController()
     {
-        float horizontalMove = Input.GetAxisRaw("Horizontal");
-
-        if (Input.GetButtonDown("Jump") && controller.isGrounded)
-        {
-            animator.SetBool(jump, true);
-        }
-        else if (controller.isGrounded && animator.GetBool("Jump"))
-        {
-            animator.SetBool(jump, false);
-        }
-
-        if (Mathf.Abs(horizontalMove) > 0)
-        {
-            animator.SetBool(run, true);
-            animator.SetBool(idle, false);
-        }
-        else
-        {
-            animator.SetBool(run, false);
-            animator.SetBool(idle, true);
-        }
+        animator.SetBool(running, controller.isRunning());
+        animator.SetBool(jumping, controller.isJumping());
+        animator.SetBool(grounded, controller.isGrounded());
+        animator.SetInteger(timesJumped, controller.getJumpCount());
     }
 }

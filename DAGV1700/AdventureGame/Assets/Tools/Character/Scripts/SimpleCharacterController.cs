@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 /// <summary>
 /// The SimpleCharacterController class controls basic movement of a 2D platformer character.
@@ -25,10 +26,17 @@ public class SimpleCharacterController : MonoBehaviour
     [Tooltip("The constant downward force applied by gravity.")]
     private float gravity = -9.81f;
 
+    [SerializeField]
+    private int availableJumps = 2;
+
     // pointers
     private CharacterController controller;
     private Vector3 velocity;
     private Transform thisTransform;
+
+    // variables
+    private bool isJumpingBool;
+    private int timesJumped;
 
     /// <summary>
     /// Initialize required components.
@@ -57,25 +65,33 @@ public class SimpleCharacterController : MonoBehaviour
         var moveInput = Input.GetAxis("Horizontal"); // left or right float [-1-1]
 
         // set velocity of controller
+        velocity.y += gravity / 50f * Time.deltaTime; // fall (maintains controller grounded state)
         if (controller.isGrounded) // on ground
         {
             // set normal speed on ground
             velocity.x = moveInput * moveSpeed * Time.deltaTime;
-            // set not falling if on ground
-            velocity.y = 0f;
+            isJumpingBool = false;
+            timesJumped = 0;
         }
         else // in air
         {
             // set reduced speed in air
             velocity.x = airSpeed * Time.deltaTime * moveInput;
-            // add falling if in air
-            velocity.y += gravity / 50f * Time.deltaTime;
+            if (velocity.y < 0)
+            {
+                isJumpingBool = false;
+            }
         }
 
         // jumping
         if (Input.GetButtonDown("Jump"))
         {
-            velocity.y = jumpForce / 50f; // instantanious, so not time.deltaTime
+            if (timesJumped < availableJumps)
+            {
+                velocity.y = jumpForce / 50f; // instantanious, so not time.deltaTime
+                isJumpingBool = true;
+                timesJumped++;
+            }
         }
 
         // move according to velocity
@@ -91,5 +107,26 @@ public class SimpleCharacterController : MonoBehaviour
         var currentPosition = thisTransform.position;
         currentPosition.z = 0f;
         thisTransform.position = currentPosition;
+    }
+
+    // getters
+    public bool isJumping()
+    {
+        return isJumpingBool;
+    }
+
+    public int getJumpCount()
+    {
+        return timesJumped;
+    }
+
+    public bool isGrounded()
+    {
+        return controller.isGrounded;
+    }
+
+    public bool isRunning()
+    {
+        return Input.GetAxis("Horizontal") != 0;
     }
 }

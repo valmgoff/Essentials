@@ -7,33 +7,29 @@
 [Tooltip("Controls the flipping of the orientation of a GameObject based on user key presses.")]
 public class FlipTransformBehaviour : MonoBehaviour
 {
-    [Tooltip("The key to press to rotate in one direction. Default key is the Right Arrow.")]
-    public KeyCode key1 = KeyCode.RightArrow;
-
-    [Tooltip("The key to press to rotate in the other direction. Default key is the Left Arrow.")]
-    public KeyCode key2 = KeyCode.LeftArrow;
-
     [Tooltip("The rotation in degrees to apply when the first key is pressed.")]
-    public float direction1 = 0;
+    public float directionRight = 0;
 
     [Tooltip("The rotation in degrees to apply when the second key is pressed.")]
-    public float direction2 = 180;
+    public float directionLeft = 180;
 
     /// <summary>
     /// Flip the GameObject rotation based on key input, every frame.
     /// </summary>
     private void Update()
     {
-        // If the first key is pressed -> rotate the GameObject to direction1
-        if (Input.GetKeyDown(key1))
+        float moveInput = Input.GetAxis("Horizontal"); // left or right float [-1-1]
+
+        // If the first key is pressed -> rotate the GameObject
+        if (moveInput < 0f)
         {
-            transform.rotation = Quaternion.Euler(0, direction1, 0);
+            transform.rotation = Quaternion.Euler(0, directionRight, 0);
         }
 
-        // If the second key is NOT pressed -> do nothing
-        if (!Input.GetKeyDown(key2)) return;
-
-        // If the second key is pressed -> rotate the GameObject to direction2
-        transform.rotation = Quaternion.Euler(0, direction2, 0);
+        // If the second key is pressed -> rotate the GameObject
+        if (0f < moveInput)
+        {
+            transform.rotation = Quaternion.Euler(0, directionRight, 0);
+        }
     }
 }
