@@ -8,11 +8,11 @@
 [RequireComponent(typeof(SpriteRenderer))]
 public class FlipTransformBehaviour : MonoBehaviour
 {
-    SpriteRenderer render;
+    SpriteRenderer renderer;
 
     private void Start()
     {
-        render = this.GetComponent<SpriteRenderer>();
+        renderer = this.GetComponent<SpriteRenderer>();
     }
 
     /// <summary>
@@ -24,12 +24,12 @@ public class FlipTransformBehaviour : MonoBehaviour
 
         if (moveInput < 0f) // left
         {
-            render.flipX = true;
+            renderer.flipX = true;
         }
 
         if (0f < moveInput) // right
         {
-            render.flipX = false;
+            renderer.flipX = false;
         }
     }
 }
