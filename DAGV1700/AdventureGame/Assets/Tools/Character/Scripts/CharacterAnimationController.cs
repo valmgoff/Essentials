@@ -15,7 +15,7 @@ public class CharacterAnimationController : MonoBehaviour
         running = Animator.StringToHash("Running"),
         jumping = Animator.StringToHash("Jumping"),
         grounded = Animator.StringToHash("Grounded"),
-        timesJumped = Animator.StringToHash("Times Jumped");
+        firstJump = Animator.StringToHash("First Jump");
 
     private void Start()
     {
@@ -35,6 +35,6 @@ public class CharacterAnimationController : MonoBehaviour
         animator.SetBool(running, controller.isRunning());
         animator.SetBool(jumping, controller.isJumping());
         animator.SetBool(grounded, controller.isGrounded());
-        animator.SetInteger(timesJumped, controller.getJumpCount());
+        animator.SetBool(firstJump, controller.isFirstJump());
     }
 }

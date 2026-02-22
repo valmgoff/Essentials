@@ -9627,9 +9627,9 @@ GameObject:
   m_Component:
   - component: {fileID: 882164016}
   - component: {fileID: 882164017}
-  - component: {fileID: 882164018}
   - component: {fileID: 882164019}
   - component: {fileID: 882164020}
+  - component: {fileID: 882164018}
   m_Layer: 0
   m_Name: Art
   m_TagString: Untagged
@@ -9723,10 +9723,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9914d55c3075a4b14a80c1204e72e335, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlipTransformBehaviour
-  key1: 275
-  key2: 276
-  direction1: 0
-  direction2: 180
+  directionRight: 0
+  directionLeft: 180
 --- !u!95 &882164019
 Animator:
   serializedVersion: 7
@@ -12616,8 +12614,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SimpleCharacterController
   moveSpeed: 10
   airSpeed: 8
-  jumpForce: 3
+  jumpForce: 4
   gravity: -9.81
+  availableJumps: 2
 --- !u!1001 &1143502217
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.AI;
 
 /// <summary>
 /// The SimpleCharacterController class controls basic movement of a 2D platformer character.
@@ -115,9 +114,9 @@ public class SimpleCharacterController : MonoBehaviour
         return isJumpingBool;
     }
 
-    public int getJumpCount()
+    public bool isFirstJump()
     {
-        return timesJumped;
+        return timesJumped == 1;
     }
 
     public bool isGrounded()
