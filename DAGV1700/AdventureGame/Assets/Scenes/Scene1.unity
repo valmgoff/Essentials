@@ -9723,8 +9723,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9914d55c3075a4b14a80c1204e72e335, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlipTransformBehaviour
-  directionRight: 0
-  directionLeft: 180
 --- !u!95 &882164019
 Animator:
   serializedVersion: 7
@@ -12612,8 +12610,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e8cbbe35153640cea23bf58a428eab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimpleCharacterController
-  moveSpeed: 10
-  airSpeed: 8
+  moveSpeed: 8
+  airSpeed: 5
   jumpForce: 4
   gravity: -9.81
   availableJumps: 2
