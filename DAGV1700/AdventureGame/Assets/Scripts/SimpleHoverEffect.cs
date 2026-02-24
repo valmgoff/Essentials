@@ -1,7 +1,6 @@
 using System;
-using System.Runtime.CompilerServices;
 using UnityEngine;
-using UnityEngine.Scripting.APIUpdating;
+using Random = UnityEngine.Random;
 
 public class SimpleHover : MonoBehaviour
 {
@@ -9,9 +8,18 @@ public class SimpleHover : MonoBehaviour
     [SerializeField]
     private bool isHovering = true;
     [SerializeField]
-    private float movementRange = 1.0f;
+    private float movementRange = 1.0f; // rang1 of 1 unit, default
     [SerializeField]
-    private float minSpeed = 0.1f;
+    private float minSpeed = 0.1f; // 0.1 units, default
+    [SerializeField]
+    private float varienceStrength = 0.1f; // 10%, default
+    // adjusted dials
+    private float adjustedRange;
+
+    // references
+    [SerializeField]
+    private RandomSO randomVarience;
+
     // variables
     private float startingHeight;
     private float distanceMoved;
@@ -31,22 +39,27 @@ public class SimpleHover : MonoBehaviour
     {
         if (isHovering)
         {
-            if (isReset == true) // grab new starting height
+            if (isReset == true) // begin hover
             {
+                // grab new starting height
                 startingHeight = transform.position.y;
+                // add varience to dials
+                float varience = movementRange * varienceStrength * randomVarience.getRandom();
+                adjustedRange = movementRange + varience;
+
                 isReset = false;
             }
 
             distanceMoved = transform.position.y - startingHeight;
 
             // here to recalculate in case of change
-            targetDistance = movementRange / 2.0f; // top half of range
+            targetDistance = adjustedRange / 2.0f; // top half of range
 
             if (isGoingDown)
             {
                 targetDistance *= -1; // bottom half of range
 
-                // if bellow (past) lower target
+                // if bellow (past) lower-target
                 if (distanceMoved <= targetDistance)
                 {
                     isGoingDown = false; // going up!
@@ -58,7 +71,7 @@ public class SimpleHover : MonoBehaviour
             }
             else // going up
             {
-                // if above (past) upper target
+                // if above (past) upper-target
                 if (distanceMoved >= targetDistance)
                 {
                     isGoingDown = true; // going down!
@@ -74,9 +87,9 @@ public class SimpleHover : MonoBehaviour
             if (isReset == false)
             {
                 // resets hover
-                Vector3 currPosition = transform.position; // grab transform
-                currPosition.y = startingHeight; // reset height
-                transform.position = currPosition; // apply
+                Vector3 newPosition = transform.position; // grab transform
+                newPosition.y = startingHeight; // reset height
+                transform.position = newPosition; // apply
 
                 isGoingDown = false;
                 isReset = true;

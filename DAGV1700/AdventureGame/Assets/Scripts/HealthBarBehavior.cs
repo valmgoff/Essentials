@@ -1,4 +1,3 @@
-using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,32 +13,41 @@ public class HealthBar : MonoBehaviour
     private Image bar;
 
     // vars
-    private float currHealth = 1f;
+    private float currHealth;
 
     // runs once
     private void Start()
     {
         // gather references
         bar = gameObject.GetComponent<Image>();
+        // prep variables
+        currHealth = maxHealth;
     }
 
-    // triggerable event.
-    public void ChangeHealth(float change)
+    private void ChangeHealth(float change)
     {
         currHealth += change;
 
         if (currHealth < minHealth)
         {
-            Debug.Log("Can't damage past min health!");
             currHealth = minHealth;
         }
         else if (currHealth > maxHealth)
         {
-            Debug.Log("Can't heal past max health!");
             currHealth = maxHealth;
         }
 
         float healthPercent = currHealth / maxHealth; // 1 = full, 0 = empty
         bar.fillAmount = healthPercent;
+    }
+
+    public void DealDamage(float damage)
+    {
+        ChangeHealth(-1 * damage);
+    }
+
+    public void DealHealth(float health)
+    {
+        ChangeHealth(health);
     }
 }
