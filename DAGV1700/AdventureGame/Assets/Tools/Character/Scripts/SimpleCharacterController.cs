@@ -44,6 +44,7 @@ public class SimpleCharacterController : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         thisTransform = transform;
+        velocity.Set(0f, 0f, 0f);
     }
 
     /// <summary>
@@ -64,7 +65,6 @@ public class SimpleCharacterController : MonoBehaviour
         var moveInput = Input.GetAxis("Horizontal"); // left or right float [-1-1]
 
         // set velocity of controller
-        velocity.y += gravity / 50f * Time.deltaTime; // fall (maintains controller grounded state)
         if (controller.isGrounded) // on ground
         {
             // set normal speed on ground
@@ -91,6 +91,10 @@ public class SimpleCharacterController : MonoBehaviour
                 isJumpingBool = true;
                 timesJumped++;
             }
+        }
+        else
+        {
+            velocity.y += gravity / 50f * Time.deltaTime; // fall (maintains controller grounded state)
         }
 
         // move according to velocity

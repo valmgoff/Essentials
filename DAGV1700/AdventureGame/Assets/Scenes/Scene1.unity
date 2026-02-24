@@ -12927,7 +12927,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SimpleCharacterController
   moveSpeed: 8
   airSpeed: 5
-  jumpForce: 4
+  jumpForce: 3
   gravity: -9.81
   availableJumps: 2
 --- !u!1001 &1143502217
