@@ -1,7 +1,7 @@
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-[CreateAssetMenu(fileName = "Random", menuName = "ScriptableObjects/Random")]
+[CreateAssetMenu(fileName = "Random", menuName = "ScriptableObjects/Val Random")]
 public class RandomSO : ScriptableObject
 {
     [SerializeField]
