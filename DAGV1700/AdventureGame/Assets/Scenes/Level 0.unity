@@ -13518,6 +13518,7 @@ MonoBehaviour:
   jumpForce: 3
   gravity: -9.81
   availableJumps: 2
+  movementScalar: 0.5
 --- !u!1001 &1143502217
 PrefabInstance:
   m_ObjectHideFlags: 0
