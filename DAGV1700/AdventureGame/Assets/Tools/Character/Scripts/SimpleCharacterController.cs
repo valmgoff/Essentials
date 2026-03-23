@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 /// <summary>
@@ -36,6 +37,8 @@ public class SimpleCharacterController : MonoBehaviour
     // variables
     private bool isJumpingBool;
     private int timesJumped;
+    [SerializeField]
+    private float movementScalar = 0.5f;
 
     /// <summary>
     /// Initialize required components.
@@ -87,15 +90,19 @@ public class SimpleCharacterController : MonoBehaviour
         {
             if (timesJumped < availableJumps)
             {
-                velocity.y = jumpForce / 50f; // instantanious, so not time.deltaTime
+                // instantanious, so not time.deltaTime
+                // scalar to reduce actual jump velocity
+                velocity.y = jumpForce * movementScalar;
                 isJumpingBool = true;
                 timesJumped++;
             }
         }
         else
         {
-            velocity.y += gravity / 50f * Time.deltaTime; // fall (maintains controller grounded state)
+            velocity.y += gravity * movementScalar * Time.deltaTime; // fall (maintains controller grounded state)
         }
+
+        Debug.Log(moveInput);
 
         // move according to velocity
         controller.Move(velocity);
