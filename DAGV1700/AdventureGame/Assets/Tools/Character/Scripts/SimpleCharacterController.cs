@@ -37,8 +37,6 @@ public class SimpleCharacterController : MonoBehaviour
     // variables
     private bool isJumpingBool;
     private int timesJumped;
-    [SerializeField]
-    private float movementScalar = 0.5f;
 
     /// <summary>
     /// Initialize required components.
@@ -61,6 +59,7 @@ public class SimpleCharacterController : MonoBehaviour
 
     /// <summary>
     /// Controls character movement and position every frame.
+    /// Calculates intended movement into a velocity sum, applied to the end.
     /// </summary>
     private void Movement()
     {
@@ -70,16 +69,18 @@ public class SimpleCharacterController : MonoBehaviour
         // set velocity of controller
         if (controller.isGrounded) // on ground
         {
-            // set normal speed on ground
-            velocity.x = moveInput * moveSpeed * Time.deltaTime;
+            // set intended normal speed on ground
+            velocity.x = moveInput * moveSpeed;
             isJumpingBool = false;
             timesJumped = 0;
+            // reset velocity to prevent storing crazy fall speed   
+            velocity.y = 0f;
         }
         else // in air
         {
-            // set reduced speed in air
-            velocity.x = airSpeed * Time.deltaTime * moveInput;
-            if (velocity.y < 0)
+            // set intended reduced speed in air
+            velocity.x = airSpeed * moveInput;
+            if (velocity.y < 0f)
             {
                 isJumpingBool = false;
             }
@@ -90,22 +91,25 @@ public class SimpleCharacterController : MonoBehaviour
         {
             if (timesJumped < availableJumps)
             {
-                // instantanious, so not time.deltaTime
-                // scalar to reduce actual jump velocity
-                velocity.y = jumpForce * movementScalar;
+                velocity.y = jumpForce;
                 isJumpingBool = true;
                 timesJumped++;
             }
         }
         else
         {
-            velocity.y += gravity * movementScalar * Time.deltaTime; // fall (maintains controller grounded state)
+            // fall (maintains controller grounded state)
+            // Had to get chatGPT to explain this explicitely, but gravity is an acceleration not a speed
+            // we need: vel = acc * dTime
+            // In other words, a change in velocity through time.
+            velocity.y += gravity * Time.deltaTime;
         }
 
-        Debug.Log(moveInput);
-
         // move according to velocity
-        controller.Move(velocity);
+        // Had to get chatGPT to explain this explicitely, but move needs a distance--not a speed
+        // we need: dist = vel * dTime
+        // In other words, a change in distance through time.
+        controller.Move(velocity * Time.deltaTime);
     }
 
     /// <summary>
