@@ -71,15 +71,26 @@ public class SimpleCharacterController : MonoBehaviour
         {
             // set intended normal speed on ground
             velocity.x = moveInput * moveSpeed;
+            // reset jumps
             isJumpingBool = false;
             timesJumped = 0;
-            // reset velocity to prevent storing crazy fall speed   
-            velocity.y = 0f;
+            // reset velocity to prevent storing crazy fall speed
+            // but include it to maintain isGrounded
+            if (velocity.y < -1)
+            {
+                velocity.y = -1f;
+            }
         }
         else // in air
         {
-            // set intended reduced speed in air
+            // set intended horizontal speed in air
             velocity.x = airSpeed * moveInput;
+            // prevent first jump in air
+            if (timesJumped == 0)
+            {
+                timesJumped = 1;
+            }
+            // check if jump is finished
             if (velocity.y < 0f)
             {
                 isJumpingBool = false;
