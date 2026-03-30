@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7635027247914906644}
   - component: {fileID: 699951568960365916}
   m_Layer: 0
-  m_Name: FruitEaten
+  m_Name: PlayerHeal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
