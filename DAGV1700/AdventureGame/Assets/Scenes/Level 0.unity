@@ -10635,7 +10635,6 @@ GameObject:
   - component: {fileID: 882164019}
   - component: {fileID: 882164020}
   - component: {fileID: 882164018}
-  - component: {fileID: 882164021}
   m_Layer: 0
   m_Name: Art
   m_TagString: Untagged
@@ -10764,22 +10763,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterAnimationController
   objectWithController: {fileID: 1142583946}
---- !u!208 &882164021
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 882164015}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.105, y: 0.125, z: 0.1}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0.005, y: -0.035, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!1001 &885768554
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22770,6 +22753,7 @@ MonoBehaviour:
   patrolPointList:
   - {fileID: 909820451}
   - {fileID: 1204916211}
+  pauseForSec: 1
 --- !u!1001 &1951782006
 PrefabInstance:
   m_ObjectHideFlags: 0
