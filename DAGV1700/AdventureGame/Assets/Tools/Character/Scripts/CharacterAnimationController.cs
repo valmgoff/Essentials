@@ -1,7 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Animations;
 
+[RequireComponent(typeof(Animator))]
 public class CharacterAnimationController : MonoBehaviour
 {
     // target references
@@ -27,10 +27,10 @@ public class CharacterAnimationController : MonoBehaviour
 
     private void Update()
     {
-        UpdateFromPlayerController();
+        UpdateControllerVars();
     }
 
-    private void UpdateFromPlayerController()
+    private void UpdateControllerVars()
     {
         animator.SetBool(running, controller.isRunning());
         animator.SetBool(jumping, controller.isJumping());
