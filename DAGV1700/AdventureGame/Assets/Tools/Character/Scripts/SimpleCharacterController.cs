@@ -29,6 +29,9 @@ public class SimpleCharacterController : MonoBehaviour
     [SerializeField]
     private int availableJumps = 2;
 
+    [SerializeField]
+    private float launchMultiplier = 3f;
+
     // pointers
     private CharacterController controller;
     private Vector3 velocity;
@@ -37,6 +40,7 @@ public class SimpleCharacterController : MonoBehaviour
     // variables
     private bool isJumpingBool;
     private int timesJumped;
+    private bool launchFlagged;
 
     /// <summary>
     /// Initialize required components.
@@ -46,6 +50,7 @@ public class SimpleCharacterController : MonoBehaviour
         controller = GetComponent<CharacterController>();
         thisTransform = transform;
         velocity.Set(0f, 0f, 0f);
+        launchFlagged = false;
     }
 
     /// <summary>
@@ -97,8 +102,13 @@ public class SimpleCharacterController : MonoBehaviour
             }
         }
 
-        // jumping
-        if (Input.GetButtonDown("Jump"))
+        if (launchFlagged) // launched (by spring)
+        {
+            isJumpingBool = true;
+            velocity.y = jumpForce * launchMultiplier;
+            launchFlagged = false;
+        }
+        else if (Input.GetButtonDown("Jump")) // jumping
         {
             if (timesJumped < availableJumps)
             {
@@ -107,9 +117,8 @@ public class SimpleCharacterController : MonoBehaviour
                 timesJumped++;
             }
         }
-        else
+        else // fall (maintains controller grounded state)
         {
-            // fall (maintains controller grounded state)
             // Had to get chatGPT to explain this explicitely, but gravity is an acceleration not a speed
             // we need: vel = acc * dTime
             // In other words, a change in velocity through time.
@@ -153,5 +162,11 @@ public class SimpleCharacterController : MonoBehaviour
     public bool isRunning()
     {
         return Input.GetAxis("Horizontal") != 0;
+    }
+
+    // setters
+    public void flagLaunched()
+    {
+        launchFlagged = true;
     }
 }
