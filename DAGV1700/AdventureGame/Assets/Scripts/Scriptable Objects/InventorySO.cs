@@ -56,7 +56,7 @@ public class InventorySO : ScriptableObject
         }
     }
 
-    public int tally(Id item)
+    public int Talley(Id item)
     {
         // pre-check
         if (Inventory == null)

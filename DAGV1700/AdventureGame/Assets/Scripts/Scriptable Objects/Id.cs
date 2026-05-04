@@ -4,10 +4,10 @@ using UnityEngine;
 public class Id : ScriptableObject
 {
     [SerializeField]
-    private String idName;
+    private String pluralName;
 
-    public String Name()
+    public String PluralName()
     {
-        return idName;
+        return pluralName;
     }
 }
