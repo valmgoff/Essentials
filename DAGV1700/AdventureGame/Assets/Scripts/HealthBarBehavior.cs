@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
@@ -8,6 +9,8 @@ public class HealthBar : MonoBehaviour
     private float maxHealth = 1f;
     [SerializeField]
     private float minHealth = 0f;
+    [SerializeField]
+    private UnityEvent deathEvents;
 
     // references
     private Image bar;
@@ -39,6 +42,11 @@ public class HealthBar : MonoBehaviour
 
         float healthPercent = currHealth / maxHealth; // 1 = full, 0 = empty
         bar.fillAmount = healthPercent;
+
+        if (currHealth <= 0)
+        {
+            deathEvents.Invoke();
+        }
     }
 
     public void DealDamage(float damage)
