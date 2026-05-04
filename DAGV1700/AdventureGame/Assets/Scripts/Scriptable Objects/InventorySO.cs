@@ -1,58 +1,54 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 
 [CreateAssetMenu(fileName = "Inventory", menuName = "ScriptableObjects/Inventory")]
 public class InventorySO : ScriptableObject
 {
-    private List<ItemStack> Inventory; // or List of Stacks
+    private List<ItemCounter> Inventory; // or List of Counters
 
-    public void Grab(Id item) // adds one at a time
+    // functions
+    public void Grab(Id item, int count) // adds one at a time
     {
         // pre-check
         if (Inventory == null)
         {
-            Inventory = new List<ItemStack>();
+            Inventory = new List<ItemCounter>();
         }
 
-        // find matching item ID in Stacks
-        ItemStack stack = Inventory.Find(s => s.GetID() == item);
-        if (stack != null) // found match inside
+        // find corrisponding counter
+        ItemCounter stack = GetCounterFor(item);
+        if (stack == null) // no counter for item
         {
-            stack.Add();
+            Inventory.Add(new ItemCounter(item, count));
         }
-        else // item is new
+        else // found coutner
         {
-            Inventory.Add(new ItemStack(item));
+            stack.Add(count);
         }
     }
 
-    public void Subtract(Id item)
-    {
-        Drop(item);
-    }
-
-    public bool Drop(Id item)
+    public void Drop(Id item, int count)
     {
         // pre-check
         if (Inventory == null)
         {
             Debug.Log("Can't remove item, list doesn't exist yet!");
+            return;
         }
 
-        // find matching item ID in Stacks
-        ItemStack stack = Inventory.Find(s => s.GetID() == item);
-        if (stack != null) // found match inside
-        {
-            stack.Subtract();
-            if (stack.Count() <= 0)
-                Inventory.Remove(stack);
-            return true; // subtracked item
-        }
-        else // no item to remove
+        // find corrisponding counter
+        ItemCounter stack = GetCounterFor(item);
+        if (stack == null) // no counter for item
         {
             Debug.Log("None of item in Inventory!");
-            return false;
+        }
+        else // found coutner
+        {
+            stack.Subtract(count);
+            if (stack.Count() <= 0)
+                Inventory.Remove(stack);
         }
     }
 
@@ -62,49 +58,103 @@ public class InventorySO : ScriptableObject
         if (Inventory == null)
         {
             Debug.Log("Can't read item, list doesn't exist yet!");
+            return 0;
         }
 
-        // find matching item ID in Stacks
-        ItemStack stack = Inventory.Find(s => s.GetID() == item);
-        if (stack != null) // found match inside
-        {
-            return stack.Count();
-        }
-        else // no item
+        // find corrisponding counter
+        ItemCounter stack = GetCounterFor(item);
+        if (stack == null) // no counter for item
         {
             return 0;
         }
+        else // found coutner
+        {
+            return stack.Count();
+        }
     }
 
-    private class ItemStack
+    public void WipeEverything()
     {
-        private Id refID;
+        Inventory = null;
+    }
+
+    // overflow and varients
+    public void Grab(Id item)
+    {
+        Grab(item, 1);
+    }
+    public void Drop(Id item)
+    {
+        Drop(item, 1);
+    }
+
+    public void Decrement(Id item) // void return, Unity Events cant find Drop
+    {
+        Drop(item);
+    }
+
+    // helper classes
+    private ItemCounter GetCounterFor(Id item)
+    {
+        // predicate
+        bool SearchLogic(ItemCounter counter)
+        {
+            if (counter == null) // Inventory exists, but is empty.
+                return false;
+            return item == counter.Item(); // bool if counter is about item
+        }
+        // loop
+        return Inventory.Find(SearchLogic);
+    }
+
+    // key+quantity entry to implement multiset structure
+    private class ItemCounter
+    {
+        private Id key;
         private int quantity;
 
         // constructor
-        public ItemStack(Id newID)
+        public ItemCounter(Id item, int count)
         {
-            refID = newID;
-            quantity = 1;
-        }
-        public void Add()
-        {
-            quantity++;
+            key = item;
+            quantity = count;
         }
 
-        public void Subtract()
+        // functions
+        public void Add(int count)
         {
-            quantity--;
+            quantity += count;
         }
 
-        public Id GetID()
+        public void Subtract(int count)
         {
-            return refID;
+            quantity -= count;
+        }
+
+        public Id Item()
+        {
+            return key;
         }
 
         public int Count()
         {
             return quantity;
+        }
+
+        // overflow and varients
+        public ItemCounter(Id item)
+        {
+            new ItemCounter(item, 1);
+        }
+
+        public void Add()
+        {
+            Add(1);
+        }
+
+        public void Subtract()
+        {
+            Subtract(1);
         }
     }
 }

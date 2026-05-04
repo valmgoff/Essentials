@@ -53,7 +53,6 @@ public class ChangeAlpha : MonoBehaviour
         // actual behavior
         while (elapsed < durrationSec)
         {
-            Debug.Log("");
 
             // increment elapsed time
             elapsed += Time.deltaTime;
