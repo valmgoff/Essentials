@@ -57,19 +57,15 @@ public class ChangeAlpha : MonoBehaviour
 
             // increment elapsed time
             elapsed += Time.deltaTime;
-            Debug.Log("elapsed: " + elapsed);
 
             // calculate
             float percentElapsed = elapsed / durrationSec;
             if (percentElapsed > 1f)
                 percentElapsed = 1f; // clamp
-            Debug.Log("percent: " + percentElapsed);
             float newAlpha = distance * percentElapsed;
-            Debug.Log("new A: " + newAlpha);
             if (newAlpha < 0) // we need to go higher to lower
             {
                 newAlpha = 1 + newAlpha;
-                Debug.Log("flip A: " + newAlpha);
             }
 
             //apply
