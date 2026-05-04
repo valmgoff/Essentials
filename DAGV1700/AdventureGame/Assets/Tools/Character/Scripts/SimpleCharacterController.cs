@@ -32,6 +32,14 @@ public class SimpleCharacterController : MonoBehaviour
     [SerializeField]
     private float launchMultiplier = 3f;
 
+    // public pointers
+
+    [SerializeField]
+    private AudioSource jumpSound;
+
+    [SerializeField]
+    private AudioSource doubleJumpSound;
+
     // pointers
     private CharacterController controller;
     private Vector3 velocity;
@@ -115,6 +123,17 @@ public class SimpleCharacterController : MonoBehaviour
                 velocity.y = jumpForce;
                 isJumpingBool = true;
                 timesJumped++;
+
+                if (timesJumped == 1) // fist jump
+                {
+                    if (jumpSound != null)
+                        jumpSound.Play();
+                }
+                else // extra jumps
+                {
+                    if (doubleJumpSound != null)
+                        doubleJumpSound.Play();
+                }
             }
         }
         else // fall (maintains controller grounded state)
