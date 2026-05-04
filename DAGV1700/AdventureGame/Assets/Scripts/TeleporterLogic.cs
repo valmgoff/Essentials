@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class TeleporterLogic : MonoBehaviour
 {
     // dials
@@ -43,6 +44,10 @@ public class TeleporterLogic : MonoBehaviour
 
             // teleport
             entity.transform.position = target.transform.position;
+
+            // play sound
+            AudioSource sound = this.GetComponent<AudioSource>();
+            sound.Play();
 
             // turn controller back on
             if (controller != null)
