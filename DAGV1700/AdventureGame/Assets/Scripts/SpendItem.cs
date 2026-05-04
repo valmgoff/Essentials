@@ -23,7 +23,7 @@ public class SpendItem : MonoBehaviour
                 return;
             }
 
-            if (inventory.Talley(item) <= cost)
+            if (inventory.Talley(item) >= cost)
             {
 
                 Debug.Log("Removing items!");

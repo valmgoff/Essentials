@@ -1102,6 +1102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1538276625}
   - component: {fileID: 1538276624}
+  - component: {fileID: 1538276626}
   m_Layer: 0
   m_Name: Menu Music
   m_TagString: Untagged
@@ -1120,11 +1121,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 8311541056427817069, guid: 605be0acb976c7647b709c730f7c5a5a, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c9e9feb751efbc44d9a1191ec09e122e, type: 3}
+  m_Resource: {fileID: 8300000, guid: d4435c6427d95174e85161d5194bc3e5, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1221,6 +1222,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1538276626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538276623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26dafc87b4f76274ca8f1b6e7e2517b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AwakenEvent
+  awakenEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 24100000, guid: 605be0acb976c7647b709c730f7c5a5a, type: 2}
+        m_TargetAssemblyTypeName: UnityEditor.Audio.AudioMixerController, UnityEditor.CoreModule
+        m_MethodName: set_TargetSnapshot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 24500006, guid: 605be0acb976c7647b709c730f7c5a5a, type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEditor.Audio.AudioMixerSnapshotController,
+            UnityEditor.CoreModule
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1582691032
 PrefabInstance:
   m_ObjectHideFlags: 0
