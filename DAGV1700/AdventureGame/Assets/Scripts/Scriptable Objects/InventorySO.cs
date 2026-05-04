@@ -2,12 +2,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[CreateAssetMenu(fileName = "Custom Event", menuName = "ScriptableObjects/Inventory")]
+[CreateAssetMenu(fileName = "Inventory", menuName = "ScriptableObjects/Inventory")]
 public class InventorySO : ScriptableObject
 {
     private List<ItemStack> Inventory; // or List of Stacks
 
-    public void Grap(Id item) // adds one at a time
+    public void Grab(Id item) // adds one at a time
     {
         // pre-check
         if (Inventory == null)
@@ -25,6 +25,11 @@ public class InventorySO : ScriptableObject
         {
             Inventory.Add(new ItemStack(item));
         }
+    }
+
+    public void Subtract(Id item)
+    {
+        Drop(item);
     }
 
     public bool Drop(Id item)
@@ -48,6 +53,26 @@ public class InventorySO : ScriptableObject
         {
             Debug.Log("None of item in Inventory!");
             return false;
+        }
+    }
+
+    public int tally(Id item)
+    {
+        // pre-check
+        if (Inventory == null)
+        {
+            Debug.Log("Can't read item, list doesn't exist yet!");
+        }
+
+        // find matching item ID in Stacks
+        ItemStack stack = Inventory.Find(s => s.GetID() == item);
+        if (stack != null) // found match inside
+        {
+            return stack.Count();
+        }
+        else // no item
+        {
+            return 0;
         }
     }
 
