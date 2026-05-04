@@ -2558,46 +2558,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142143264}
   m_CullTransparentMesh: 1
---- !u!1 &145131974 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5880745421616546938, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
-  m_PrefabInstance: {fileID: 242215900}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &145131975 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 678596843056780828, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
   m_PrefabInstance: {fileID: 242215900}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &145131976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 145131974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7c4c067838ab4f4daf3ceea190e0b91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SimpleTriggerEventBehaviour
-  awakeEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  triggerEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: c06b3c02910cb964e9b78cb2f5354a73, type: 2}
-        m_TargetAssemblyTypeName: GameEventSO, Assembly-CSharp
-        m_MethodName: Raise
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &147750046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3939,10 +3904,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1137532142280818843, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5880745421616546938, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
       propertyPath: m_Name
       value: Spring (1)
@@ -3950,10 +3911,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5880745421616546938, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 145131976}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
 --- !u!1001 &242458105
 PrefabInstance:
@@ -6669,13 +6627,14 @@ Transform:
   m_GameObject: {fileID: 391162979}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.34565, y: -2.5300498, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 185621036}
   - {fileID: 974103283}
   - {fileID: 1805073778}
+  - {fileID: 1393371549}
   m_Father: {fileID: 1142583950}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &393210709
@@ -7734,10 +7693,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1137532142280818843, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5880745421616546938, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
       propertyPath: m_Name
       value: Spring (2)
@@ -7745,10 +7700,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5880745421616546938, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2036771903}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
 --- !u!1001 &496241832
 PrefabInstance:
@@ -8594,10 +8546,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1137532142280818843, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5880745421616546938, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
       propertyPath: m_Name
       value: Spring (4)
@@ -8605,10 +8553,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5880745421616546938, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1889293709}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
 --- !u!1001 &546957291
 PrefabInstance:
@@ -15352,7 +15297,7 @@ Transform:
   m_GameObject: {fileID: 974103282}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.34565, y: 2.5300498, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16061,10 +16006,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1137532142280818843, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5880745421616546938, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
       propertyPath: m_Name
       value: Spring (3)
@@ -16072,10 +16013,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5880745421616546938, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1906862649}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
 --- !u!1001 &1030223766
 PrefabInstance:
@@ -16564,11 +16502,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1613061437736732598, guid: 776a079a5a3b08040a657f42c500de80, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.34565
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1613061437736732598, guid: 776a079a5a3b08040a657f42c500de80, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5300498
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1613061437736732598, guid: 776a079a5a3b08040a657f42c500de80, type: 3}
       propertyPath: m_LocalPosition.z
@@ -18793,10 +18731,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1137532142280818843, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5880745421616546938, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
       propertyPath: m_Name
       value: Spring (5)
@@ -18804,51 +18738,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5880745421616546938, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1206986338}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
 --- !u!4 &1206986336 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 678596843056780828, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
   m_PrefabInstance: {fileID: 1206986335}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1206986337 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5880745421616546938, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
-  m_PrefabInstance: {fileID: 1206986335}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1206986338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1206986337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7c4c067838ab4f4daf3ceea190e0b91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SimpleTriggerEventBehaviour
-  awakeEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  triggerEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: c06b3c02910cb964e9b78cb2f5354a73, type: 2}
-        m_TargetAssemblyTypeName: GameEventSO, Assembly-CSharp
-        m_MethodName: Raise
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &1208759962
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21856,6 +21752,135 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 930416352833925999, guid: b0205fb0fecb967428d383c49cc77d63, type: 3}
   m_PrefabInstance: {fileID: 1389368861}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1393371548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1393371549}
+  - component: {fileID: 1393371550}
+  m_Layer: 0
+  m_Name: JumpSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1393371549
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393371548}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 391162980}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1393371550
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393371548}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1398019600
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25573,41 +25598,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12d7f16ae6f32c74c99f69ae4bec2aeb, type: 3}
---- !u!1 &1631680255 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5880745421616546938, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
-  m_PrefabInstance: {fileID: 8740288451245734187}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1631680258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631680255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7c4c067838ab4f4daf3ceea190e0b91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SimpleTriggerEventBehaviour
-  awakeEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  triggerEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: c06b3c02910cb964e9b78cb2f5354a73, type: 2}
-        m_TargetAssemblyTypeName: GameEventSO, Assembly-CSharp
-        m_MethodName: Raise
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &1634110257
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29029,46 +29019,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b2d578cfab4b284db4eedb01f7ca7ed, type: 3}
---- !u!1 &1889293707 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5880745421616546938, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
-  m_PrefabInstance: {fileID: 545111710}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1889293708 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 678596843056780828, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
   m_PrefabInstance: {fileID: 545111710}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1889293709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1889293707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7c4c067838ab4f4daf3ceea190e0b91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SimpleTriggerEventBehaviour
-  awakeEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  triggerEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: c06b3c02910cb964e9b78cb2f5354a73, type: 2}
-        m_TargetAssemblyTypeName: GameEventSO, Assembly-CSharp
-        m_MethodName: Raise
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &1896104305
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29188,46 +29143,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8347385216528402609, guid: 1d7c2c173e2a7634caa1126341cf4638, type: 3}
   m_PrefabInstance: {fileID: 1906734629}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1906862647 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5880745421616546938, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
-  m_PrefabInstance: {fileID: 1029215728}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1906862648 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 678596843056780828, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
   m_PrefabInstance: {fileID: 1029215728}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1906862649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1906862647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7c4c067838ab4f4daf3ceea190e0b91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SimpleTriggerEventBehaviour
-  awakeEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  triggerEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: c06b3c02910cb964e9b78cb2f5354a73, type: 2}
-        m_TargetAssemblyTypeName: GameEventSO, Assembly-CSharp
-        m_MethodName: Raise
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &1908235377
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30917,46 +30837,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3091412363993983580, guid: 8b2d578cfab4b284db4eedb01f7ca7ed, type: 3}
   m_PrefabInstance: {fileID: 1887649509}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2036771901 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5880745421616546938, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
-  m_PrefabInstance: {fileID: 487754785}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2036771902 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 678596843056780828, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
   m_PrefabInstance: {fileID: 487754785}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2036771903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2036771901}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7c4c067838ab4f4daf3ceea190e0b91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SimpleTriggerEventBehaviour
-  awakeEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  triggerEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: c06b3c02910cb964e9b78cb2f5354a73, type: 2}
-        m_TargetAssemblyTypeName: GameEventSO, Assembly-CSharp
-        m_MethodName: Raise
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!4 &2037295576 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1797425905623753077, guid: 1bd73478289e14e49a8b5e3370d47a6d, type: 3}
@@ -32905,11 +32790,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1613061437736732598, guid: cf942868d3626ca4b94933e238603586, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.34565
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1613061437736732598, guid: cf942868d3626ca4b94933e238603586, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5300498
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1613061437736732598, guid: cf942868d3626ca4b94933e238603586, type: 3}
       propertyPath: m_LocalPosition.z
@@ -33466,10 +33351,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1137532142280818843, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5880745421616546938, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
       propertyPath: m_Name
       value: Spring
@@ -33477,10 +33358,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5880745421616546938, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1631680258}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7d0ed2bbe1ca024a998c25a3bc21419, type: 3}
 --- !u!1001 &8865310736616395097
 PrefabInstance:
