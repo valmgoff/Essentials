@@ -76,6 +76,7 @@ public class ChangeAlpha : MonoBehaviour
             yield return null; // wait till next frame
         }
         // finished
+        Debug.Log("Now finished: invoking");
         finishEvent.Invoke();
         CleanCoroutine();
 

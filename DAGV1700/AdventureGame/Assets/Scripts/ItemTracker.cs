@@ -1,9 +1,6 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
-using UnityEngine.Events;
-using System.Globalization;
-using System.Collections;
+using System;
 
 [RequireComponent(typeof(TextMeshProUGUI))]
 public class ItemTracker : MonoBehaviour
@@ -11,30 +8,32 @@ public class ItemTracker : MonoBehaviour
     [SerializeField] private InventorySO observedInventory;
     [SerializeField] private bool showZero;
 
-    private TextMeshProUGUI textObj;
-    private WaitForSeconds waitForFixedUpdate;
-    private int counter;
-
-    private int currentNum;
+    private TextMeshProUGUI display;
 
     private void Start()
     {
-        waitForFixedUpdate = new WaitForSeconds(0.1f); // Set delay time for UpdateNumberCount
-        Awake();
+        WaitForSeconds waitForFixedUpdate = new WaitForSeconds(0.1f); // Set delay time for UpdateNumberCount
+        display = GetComponent<TextMeshProUGUI>();
         UpdateText(""); // blank until update externally
     }
 
-    protected void Awake()
+    public void UpdateText(string newText)
     {
-        textObj = GetComponent<TextMeshProUGUI>();
+        if (newText == null)
+        {
+            Debug.LogError("Updating text with null string.", this);
+            return;
+        }
+        display.text = newText;
     }
-
-    public void UpdateText(string obj) => textObj.text = obj;
 
     public void UpdateCounter(Id item)
     {
         int count = observedInventory.Talley(item);
         if (showZero || count != 0)
-            UpdateText(count.ToString() + " " + item.PluralName());
+        {
+            String newText = count.ToString() + " " + item.PluralName();
+            UpdateText(newText);
+        }
     }
 }
