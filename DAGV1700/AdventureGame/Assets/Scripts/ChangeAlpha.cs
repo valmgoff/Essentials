@@ -25,6 +25,7 @@ public class ChangeAlpha : MonoBehaviour
 
     public void BeginChange()
     {
+        Debug.Log("Beginning change to: " + desiredAlpha);
         // create only one Coroutine
         if (alphaCoroutine == null)
         {

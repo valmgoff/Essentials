@@ -13,11 +13,12 @@ public class ExitMaintainedTrigger : MonoBehaviour
         BoxCollider trigger = this.GetComponent<BoxCollider>();
 
         if (player.bounds.Intersects(trigger.bounds))
+            foundPlayer = true;
 
-            if (!foundPlayer)
-            {
-                OnExit.Invoke();
-                this.GetComponent<ExitMaintainedTrigger>().enabled = false;
-            }
+        if (!foundPlayer)
+        {
+            OnExit.Invoke();
+            this.GetComponent<ExitMaintainedTrigger>().enabled = false;
+        }
     }
 }
