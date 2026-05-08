@@ -110,17 +110,23 @@ public class SimpleCharacterController : MonoBehaviour
             }
         }
 
+        // TODO: DO DO DO DO SPRING
         if (launchFlagged) // launched (by spring)
         {
             isJumpingBool = true;
-            velocity.y = jumpForce * launchMultiplier;
+            if (velocity.y < 0) // if going down reset, if up add it
+                velocity.y = 0;
+            velocity.y += jumpForce * launchMultiplier;
+            timesJumped = 1; // allways allow double jump
             launchFlagged = false;
         }
         else if (Input.GetButtonDown("Jump")) // jumping
         {
             if (timesJumped < availableJumps)
             {
-                velocity.y = jumpForce;
+                if (velocity.y < 0) // if going down reset, if up add it
+                    velocity.y = 0;
+                velocity.y += jumpForce;
                 isJumpingBool = true;
                 timesJumped++;
 

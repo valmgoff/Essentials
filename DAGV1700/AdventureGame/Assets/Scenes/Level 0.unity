@@ -1851,11 +1851,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8347385216528402609, guid: 1d7c2c173e2a7634caa1126341cf4638, type: 3}
   m_PrefabInstance: {fileID: 98231825}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &102991718 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3091412363993983580, guid: 8b2d578cfab4b284db4eedb01f7ca7ed, type: 3}
-  m_PrefabInstance: {fileID: 1768001364}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &107540986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7114,6 +7109,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3530815013964894509, guid: d49abfecebd072640a67a5e3176b8fef, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.19
+      objectReference: {fileID: 0}
     - target: {fileID: 4826799376504941385, guid: d49abfecebd072640a67a5e3176b8fef, type: 3}
       propertyPath: m_NavMeshData
       value: 
@@ -7121,6 +7120,10 @@ PrefabInstance:
     - target: {fileID: 7603173722572794922, guid: d49abfecebd072640a67a5e3176b8fef, type: 3}
       propertyPath: m_Name
       value: Patrolling Frog (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603173722572794922, guid: d49abfecebd072640a67a5e3176b8fef, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8610,6 +8613,7 @@ GameObject:
   m_Component:
   - component: {fileID: 544646607}
   - component: {fileID: 544646606}
+  - component: {fileID: 544646608}
   m_Layer: 0
   m_Name: Start Music
   m_TagString: Untagged
@@ -8729,6 +8733,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 195865093}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &544646608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544646605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26dafc87b4f76274ca8f1b6e7e2517b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AwakenEvent
+  awakenEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 24100000, guid: 605be0acb976c7647b709c730f7c5a5a, type: 2}
+        m_TargetAssemblyTypeName: UnityEditor.Audio.AudioMixerController, UnityEditor.CoreModule
+        m_MethodName: set_TargetSnapshot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 24500006, guid: 605be0acb976c7647b709c730f7c5a5a, type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEditor.Audio.AudioMixerSnapshotController,
+            UnityEditor.CoreModule
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &545111710
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8904,13 +8936,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3530815013964894509, guid: d49abfecebd072640a67a5e3176b8fef, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826799376504941385, guid: d49abfecebd072640a67a5e3176b8fef, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4826799376504941385, guid: d49abfecebd072640a67a5e3176b8fef, type: 3}
       propertyPath: m_NavMeshData
       value: 
       objectReference: {fileID: 23800000, guid: 4c18793a8bc455a42b624c56544695e1, type: 2}
+    - target: {fileID: 7519059394604436405, guid: d49abfecebd072640a67a5e3176b8fef, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7603173722572794922, guid: d49abfecebd072640a67a5e3176b8fef, type: 3}
       propertyPath: m_Name
       value: Patrolling Frog (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603173722572794922, guid: d49abfecebd072640a67a5e3176b8fef, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10085,7 +10133,7 @@ Transform:
   m_GameObject: {fileID: 617348120}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -36, y: 4.4, z: -10}
+  m_LocalPosition: {x: 0, y: -3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12257,7 +12305,7 @@ Transform:
   m_GameObject: {fileID: 751489414}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -36, y: 4.4, z: -10}
+  m_LocalPosition: {x: 0, y: -3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16751,7 +16799,6 @@ Transform:
   - {fileID: 1335935096}
   - {fileID: 40384001}
   - {fileID: 1222438411}
-  - {fileID: 102991718}
   - {fileID: 1667084150}
   - {fileID: 1908293459}
   - {fileID: 1180200721}
@@ -18112,7 +18159,7 @@ Transform:
   m_GameObject: {fileID: 1142583946}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -36, y: 4.4, z: 0}
+  m_LocalPosition: {x: 0, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -27461,63 +27508,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3091412363993983580, guid: 8b2d578cfab4b284db4eedb01f7ca7ed, type: 3}
   m_PrefabInstance: {fileID: 1700914149}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1768001364
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1057835502}
-    m_Modifications:
-    - target: {fileID: 1443947405072226965, guid: 8b2d578cfab4b284db4eedb01f7ca7ed, type: 3}
-      propertyPath: m_Name
-      value: Fruit (14)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3091412363993983580, guid: 8b2d578cfab4b284db4eedb01f7ca7ed, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -57.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3091412363993983580, guid: 8b2d578cfab4b284db4eedb01f7ca7ed, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.99999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 3091412363993983580, guid: 8b2d578cfab4b284db4eedb01f7ca7ed, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3091412363993983580, guid: 8b2d578cfab4b284db4eedb01f7ca7ed, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3091412363993983580, guid: 8b2d578cfab4b284db4eedb01f7ca7ed, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3091412363993983580, guid: 8b2d578cfab4b284db4eedb01f7ca7ed, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3091412363993983580, guid: 8b2d578cfab4b284db4eedb01f7ca7ed, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3091412363993983580, guid: 8b2d578cfab4b284db4eedb01f7ca7ed, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3091412363993983580, guid: 8b2d578cfab4b284db4eedb01f7ca7ed, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3091412363993983580, guid: 8b2d578cfab4b284db4eedb01f7ca7ed, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8b2d578cfab4b284db4eedb01f7ca7ed, type: 3}
 --- !u!1001 &1768058673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33665,6 +33655,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4266538683220730525, guid: d49abfecebd072640a67a5e3176b8fef, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826799376504941385, guid: d49abfecebd072640a67a5e3176b8fef, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4826799376504941385, guid: d49abfecebd072640a67a5e3176b8fef, type: 3}
       propertyPath: m_NavMeshData
       value: 
@@ -33673,9 +33671,25 @@ PrefabInstance:
       propertyPath: m_GenerateLinks
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7519059394604436405, guid: d49abfecebd072640a67a5e3176b8fef, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7603173722572794922, guid: d49abfecebd072640a67a5e3176b8fef, type: 3}
       propertyPath: m_Name
       value: Patrolling Frog
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603173722572794922, guid: d49abfecebd072640a67a5e3176b8fef, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7806219358740545723, guid: d49abfecebd072640a67a5e3176b8fef, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435254066149577823, guid: d49abfecebd072640a67a5e3176b8fef, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -34391,7 +34405,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &8515600557473747542
 MonoBehaviour:
   m_ObjectHideFlags: 0
