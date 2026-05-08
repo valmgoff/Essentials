@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using TMPro;
 using System;
-using Unity.VisualScripting;
 
 [RequireComponent(typeof(TextMeshProUGUI))]
 public class ItemTracker : MonoBehaviour
