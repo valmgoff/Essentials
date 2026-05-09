@@ -18181,9 +18181,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SimpleCharacterController
   moveSpeed: 8
   airSpeed: 5
-  jumpForce: 13
   gravity: -40
+  jumpingClamp: 23
   availableJumps: 2
+  jumpForce: 13
   launchMultiplier: 1.5
   jumpSound: {fileID: 308411247}
   doubleJumpSound: {fileID: 1393371550}
@@ -18205,7 +18206,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1142583951}
         m_TargetAssemblyTypeName: SimpleCharacterController, Assembly-CSharp
-        m_MethodName: flagLaunched
+        m_MethodName: raiseLaunched
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

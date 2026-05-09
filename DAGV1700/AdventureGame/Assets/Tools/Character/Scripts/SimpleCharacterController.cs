@@ -10,35 +10,40 @@ using UnityEngine;
 public class SimpleCharacterController : MonoBehaviour
 {
     // editor dials
-    [SerializeField]
+    [Header("Left Right")]
+
     [Tooltip("The speed at which the character moves horizontally.")]
-    private float moveSpeed = 8f;
+    [SerializeField] private float moveSpeed = 8f;
 
-    [SerializeField]
+
     [Tooltip("The speed at which the character moves horizontally in air.")]
-    private float airSpeed = 4f;
+    [SerializeField] private float airSpeed = 4f;
 
-    [SerializeField]
-    [Tooltip("The upward force applied when the character jumps.")]
-    private float jumpForce = 5f;
+    [Header("Up Down")]
 
-    [SerializeField]
     [Tooltip("The constant downward force applied by gravity.")]
-    private float gravity = -9.81f;
+    [SerializeField] private float gravity = -9.81f;
 
-    [SerializeField]
-    private int availableJumps = 2;
+    [Tooltip("The maximum upper force from a jump.")]
+    [SerializeField] private float jumpingClamp = 23f;
 
-    [SerializeField]
-    private float launchMultiplier = 3f;
+    [Header("Jumping Dials")]
+
+    [Tooltip("Number of total jumps. 0 can't jump ever.")]
+    [SerializeField] private int availableJumps = 2;
+
+    [Tooltip("The upward force applied when the character jumps.")]
+    [SerializeField] private float jumpForce = 5f;
+
+    [Tooltip("How high a spring launches them.")]
+    [SerializeField] private float launchMultiplier = 3f;
 
     // public pointers
+    [Header("References")]
 
-    [SerializeField]
-    private AudioSource jumpSound;
+    [SerializeField] private AudioSource jumpSound;
 
-    [SerializeField]
-    private AudioSource doubleJumpSound;
+    [SerializeField] private AudioSource doubleJumpSound;
 
     // pointers
     private CharacterController controller;
@@ -110,23 +115,19 @@ public class SimpleCharacterController : MonoBehaviour
             }
         }
 
-        // TODO: DO DO DO DO SPRING
         if (launchFlagged) // launched (by spring)
         {
+            Jump(launchMultiplier);
             isJumpingBool = true;
-            if (velocity.y < 0) // if going down reset, if up add it
-                velocity.y = 0;
-            velocity.y += jumpForce * launchMultiplier;
             timesJumped = 1; // allways allow double jump
+
             launchFlagged = false;
         }
         else if (Input.GetButtonDown("Jump")) // jumping
         {
             if (timesJumped < availableJumps)
             {
-                if (velocity.y < 0) // if going down reset, if up add it
-                    velocity.y = 0;
-                velocity.y += jumpForce;
+                Jump();
                 isJumpingBool = true;
                 timesJumped++;
 
@@ -155,6 +156,25 @@ public class SimpleCharacterController : MonoBehaviour
         // we need: dist = vel * dTime
         // In other words, a change in distance through time.
         controller.Move(velocity * Time.deltaTime);
+    }
+
+    private void Jump(float multiplier)
+    {
+        // additive
+        // if (velocity.y < 0f) // lower clamp
+        //     velocity.y = 0;
+        // velocity.y += jumpForce * multiplier;
+
+        // static
+        velocity.y = jumpForce * multiplier;
+
+        if (velocity.y > jumpingClamp) // upper clamp
+            velocity.y = jumpingClamp;
+    }
+
+    private void Jump()
+    {
+        Jump(1f); // no modifier
     }
 
     /// <summary>
@@ -190,7 +210,7 @@ public class SimpleCharacterController : MonoBehaviour
     }
 
     // setters
-    public void flagLaunched()
+    public void raiseLaunched()
     {
         launchFlagged = true;
     }

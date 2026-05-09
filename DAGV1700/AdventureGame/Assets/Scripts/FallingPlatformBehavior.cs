@@ -1,22 +1,20 @@
 using System.Collections;
 using UnityEngine;
-[RequireComponent(typeof(BoxCollider))]
+[RequireComponent(typeof(BoxCollider), typeof(AudioSource))]
 public class FallingPlatformBehavior : MonoBehaviour
 {
     // editor dials
-    [SerializeField]
-    private float delayFallSecs = 1f;
-    [SerializeField]
-    private float fallingForSecs = 1f;
-    [SerializeField]
-    private float startingSpeed = 1f;
-    [SerializeField]
-    private float acceleration = 1f;
-    [SerializeField]
-    private float secsUntillRespawn = 3f;
+    [SerializeField] private float delayFallSecs = 1f;
+    [SerializeField] private float fallingForSecs = 1f;
+    [SerializeField] private float startingSpeed = 1f;
+    [SerializeField] private float acceleration = 1f;
+    [SerializeField] private float secsUntillRespawn = 3f;
+
     // pointers
     private Coroutine fallCoroutine;
     private GameObject parentPlatform;
+    private AudioSource fallingSound;
+
     // vars
     private bool isFalling;
     private float currSpeed;
@@ -25,6 +23,7 @@ public class FallingPlatformBehavior : MonoBehaviour
     private void Start()
     {
         parentPlatform = transform.parent.gameObject; // grabs parrent
+        fallingSound = transform.GetComponent<AudioSource>(); // grab sound
         startingPosition = parentPlatform.transform.position;
         Reset();
     }
@@ -69,6 +68,7 @@ public class FallingPlatformBehavior : MonoBehaviour
 
         // begin fall
         isFalling = true;
+        fallingSound.Play();
         // fall for seonds
         yield return new WaitForSeconds(fallingForSecs);
 
