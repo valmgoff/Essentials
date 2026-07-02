@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: vg1100_u4_Walker_00.ma
-//Last modified: Thu, Jul 02, 2026 05:13:48 PM
+//Last modified: Thu, Jul 02, 2026 05:29:33 PM
 //Codeset: 1252
 file -rdi 1 -ns "Ultimate_Walker_IK_v1_0_1" -rfn "Ultimate_Walker_IK_v1_0_1RN"
 		 -op "v=0;" -typ "mayaAscii" "C:/Users/Valor/Documents/[Workspaces]/git Repos/Essentials/DAGV1100and1200/Maya/scenes/Rigs/Ultimate_Walker_IK_v1.0.1.ma";
@@ -25,18 +25,18 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "1B5D0237-451C-0D56-61F4-B899C86EB04C";
+fileInfo "UUID" "F7831D89-4C44-ED75-8A96-E594F9D39F64";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "C9712CCD-754C-F86E-AD2A-73826B605734";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 4.9667064019384544 0.095297859551370601 -0.5347107160554343 ;
-	setAttr ".r" -type "double3" 8.0616472731462974 1170.59999999966 7.6333312355124402e-14 ;
+	setAttr ".t" -type "double3" 5.7120584633646647 0.39542334324741102 0.20177659093212622 ;
+	setAttr ".r" -type "double3" 5.6616472745663042 1168.9999999995887 4.5560402967705228e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "461DA5EF-F84A-C499-F69E-15ADE383DA43";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 4.0990265655722631;
+	setAttr ".coi" 4.8509306596141748;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -78,14 +78,14 @@ createNode camera -s -n "frontShape" -p "front";
 createNode transform -s -n "side";
 	rename -uid "43D9631F-064B-9DE1-ACCC-B4892A0FE18E";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1000.1 1.315143845908878 0.1862729995366843 ;
+	setAttr ".t" -type "double3" 1000.1 1.1769904641761395 0.52363896492324036 ;
 	setAttr ".r" -type "double3" 0 89.999999999999986 0 ;
 createNode camera -s -n "sideShape" -p "side";
 	rename -uid "D4AB3D4A-1444-190B-66DE-A1B267B20C18";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
-	setAttr ".ow" 8.073400755076058;
+	setAttr ".ow" 6.9017196144811708;
 	setAttr ".imn" -type "string" "side";
 	setAttr ".den" -type "string" "side_depth";
 	setAttr ".man" -type "string" "side_mask";
@@ -285,7 +285,7 @@ createNode script -n "uiConfigurationScriptNode";
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "E4ED4FF4-ED45-48F0-69AD-678D0881BCE1";
-	setAttr ".b" -type "string" "playbackOptions -min 1 -max 23 -ast 1 -aet 26 ";
+	setAttr ".b" -type "string" "playbackOptions -min 1 -max 24 -ast 1 -aet 25 ";
 	setAttr ".st" 6;
 createNode animCurveTA -n "walker_lf_heel_ik_ctrl_rotateX";
 	rename -uid "F02B1157-214A-00C9-1693-949FDEF52C93";
@@ -303,15 +303,6 @@ createNode animCurveTA -n "walker_lf_heel_ik_ctrl_rotateY";
 		 13 -6.131 16 1.8967810872569888 19 2.0028113909116567 22 -3.8251616950539096 25 -6.131459148378668;
 	setAttr -s 7 ".kit[5:6]"  9 9;
 	setAttr -s 7 ".kot[1:6]"  5 3 3 3 9 9;
-createNode animCurveTL -n "walker_lf_heel_ik_ctrl_translateY";
-	rename -uid "C9680898-8C43-4236-BA8E-4EBE339A6DBB";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 -0.028595773155118621 4 -0.0099598481705194669
-		 10 -0.056200332803154646 13 0.37827761272784372 16 1.0103796372782203 19 1.0568769333363899
-		 22 0.82831113624921104 25 -0.056200332803154646;
-	setAttr -s 8 ".kit[0:7]"  3 3 3 9 9 9 9 3;
-	setAttr -s 8 ".kot[0:7]"  3 3 3 9 9 9 9 3;
 createNode animCurveTL -n "walker_lf_heel_ik_ctrl_translateZ";
 	rename -uid "39B931AA-3444-0568-B458-028C85D4EE94";
 	setAttr ".tan" 9;
@@ -883,6 +874,22 @@ createNode animCurveTL -n "walker_lf_heel_ik_ctrl_translateX";
 		 19 0.14472982318871624 22 0.060451265167439872 25 -0.24173960470932598;
 	setAttr -s 9 ".kit[3:8]"  3 3 3 3 9 9;
 	setAttr -s 9 ".kot[3:8]"  3 3 3 3 9 9;
+createNode animCurveTL -n "walker_lf_heel_ik_ctrl_translateY";
+	rename -uid "7578DA2F-4F3C-D1FA-D583-DA87D404F9E2";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 -0.011177624484240143 10 0 13 0.32743227854483781
+		 16 0.93453860266946476 19 1.0747182550768555 22 0.9092039575135954 25 -0.011177624484240143;
+	setAttr -s 7 ".kit[0:6]"  3 3 1 9 9 9 3;
+	setAttr -s 7 ".kot[0:6]"  1 3 9 9 9 9 3;
+	setAttr -s 7 ".kix[2:6]"  0.356652764247467 0.31726084249892056 0.99490445914597603 
+		0.22435561273549826 1;
+	setAttr -s 7 ".kiy[2:6]"  0.93423701797490388 0.94833831400870605 
+		-0.10082220574582171 -0.97450734170352926 0;
+	setAttr -s 7 ".kox[0:6]"  1 1 0.25842469309499261 0.31726084249892056 
+		0.99490445914597603 0.22435561273549826 1;
+	setAttr -s 7 ".koy[0:6]"  0 0 0.96603140632111895 0.94833831400870605 
+		-0.10082220574582171 -0.97450734170352926 0;
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -cb on ".ihi";
