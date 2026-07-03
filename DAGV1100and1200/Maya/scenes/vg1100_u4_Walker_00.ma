@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: vg1100_u4_Walker_00.ma
-//Last modified: Thu, Jul 02, 2026 05:41:56 PM
+//Last modified: Thu, Jul 02, 2026 06:35:04 PM
 //Codeset: 1252
 file -rdi 1 -ns "Ultimate_Walker_IK_v1_0_1" -rfn "Ultimate_Walker_IK_v1_0_1RN"
 		 -op "v=0;" -typ "mayaAscii" "C:/Users/Valor/Documents/[Workspaces]/git Repos/Essentials/DAGV1100and1200/Maya/scenes/Rigs/Ultimate_Walker_IK_v1.0.1.ma";
@@ -25,13 +25,13 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "CDD4D141-4E58-E33B-A27C-85A23CAEEDA3";
+fileInfo "UUID" "8A7FFD13-46EB-77D0-6798-4EABF599A9B3";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "C9712CCD-754C-F86E-AD2A-73826B605734";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0.34198572684327383 4.3032838813411169 6.2556150189056332 ;
-	setAttr ".r" -type "double3" -33.338352726206551 1077.7999999995336 0 ;
+	setAttr ".t" -type "double3" -3.808817240101348 4.9309022778584799 3.4210332414293636 ;
+	setAttr ".r" -type "double3" -39.938352726206816 1022.9999999995299 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "461DA5EF-F84A-C499-F69E-15ADE383DA43";
 	setAttr -k off ".v" no;
