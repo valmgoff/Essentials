@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: vg1100_u7_Beefy.ma
-//Last modified: Wed, Jul 15, 2026 01:25:12 AM
+//Last modified: Wed, Jul 15, 2026 01:30:45 AM
 //Codeset: 1252
 file -rdi 1 -ns "Ultimate_Bony_v1_0_5" -dr 1 -rfn "Ultimate_Bony_v1_0_5RN" -op
 		 "v=0;" -typ "mayaAscii" "/Users/anthonyromrell/GitRepos/Essentials/DAGV1100and1200/Maya//scenes/Rigs/Ultimate_Bony_v1.0.5.ma";
@@ -20,18 +20,18 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "C9DAEFBD-486C-0963-FAEC-78B67878702C";
+fileInfo "UUID" "10D48D67-4121-AA19-8B71-21835137216A";
 createNode transform -s -n "persp";
 	rename -uid "A99A115B-2B40-A95A-EB94-24A6C71E6B67";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 3.7705798268922219 6.6434408431339582 10.728936312363921 ;
-	setAttr ".r" -type "double3" -23.400000000005033 17.200000000001378 -8.323633214085622e-16 ;
+	setAttr ".t" -type "double3" -2.8777955041882333 4.3255117392073297 14.421999010240512 ;
+	setAttr ".r" -type "double3" -5.4000000000007482 -12.800000000000033 0 ;
 	setAttr ".rpt" -type "double3" 1.2224301431053502e-17 -5.5316513581553561e-17 1.0791699606844754e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "23F191FC-AA4C-36B2-3112-5F83AEC65EF3";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 12.923445869590932;
+	setAttr ".coi" 15.417662367459743;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -1103,9 +1103,9 @@ createNode animCurveTA -n "Beefy_MainHipC_rotateX";
 	rename -uid "02A7DD8E-43C5-8FB4-B831-CC8FD9F63C63";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 -6.0332498845224816 4 -29.651425602206547
-		 7 -36.175194316249481 10 -35.970540259386546 13 -10.820264422865344 16 -25.306980586953561
-		 19 -31.465634925213148 22 -32.357553356645631 25 -6.0332498845224816;
+	setAttr -s 9 ".ktv[0:8]"  1 -9.5830243320605781 4 -23.29919764345415
+		 7 -29.822966357497087 10 -32.999080336873291 13 -9.6132409241535584 16 -23.625508480224994
+		 19 -29.784162818484603 22 -30.676081249917083 25 -9.5830243320605781;
 	setAttr -s 9 ".kit[0:8]"  1 3 3 3 1 3 3 3 
 		1;
 	setAttr -s 9 ".kix[0:8]"  1 1 1 1 1 1 1 1 1;
@@ -1126,8 +1126,8 @@ createNode animCurveTA -n "Beefy_MainHipC_rotateZ";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
 	setAttr -s 9 ".ktv[0:8]"  1 10.916795993187261 4 12.960179295380817
-		 7 -29.212748812664707 10 -26.961315315747072 13 -13.74918115287894 16 -13.749181152878982
-		 19 24.572618379182043 22 28.310846741865991 25 10.916795993187261;
+		 7 -29.212748812664707 10 -27.674417739976789 13 -13.74918115287894 16 -13.749181152878982
+		 19 24.572618379182043 22 32.23291007512946 25 10.916795993187261;
 	setAttr -s 9 ".kit[0:8]"  1 3 3 3 1 3 3 3 
 		1;
 	setAttr -s 9 ".kix[0:8]"  1 1 1 1 1 1 1 1 1;
@@ -1338,7 +1338,7 @@ createNode animCurveTA -n "Beefy_lFootIKC_rotateX";
 	setAttr ".wgt" no;
 	setAttr -s 9 ".ktv[0:8]"  1 35.317683992530178 4 10.253446096076972
 		 7 14.194414987978234 10 4.0290728654698178 13 -13.531414172868333 16 -4.6139578917033912
-		 19 46.371359058902861 22 22 25 35.317683992530178;
+		 19 46.371359058902861 22 22.732568577407811 25 35.317683992530178;
 	setAttr -s 9 ".kit[0:8]"  3 3 3 3 1 3 3 3 
 		1;
 	setAttr -s 9 ".kix[4:8]"  1 1 1 1 1;
@@ -1349,7 +1349,7 @@ createNode animCurveTA -n "Beefy_lFootIKC_rotateY";
 	setAttr ".wgt" no;
 	setAttr -s 9 ".ktv[0:8]"  1 8.5225414928055621 4 10.295465119264296
 		 7 39.982413615244532 10 81.039285199016803 13 119.57955151676232 16 116.92473687096896
-		 19 30.219999999999995 22 5 25 8.5225414928055621;
+		 19 30.219999999999995 22 5.0608306499276292 25 8.5225414928055621;
 	setAttr -s 9 ".kit[0:8]"  3 3 3 3 1 3 3 3 
 		1;
 	setAttr -s 9 ".kix[4:8]"  1 1 1 1 1;
@@ -1360,7 +1360,7 @@ createNode animCurveTA -n "Beefy_lFootIKC_rotateZ";
 	setAttr ".wgt" no;
 	setAttr -s 9 ".ktv[0:8]"  1 -6.0946634723529147 4 -1.8830083591142051
 		 7 -12.245771822424294 10 -22.298219170451446 13 -25.086637489255789 16 -9.1433319457331326
-		 19 27.259000000000004 22 0.6 25 -6.0946634723529147;
+		 19 27.259000000000004 22 8.9011921637608769 25 -6.0946634723529147;
 	setAttr -s 9 ".kit[0:8]"  3 3 3 3 1 3 3 3 
 		1;
 	setAttr -s 9 ".kix[4:8]"  1 1 1 1 1;
@@ -1757,7 +1757,7 @@ createNode animCurveTA -n "Beefy_rFootIKC_rotateX";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
 	setAttr -s 9 ".ktv[0:8]"  1 -11.555497593253339 4 -3.1205409774180048
-		 7 46.655122877690829 10 22.454228440306657 13 35.363303838190163 16 10.215083192037214
+		 7 46.655122877690829 10 22.573487223485646 13 35.363303838190163 16 10.215083192037214
 		 19 14.20813648415964 22 1.5793492131137605 25 -11.555497593253339;
 	setAttr -s 9 ".kit[0:8]"  1 3 3 3 1 3 3 3 
 		1;
@@ -1768,7 +1768,7 @@ createNode animCurveTA -n "Beefy_rFootIKC_rotateY";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
 	setAttr -s 9 ".ktv[0:8]"  1 115.19817843422219 4 112.75152676423517
-		 7 30.146779676112256 10 4.956592547354111 13 7.199891809079392 16 8.7455541333033686
+		 7 30.146779676112256 10 4.9593929532559535 13 7.199891809079392 16 8.7455541333033686
 		 19 38.041501665748186 22 85.224409698804351 25 115.19817843422219;
 	setAttr -s 9 ".kit[0:8]"  1 3 3 3 1 3 3 3 
 		1;
@@ -1779,7 +1779,7 @@ createNode animCurveTA -n "Beefy_rFootIKC_rotateZ";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
 	setAttr -s 9 ".ktv[0:8]"  1 -25.755902476760895 4 -7.469596833324867
-		 7 27.016849642088129 10 0.65823377743576661 13 -5.1437331845083669 16 -1.2982060467910859
+		 7 27.016849642088129 10 2.0326302766710898 13 -5.1437331845083669 16 -1.2982060467910859
 		 19 -11.426413265246056 22 -22.00281720565868 25 -25.755902476760895;
 	setAttr -s 9 ".kit[0:8]"  1 3 3 3 1 3 3 3 
 		1;
@@ -2219,7 +2219,7 @@ createNode animCurveTL -n "Beefy_rFootIKC_translateY";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
 	setAttr -s 9 ".ktv[0:8]"  1 -0.21399198424246235 4 -0.077550603506237992
-		 7 -1.2945320400005553 10 -1.2498568430664778 13 -0.68687251077943734 16 -0.099305146447389858
+		 7 -1.2945320400005553 10 -0.96257173879753877 13 -0.68687251077943734 16 -0.099305146447389858
 		 19 -0.16129308598990433 22 -0.17882079775164161 25 -0.21399198424246235;
 	setAttr -s 9 ".kit[0:8]"  1 3 3 3 1 3 3 3 
 		1;
@@ -2370,7 +2370,7 @@ createNode animCurveTL -n "Beefy_lFootIKC_translateY";
 	setAttr ".wgt" no;
 	setAttr -s 9 ".ktv[0:8]"  1 0.68013262062928281 4 0.098176396723031356
 		 7 0.16213780517306964 10 0.16731565285809935 13 0.21703178210210861 16 0.098672888567595374
-		 19 1.3750061278751644 22 1.25 25 0.68013262062928281;
+		 19 1.3750061278751644 22 1.0623929687710079 25 0.68013262062928281;
 	setAttr -s 9 ".kit[0:8]"  3 3 3 3 1 3 3 3 
 		1;
 	setAttr -s 9 ".kix[4:8]"  1 1 1 1 1;
@@ -2777,8 +2777,8 @@ createNode animCurveTL -n "Beefy_SpineTopIKC_translateZ";
 	setAttr -s 9 ".kix[4:8]"  1 1 1 1 1;
 	setAttr -s 9 ".kiy[4:8]"  0 0 0 0 0;
 select -ne :time1;
-	setAttr ".o" 18;
-	setAttr ".unw" 18;
+	setAttr ".o" 20;
+	setAttr ".unw" 20;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
