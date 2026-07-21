@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: vg1100_u7_Beefy.ma
-//Last modified: Mon, Jul 20, 2026 05:31:28 PM
+//Last modified: Mon, Jul 20, 2026 09:29:31 PM
 //Codeset: 1252
 file -rdi 1 -ns "Ultimate_Bony_v1_0_5" -dr 1 -rfn "Ultimate_Bony_v1_0_5RN" -op
 		 "v=0;" -typ "mayaAscii" "/Users/anthonyromrell/GitRepos/Essentials/DAGV1100and1200/Maya//scenes/Rigs/Ultimate_Bony_v1.0.5.ma";
@@ -20,19 +20,19 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "4A7191F5-4728-2A8D-4F7C-A28C99ECADB6";
+fileInfo "UUID" "98CD7C15-4CE4-624B-8E91-108F3C0AE5B0";
 createNode transform -s -n "persp";
 	rename -uid "A99A115B-2B40-A95A-EB94-24A6C71E6B67";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -1.6874703949076046 10.857314492734254 35.419457653777648 ;
-	setAttr ".r" -type "double3" -11.39999999999851 357.59999999987849 4.9739797150821458e-17 ;
+	setAttr ".t" -type "double3" 7.5923629793750695 8.6767617564307553 8.0198452331928944 ;
+	setAttr ".r" -type "double3" -8.3999999999985775 404.39999999987725 -5.5645141726963234e-16 ;
 	setAttr ".rp" -type "double3" -6.6613381477509392e-16 8.8817841970012523e-16 0 ;
 	setAttr ".rpt" -type "double3" -5.2403600419209793e-16 5.6806756071080773e-17 -9.0077841252336035e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "23F191FC-AA4C-36B2-3112-5F83AEC65EF3";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 35.413852301861965;
+	setAttr ".coi" 11.211536660774529;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -2254,8 +2254,8 @@ createNode animCurveTU -n "Beefy_lThumbJ1C_scaleZ";
 	setAttr ".ktv[0]"  4 1;
 	setAttr ".kot[0]"  5;
 select -ne :time1;
-	setAttr ".o" 6;
-	setAttr ".unw" 6;
+	setAttr ".o" 25;
+	setAttr ".unw" 25;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
